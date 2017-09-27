@@ -7,6 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
 
 // This class is meant as a smoke test for Selenium itself. Is it installed and working right?
+// test edit to see if I got project creation down
 
 public class checkSelenium {
 	public static void main(String[] args) {
