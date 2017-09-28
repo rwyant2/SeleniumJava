@@ -6,9 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
 
-// This class is meant as a smoke test for Selenium itself. Is it installed and working right?
+// This class is meant to see if the app itself is up and ready for testing.
 
-public class checkSelenium {
+public class checkIfAppIsUp {
 	public static void main(String[] args) {
 		// can i habe firefox please?
     	System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
@@ -22,8 +22,8 @@ public class checkSelenium {
 		System.setProperty("webdriver.ie.driver", "C:\\webdrivers\\IEDriverServer.exe");
 		WebDriver ieDriver = new InternetExplorerDriver();
     	
-        String baseUrl = "http://demo.guru99.com/selenium/newtours/";
-        String expectedTitle = "Welcome: Mercury Tours";
+        String baseUrl = "http://localhost:8080/";
+        String expectedTitle = "This is my title";
         String actualTitle = "";
 
         // launch the browser and direct it to the Base URL
