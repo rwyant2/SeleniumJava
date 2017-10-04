@@ -2,6 +2,7 @@ package cases;
 
 import static org.junit.Assert.assertEquals;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.*;
 import org.openqa.selenium.support.ui.Select;
 
 import org.junit.Assert;
@@ -20,58 +21,69 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class dropDownCase {
 	// parameterize these two
-	private static String url = "http://localhost:8080/html5";
+	private static String url = "http://localhost:8080";
 	private static int timeout = 10;
-	
-	private static String inputText = "I can't think of anything clever to say here.";
+	WebDriver driver = new FirefoxDriver();
+	WebDriverWait wait = new WebDriverWait(driver, timeout);
 	private static String actualText;
 	
-	public static void main(String[] args) {
+	@BeforeTest // before everything else here
+	public void startBrowser() {
 		// parameterize this
     	System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
-		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		
-		// Test 1st drop down selection as default
 		driver.get(url);
+	}
+
+	@AfterTest // after everything else here
+	public void closeBrowser() {
+		driver.close();
+	}
+	
+	@BeforeMethod
+	public void goToHTML5Page() {
+		driver.findElement(By.xpath("//a[@href='/html5']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='dropDownSelection']")));
+	}
+	
+	@Test
+	public void dropDownTomato() {
 		Select dropDown = new Select(driver.findElement(By.xpath("//select[@id='dropDownSelection']")));  
-		
+		dropDown.selectByVisibleText("tomato");
+		driver.findElement(By.xpath("//input[@type='submit']")).click();	
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dropDownResult']")));
+		// reminder: assert with TestNG fails and stops, verify with JUnit fails and continues
+		actualText = driver.findElement(By.xpath("//p[@id='dropDownResult']")).getText();
+		assertEquals("red",actualText);
+	}
+	
+	@Test
+	public void dropDownMustard() {
+		Select dropDown = new Select(driver.findElement(By.xpath("//select[@id='dropDownSelection']")));  
 		dropDown.selectByVisibleText("mustard");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dropDownResult']")));
 		// reminder: assert with TestNG fails and stops, verify with JUnit fails and continues
 		actualText = driver.findElement(By.xpath("//p[@id='dropDownResult']")).getText();
 		assertEquals("yellow",actualText);
-
-		// Test 2nd drop down selection
-		driver.findElement(By.xpath("//a[@href='/html5']")).click();
-		Select dropDown2 = new Select(driver.findElement(By.xpath("//select[@id='dropDownSelection']")));  
-		dropDown2.selectByVisibleText("tomato");
-		driver.findElement(By.xpath("//input[@type='submit']")).click();	
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dropDownResult']")));
-		// reminder: assert with TestNG fails and stops, verify with JUnit fails and continues
-		actualText = driver.findElement(By.xpath("//p[@id='dropDownResult']")).getText();
-		assertEquals("red",actualText);
-				
-		// Test 3rd drop down selection
-		driver.findElement(By.xpath("//a[@href='/html5']")).click();
-		Select dropDown3 = new Select(driver.findElement(By.xpath("//select[@id='dropDownSelection']")));  
-		dropDown3.selectByVisibleText("onions");
+	}
+		
+	@Test
+	public void dropDownOnion() {
+		Select dropDown = new Select(driver.findElement(By.xpath("//select[@id='dropDownSelection']")));  
+		dropDown.selectByVisibleText("onions");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dropDownResult']")));
 		// reminder: assert with TestNG fails and stops, verify with JUnit fails and continues
 		actualText = driver.findElement(By.xpath("//p[@id='dropDownResult']")).getText();
 		assertEquals("white",actualText);
+	}
 
-		// Test defaulting to 1st drop down selection
-		driver.findElement(By.xpath("//a[@href='/html5']")).click();
+	@Test
+	public void dropDownDefault() {  
 		driver.findElement(By.xpath("//input[@type='submit']")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dropDownResult']")));
 		// reminder: assert with TestNG fails and stops, verify with JUnit fails and continues
 		actualText = driver.findElement(By.xpath("//p[@id='dropDownResult']")).getText();
-		assertEquals("yellow",actualText);		
-		
-		driver.close();
+		assertEquals("yellow",actualText);
 	}
 }
