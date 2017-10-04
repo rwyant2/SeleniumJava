@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AllCases]">
+  <test name="cases(failed)">
+    <classes>
+      <class name="cases.textFieldCase">
+        <methods>
+          <include name="goToHTML5Page"/>
+          <include name="testTextField"/>
+          <include name="closeBrowser"/>
+          <include name="startBrowser"/>
+        </methods>
+      </class> <!-- cases.textFieldCase -->
+    </classes>
+  </test> <!-- cases(failed) -->
+</suite> <!-- Failed suite [AllCases] -->

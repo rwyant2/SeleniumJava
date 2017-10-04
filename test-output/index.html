@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AllCases">
+              <span class="suite-name border-passed">AllCases</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AllCases">
+                    <span>C:\Users\Richard\git\SeleniumJava\src\resources\caseSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AllCases">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AllCases">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AllCases">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AllCases">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AllCases">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AllCases">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AllCases" class="hide-methods passed suite-AllCases"> (hide)</a> <!-- hide-methods passed suite-AllCases -->
+                      <a href="#" panel-name="suite-AllCases" class="show-methods passed suite-AllCases"> (show)</a> <!-- show-methods passed suite-AllCases -->
+                    </span>
+                    <div class="method-list-content passed suite-AllCases">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.checkBoxCase" hash-for-method="checkBoxAll">checkBoxAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.checkBoxCase" hash-for-method="checkBoxNone">checkBoxNone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.checkBoxCase" hash-for-method="checkBoxOneThree">checkBoxOneThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.checkBoxCase" hash-for-method="checkBoxOneTwo">checkBoxOneTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.checkBoxCase" hash-for-method="checkBoxTwoThree">checkBoxTwoThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.dropDownCase" hash-for-method="dropDownDefault">dropDownDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.dropDownCase" hash-for-method="dropDownMustard">dropDownMustard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.dropDownCase" hash-for-method="dropDownOnion">dropDownOnion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.dropDownCase" hash-for-method="dropDownTomato">dropDownTomato</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.radioButtonCase" hash-for-method="radioChoiceA">radioChoiceA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.radioButtonCase" hash-for-method="radioChoiceB">radioChoiceB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.radioButtonCase" hash-for-method="radioChoiceC">radioChoiceC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.radioButtonCase" hash-for-method="radioDefault">radioDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.textFieldCase" hash-for-method="testTextField">testTextField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.textAreaCase" hash-for-method="textAreaLongString">textAreaLongString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AllCases" title="cases.textAreaCase" hash-for-method="textAreaWithEnter">textAreaWithEnter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AllCases -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AllCases" class="panel AllCases">
+          <div class="suite-AllCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.textFieldCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextField">
+                  </a> <!-- testTextField -->
+                  <span class="method-name">testTextField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllCases-class-passed -->
+          <div class="suite-AllCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.radioButtonCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioChoiceA">
+                  </a> <!-- radioChoiceA -->
+                  <span class="method-name">radioChoiceA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioChoiceB">
+                  </a> <!-- radioChoiceB -->
+                  <span class="method-name">radioChoiceB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioChoiceC">
+                  </a> <!-- radioChoiceC -->
+                  <span class="method-name">radioChoiceC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioDefault">
+                  </a> <!-- radioDefault -->
+                  <span class="method-name">radioDefault</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllCases-class-passed -->
+          <div class="suite-AllCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.checkBoxCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxAll">
+                  </a> <!-- checkBoxAll -->
+                  <span class="method-name">checkBoxAll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxNone">
+                  </a> <!-- checkBoxNone -->
+                  <span class="method-name">checkBoxNone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxOneThree">
+                  </a> <!-- checkBoxOneThree -->
+                  <span class="method-name">checkBoxOneThree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxOneTwo">
+                  </a> <!-- checkBoxOneTwo -->
+                  <span class="method-name">checkBoxOneTwo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBoxTwoThree">
+                  </a> <!-- checkBoxTwoThree -->
+                  <span class="method-name">checkBoxTwoThree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllCases-class-passed -->
+          <div class="suite-AllCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.dropDownCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownDefault">
+                  </a> <!-- dropDownDefault -->
+                  <span class="method-name">dropDownDefault</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownMustard">
+                  </a> <!-- dropDownMustard -->
+                  <span class="method-name">dropDownMustard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownOnion">
+                  </a> <!-- dropDownOnion -->
+                  <span class="method-name">dropDownOnion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDownTomato">
+                  </a> <!-- dropDownTomato -->
+                  <span class="method-name">dropDownTomato</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllCases-class-passed -->
+          <div class="suite-AllCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.textAreaCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="textAreaLongString">
+                  </a> <!-- textAreaLongString -->
+                  <span class="method-name">textAreaLongString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textAreaWithEnter">
+                  </a> <!-- textAreaWithEnter -->
+                  <span class="method-name">textAreaWithEnter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllCases-class-passed -->
+        </div> <!-- panel AllCases -->
+        <div panel-name="test-xml-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Richard\git\SeleniumJava\src\resources\caseSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AllCases&quot;&gt;
+  &lt;test name=&quot;cases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cases.beforeAndAfterSuite&quot;/&gt;
+      &lt;class name=&quot;cases.textFieldCase&quot;/&gt;
+      &lt;class name=&quot;cases.checkBoxCase&quot;/&gt;
+      &lt;class name=&quot;cases.radioButtonCase&quot;/&gt;
+      &lt;class name=&quot;cases.dropDownCase&quot;/&gt;
+      &lt;class name=&quot;cases.textAreaCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- cases --&gt;
+&lt;/suite&gt; &lt;!-- AllCases --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AllCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">cases (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AllCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AllCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AllCases');
+function tableData_AllCases() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testTextField')
+data.setCell(0, 2, 'cases.textFieldCase')
+data.setCell(0, 3, 1202);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkBoxAll')
+data.setCell(1, 2, 'cases.checkBoxCase')
+data.setCell(1, 3, 984);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkBoxOneTwo')
+data.setCell(2, 2, 'cases.checkBoxCase')
+data.setCell(2, 3, 811);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkBoxOneThree')
+data.setCell(3, 2, 'cases.checkBoxCase')
+data.setCell(3, 3, 780);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkBoxTwoThree')
+data.setCell(4, 2, 'cases.checkBoxCase')
+data.setCell(4, 3, 717);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'dropDownTomato')
+data.setCell(5, 2, 'cases.dropDownCase')
+data.setCell(5, 3, 593);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'dropDownOnion')
+data.setCell(6, 2, 'cases.dropDownCase')
+data.setCell(6, 3, 563);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'textAreaWithEnter')
+data.setCell(7, 2, 'cases.textAreaCase')
+data.setCell(7, 3, 469);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'radioChoiceC')
+data.setCell(8, 2, 'cases.radioButtonCase')
+data.setCell(8, 3, 468);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'radioChoiceA')
+data.setCell(9, 2, 'cases.radioButtonCase')
+data.setCell(9, 3, 468);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'textAreaLongString')
+data.setCell(10, 2, 'cases.textAreaCase')
+data.setCell(10, 3, 468);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'radioChoiceB')
+data.setCell(11, 2, 'cases.radioButtonCase')
+data.setCell(11, 3, 422);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'dropDownMustard')
+data.setCell(12, 2, 'cases.dropDownCase')
+data.setCell(12, 3, 327);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'radioDefault')
+data.setCell(13, 2, 'cases.radioButtonCase')
+data.setCell(13, 3, 266);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkBoxNone')
+data.setCell(14, 2, 'cases.checkBoxCase')
+data.setCell(14, 3, 234);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'dropDownDefault')
+data.setCell(15, 2, 'cases.dropDownCase')
+data.setCell(15, 3, 234);
+window.suiteTableData['AllCases']= { tableData: data, tableDiv: 'times-div-AllCases'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-AllCases">
+              </div> <!-- times-div-AllCases -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AllCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AllCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.beforeAndAfterSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.checkBoxCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.dropDownCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">812 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.radioButtonCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">2872 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.textAreaCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">4984 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.textFieldCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">6545 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">8450 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextField</span>
+                <span class="method-start">9574 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.checkBoxCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">10776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxAll</span>
+                <span class="method-start">11119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">12103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxNone</span>
+                <span class="method-start">12462 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">12696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxOneThree</span>
+                <span class="method-start">13024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">13804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxOneTwo</span>
+                <span class="method-start">14055 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">14866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxTwoThree</span>
+                <span class="method-start">15086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.radioButtonCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">15803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radioChoiceA</span>
+                <span class="method-start">16101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">16584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radioChoiceB</span>
+                <span class="method-start">16834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">17256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radioChoiceC</span>
+                <span class="method-start">17459 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">17927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radioDefault</span>
+                <span class="method-start">18255 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.dropDownCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">18521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDownDefault</span>
+                <span class="method-start">18801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">19035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDownMustard</span>
+                <span class="method-start">19255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">19582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDownOnion</span>
+                <span class="method-start">19832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">20395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropDownTomato</span>
+                <span class="method-start">20675 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.textAreaCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">21284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">textAreaLongString</span>
+                <span class="method-start">21612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToHTML5Page</span>
+                <span class="method-start">22080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">textAreaWithEnter</span>
+                <span class="method-start">22283 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.checkBoxCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">22752 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.dropDownCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23064 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.radioButtonCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23345 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.textAreaCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23626 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.textFieldCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23891 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cases.beforeAndAfterSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">24234 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

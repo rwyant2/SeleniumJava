@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllCases" duration-ms="24171" started-at="2017-10-04T20:27:12Z" finished-at="2017-10-04T20:27:36Z">
+    <groups>
+    </groups>
+    <test name="cases" duration-ms="24171" started-at="2017-10-04T20:27:12Z" finished-at="2017-10-04T20:27:36Z">
+      <class name="cases.radioButtonCase">
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.radioButtonCase@229c6181]" name="goToHTML5Page" is-config="true" duration-ms="298" started-at="2017-10-04T15:27:28Z" finished-at="2017-10-04T15:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="radioChoiceA()[pri:0, instance:cases.radioButtonCase@229c6181]" name="radioChoiceA" duration-ms="468" started-at="2017-10-04T15:27:28Z" finished-at="2017-10-04T15:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioChoiceA -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.radioButtonCase@229c6181]" name="goToHTML5Page" is-config="true" duration-ms="250" started-at="2017-10-04T15:27:29Z" finished-at="2017-10-04T15:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="radioChoiceB()[pri:0, instance:cases.radioButtonCase@229c6181]" name="radioChoiceB" duration-ms="422" started-at="2017-10-04T15:27:29Z" finished-at="2017-10-04T15:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioChoiceB -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.radioButtonCase@229c6181]" name="goToHTML5Page" is-config="true" duration-ms="203" started-at="2017-10-04T15:27:29Z" finished-at="2017-10-04T15:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="radioChoiceC()[pri:0, instance:cases.radioButtonCase@229c6181]" name="radioChoiceC" duration-ms="468" started-at="2017-10-04T15:27:30Z" finished-at="2017-10-04T15:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioChoiceC -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.radioButtonCase@229c6181]" name="goToHTML5Page" is-config="true" duration-ms="328" started-at="2017-10-04T15:27:30Z" finished-at="2017-10-04T15:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="radioDefault()[pri:0, instance:cases.radioButtonCase@229c6181]" name="radioDefault" duration-ms="266" started-at="2017-10-04T15:27:30Z" finished-at="2017-10-04T15:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioDefault -->
+      </class> <!-- cases.radioButtonCase -->
+      <class name="cases.textAreaCase">
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="goToHTML5Page" is-config="true" duration-ms="328" started-at="2017-10-04T15:27:33Z" finished-at="2017-10-04T15:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="textAreaLongString()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="textAreaLongString" duration-ms="468" started-at="2017-10-04T15:27:34Z" finished-at="2017-10-04T15:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textAreaLongString -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="goToHTML5Page" is-config="true" duration-ms="203" started-at="2017-10-04T15:27:34Z" finished-at="2017-10-04T15:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="textAreaWithEnter()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="textAreaWithEnter" duration-ms="469" started-at="2017-10-04T15:27:34Z" finished-at="2017-10-04T15:27:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textAreaWithEnter -->
+      </class> <!-- cases.textAreaCase -->
+      <class name="cases.beforeAndAfterSuite">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:cases.beforeAndAfterSuite@18df8434]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2017-10-04T15:27:12Z" finished-at="2017-10-04T15:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:cases.beforeAndAfterSuite@18df8434]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-10-04T15:27:36Z" finished-at="2017-10-04T15:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- cases.beforeAndAfterSuite -->
+      <class name="cases.textFieldCase">
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.textFieldCase@65c7a252]" name="goToHTML5Page" is-config="true" duration-ms="1124" started-at="2017-10-04T15:27:21Z" finished-at="2017-10-04T15:27:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="testTextField()[pri:0, instance:cases.textFieldCase@65c7a252]" name="testTextField" duration-ms="1202" started-at="2017-10-04T15:27:22Z" finished-at="2017-10-04T15:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextField -->
+      </class> <!-- cases.textFieldCase -->
+      <class name="cases.checkBoxCase">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="startBrowser" is-config="true" duration-ms="796" started-at="2017-10-04T15:27:12Z" finished-at="2017-10-04T15:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:cases.dropDownCase@4686afc2]" name="startBrowser" is-config="true" duration-ms="2060" started-at="2017-10-04T15:27:13Z" finished-at="2017-10-04T15:27:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:cases.radioButtonCase@229c6181]" name="startBrowser" is-config="true" duration-ms="2112" started-at="2017-10-04T15:27:15Z" finished-at="2017-10-04T15:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="startBrowser" is-config="true" duration-ms="1561" started-at="2017-10-04T15:27:17Z" finished-at="2017-10-04T15:27:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:cases.textFieldCase@65c7a252]" name="startBrowser" is-config="true" duration-ms="1889" started-at="2017-10-04T15:27:19Z" finished-at="2017-10-04T15:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="goToHTML5Page" is-config="true" duration-ms="343" started-at="2017-10-04T15:27:23Z" finished-at="2017-10-04T15:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="checkBoxAll()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="checkBoxAll" duration-ms="984" started-at="2017-10-04T15:27:23Z" finished-at="2017-10-04T15:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxAll -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="goToHTML5Page" is-config="true" duration-ms="359" started-at="2017-10-04T15:27:24Z" finished-at="2017-10-04T15:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="checkBoxNone()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="checkBoxNone" duration-ms="234" started-at="2017-10-04T15:27:25Z" finished-at="2017-10-04T15:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxNone -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="goToHTML5Page" is-config="true" duration-ms="313" started-at="2017-10-04T15:27:25Z" finished-at="2017-10-04T15:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="checkBoxOneThree()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="checkBoxOneThree" duration-ms="780" started-at="2017-10-04T15:27:25Z" finished-at="2017-10-04T15:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxOneThree -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="goToHTML5Page" is-config="true" duration-ms="251" started-at="2017-10-04T15:27:26Z" finished-at="2017-10-04T15:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="checkBoxOneTwo()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="checkBoxOneTwo" duration-ms="811" started-at="2017-10-04T15:27:26Z" finished-at="2017-10-04T15:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxOneTwo -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="goToHTML5Page" is-config="true" duration-ms="220" started-at="2017-10-04T15:27:27Z" finished-at="2017-10-04T15:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="checkBoxTwoThree()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="checkBoxTwoThree" duration-ms="717" started-at="2017-10-04T15:27:27Z" finished-at="2017-10-04T15:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxTwoThree -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cases.checkBoxCase@4d154ccd]" name="closeBrowser" is-config="true" duration-ms="312" started-at="2017-10-04T15:27:35Z" finished-at="2017-10-04T15:27:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cases.dropDownCase@4686afc2]" name="closeBrowser" is-config="true" duration-ms="281" started-at="2017-10-04T15:27:35Z" finished-at="2017-10-04T15:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cases.radioButtonCase@229c6181]" name="closeBrowser" is-config="true" duration-ms="281" started-at="2017-10-04T15:27:36Z" finished-at="2017-10-04T15:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cases.textAreaCase@1e0b4072]" name="closeBrowser" is-config="true" duration-ms="265" started-at="2017-10-04T15:27:36Z" finished-at="2017-10-04T15:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:cases.textFieldCase@65c7a252]" name="closeBrowser" is-config="true" duration-ms="296" started-at="2017-10-04T15:27:36Z" finished-at="2017-10-04T15:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- cases.checkBoxCase -->
+      <class name="cases.dropDownCase">
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.dropDownCase@4686afc2]" name="goToHTML5Page" is-config="true" duration-ms="280" started-at="2017-10-04T15:27:31Z" finished-at="2017-10-04T15:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="dropDownDefault()[pri:0, instance:cases.dropDownCase@4686afc2]" name="dropDownDefault" duration-ms="234" started-at="2017-10-04T15:27:31Z" finished-at="2017-10-04T15:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownDefault -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.dropDownCase@4686afc2]" name="goToHTML5Page" is-config="true" duration-ms="220" started-at="2017-10-04T15:27:31Z" finished-at="2017-10-04T15:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="dropDownMustard()[pri:0, instance:cases.dropDownCase@4686afc2]" name="dropDownMustard" duration-ms="327" started-at="2017-10-04T15:27:31Z" finished-at="2017-10-04T15:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownMustard -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.dropDownCase@4686afc2]" name="goToHTML5Page" is-config="true" duration-ms="250" started-at="2017-10-04T15:27:32Z" finished-at="2017-10-04T15:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="dropDownOnion()[pri:0, instance:cases.dropDownCase@4686afc2]" name="dropDownOnion" duration-ms="563" started-at="2017-10-04T15:27:32Z" finished-at="2017-10-04T15:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownOnion -->
+        <test-method status="PASS" signature="goToHTML5Page()[pri:0, instance:cases.dropDownCase@4686afc2]" name="goToHTML5Page" is-config="true" duration-ms="280" started-at="2017-10-04T15:27:33Z" finished-at="2017-10-04T15:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Page -->
+        <test-method status="PASS" signature="dropDownTomato()[pri:0, instance:cases.dropDownCase@4686afc2]" name="dropDownTomato" duration-ms="593" started-at="2017-10-04T15:27:33Z" finished-at="2017-10-04T15:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownTomato -->
+      </class> <!-- cases.dropDownCase -->
+    </test> <!-- cases -->
+  </suite> <!-- AllCases -->
+</testng-results>

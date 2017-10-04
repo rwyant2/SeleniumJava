@@ -2,6 +2,7 @@ package cases;
 
 import static org.junit.Assert.assertEquals;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.*;
 import org.openqa.selenium.Keys;
 
 import org.junit.Assert;
@@ -18,37 +19,49 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 //import java.util.concurrent.TimeUnit;
 
 public class textAreaCase {
-	// parameterize this
-	private static String url = "http://localhost:8080/html5";
+	// parameterize these
+	private static String url = "http://localhost:8080";
 	private static int timeout = 10;
-	
-	private static String inputText = "I can't think of anything clever to say here, either."
-			+ "I wish the bus wasn't so rough to ride on. They're all drove like the General Lee."
-			+ "It's hard to type when the bus is all over the place like that";
-	
+	WebDriver driver = new FirefoxDriver();
+	WebDriverWait wait = new WebDriverWait(driver, timeout);	
 	private static String actualText;
-	
-	private static String[] inputTextWithEnter = new String [3];
-	
-	public static void main(String[] args) {
-		inputTextWithEnter[0] = "I can't think of anything clever to say here, either.";
-		inputTextWithEnter[1] = "I wish the bus wasn't so rough to ride on. They're all drove like the General Lee.";
-		inputTextWithEnter[2] = "It's hard to type when the bus is all over the place like that";
-		
+
+	@BeforeTest // before everything else here
+	public void startBrowser() {
 		// parameterize this
     	System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
-		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		
 		driver.get(url);
+	}
+
+	@AfterTest // after everything else here
+	public void closeBrowser() {
+		driver.close();
+	}
+		
+	@BeforeMethod
+	public void goToHTML5Page() {
+		driver.findElement(By.xpath("//a[@href='/html5']")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='textArea']")));
+	}	
+		
+	@Test
+	public void textAreaLongString() {
+		String inputText = "I can't think of anything clever to say here, either."
+				+ "I wish the bus wasn't so rough to ride on. They're all drove like the General Lee."
+				+ "It's hard to type when the bus is all over the place like that";
 		driver.findElement(By.name("textArea")).sendKeys(inputText);  
 		driver.findElement(By.xpath("//input[@type='submit']")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='textAreaResult']")));
 		actualText = driver.findElement(By.xpath("//p[@id='textAreaResult']")).getText();
-		assertEquals(inputText,actualText);
+		Assert.assertEquals(inputText,actualText);
+	}
 		
-		// Test when user hits enter instead of just one long line
-		driver.findElement(By.xpath("//a[@href='/html5']")).click();
+	@Test
+	public void textAreaWithEnter() {
+		String[] inputTextWithEnter = new String [3];
+		inputTextWithEnter[0] = "I can't think of anything clever to say here, either.";
+		inputTextWithEnter[1] = "I wish the bus wasn't so rough to ride on. They're all drove like the General Lee.";
+		inputTextWithEnter[2] = "It's hard to type when the bus is all over the place like that";  
 		driver.findElement(By.name("textArea")).sendKeys(inputTextWithEnter[0]);
 		driver.findElement(By.name("textArea")).sendKeys(Keys.RETURN);
 		driver.findElement(By.name("textArea")).sendKeys(inputTextWithEnter[1]);
@@ -57,10 +70,8 @@ public class textAreaCase {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='textAreaResult']")));
 		actualText = driver.findElement(By.xpath("//p[@id='textAreaResult']")).getText();
-		assertEquals(inputTextWithEnter[0] + " "
+		Assert.assertEquals(inputTextWithEnter[0] + " "
 				+ inputTextWithEnter[1] + " " 
-				+ inputTextWithEnter[2],actualText);
-		
-		driver.close();
+				+ inputTextWithEnter[2],actualText);		
 	}
 }
