@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllCases">
+	<test name="cases">
+		<classes>
+			<class name="cases.beforeAndAfterSuite" />
+			<class name="cases.textFieldCase" />
+			<class name="cases.checkBoxCase" />
+			<class name="cases.radioButtonCase" />
+			<class name="cases.dropDownCase" />
+			<class name="cases.textAreaCase" />
+		</classes>
+	</test>
+</suite>

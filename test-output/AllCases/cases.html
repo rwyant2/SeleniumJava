@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 04 15:27:12 CDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24171 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cases.checkBoxCase.checkBoxAll()'><b>checkBoxAll</b><br>Test class: cases.checkBoxCase</td>
+<td></td>
+<td>0</td>
+<td>cases.checkBoxCase@4d154ccd</td></tr>
+<tr>
+<td title='cases.checkBoxCase.checkBoxNone()'><b>checkBoxNone</b><br>Test class: cases.checkBoxCase</td>
+<td></td>
+<td>0</td>
+<td>cases.checkBoxCase@4d154ccd</td></tr>
+<tr>
+<td title='cases.checkBoxCase.checkBoxOneThree()'><b>checkBoxOneThree</b><br>Test class: cases.checkBoxCase</td>
+<td></td>
+<td>0</td>
+<td>cases.checkBoxCase@4d154ccd</td></tr>
+<tr>
+<td title='cases.checkBoxCase.checkBoxOneTwo()'><b>checkBoxOneTwo</b><br>Test class: cases.checkBoxCase</td>
+<td></td>
+<td>0</td>
+<td>cases.checkBoxCase@4d154ccd</td></tr>
+<tr>
+<td title='cases.checkBoxCase.checkBoxTwoThree()'><b>checkBoxTwoThree</b><br>Test class: cases.checkBoxCase</td>
+<td></td>
+<td>0</td>
+<td>cases.checkBoxCase@4d154ccd</td></tr>
+<tr>
+<td title='cases.dropDownCase.dropDownDefault()'><b>dropDownDefault</b><br>Test class: cases.dropDownCase</td>
+<td></td>
+<td>0</td>
+<td>cases.dropDownCase@4686afc2</td></tr>
+<tr>
+<td title='cases.dropDownCase.dropDownMustard()'><b>dropDownMustard</b><br>Test class: cases.dropDownCase</td>
+<td></td>
+<td>0</td>
+<td>cases.dropDownCase@4686afc2</td></tr>
+<tr>
+<td title='cases.dropDownCase.dropDownOnion()'><b>dropDownOnion</b><br>Test class: cases.dropDownCase</td>
+<td></td>
+<td>0</td>
+<td>cases.dropDownCase@4686afc2</td></tr>
+<tr>
+<td title='cases.dropDownCase.dropDownTomato()'><b>dropDownTomato</b><br>Test class: cases.dropDownCase</td>
+<td></td>
+<td>0</td>
+<td>cases.dropDownCase@4686afc2</td></tr>
+<tr>
+<td title='cases.radioButtonCase.radioChoiceA()'><b>radioChoiceA</b><br>Test class: cases.radioButtonCase</td>
+<td></td>
+<td>0</td>
+<td>cases.radioButtonCase@229c6181</td></tr>
+<tr>
+<td title='cases.radioButtonCase.radioChoiceB()'><b>radioChoiceB</b><br>Test class: cases.radioButtonCase</td>
+<td></td>
+<td>0</td>
+<td>cases.radioButtonCase@229c6181</td></tr>
+<tr>
+<td title='cases.radioButtonCase.radioChoiceC()'><b>radioChoiceC</b><br>Test class: cases.radioButtonCase</td>
+<td></td>
+<td>0</td>
+<td>cases.radioButtonCase@229c6181</td></tr>
+<tr>
+<td title='cases.radioButtonCase.radioDefault()'><b>radioDefault</b><br>Test class: cases.radioButtonCase</td>
+<td></td>
+<td>0</td>
+<td>cases.radioButtonCase@229c6181</td></tr>
+<tr>
+<td title='cases.textFieldCase.testTextField()'><b>testTextField</b><br>Test class: cases.textFieldCase</td>
+<td></td>
+<td>1</td>
+<td>cases.textFieldCase@65c7a252</td></tr>
+<tr>
+<td title='cases.textAreaCase.textAreaLongString()'><b>textAreaLongString</b><br>Test class: cases.textAreaCase</td>
+<td></td>
+<td>0</td>
+<td>cases.textAreaCase@1e0b4072</td></tr>
+<tr>
+<td title='cases.textAreaCase.textAreaWithEnter()'><b>textAreaWithEnter</b><br>Test class: cases.textAreaCase</td>
+<td></td>
+<td>0</td>
+<td>cases.textAreaCase@1e0b4072</td></tr>
+</table><p>
+</body>
+</html>
