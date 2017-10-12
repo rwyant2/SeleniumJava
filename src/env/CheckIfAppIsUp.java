@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 // This class is meant to see if the app itself is up and ready for testing.
 
-public class checkIfAppIsUp {
+public class CheckIfAppIsUp {
 	
 	@Test
 	public void isAppUp() {

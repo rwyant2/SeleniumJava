@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 // This class is meant as a smoke test for Selenium itself. Is it installed and working right?
 // This will require internet access to work.
 
-public class checkSelenium {
+public class CheckSelenium {
 	private static String url = "http://demo.guru99.com/selenium/newtours/";
 	private static String expectedTitle = "Welcome: Mercury Tours";
 	
