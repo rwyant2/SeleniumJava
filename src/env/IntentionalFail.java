@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 // I don't see why it wouldn't work, but since I'm testing the environment anyway.
 // And I want to be sure I have suites down.
 
-public class intentionalFail {
+public class IntentionalFail {
 	
 	@Test
 	public void isAppUp() {

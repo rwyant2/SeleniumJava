@@ -1,13 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AllCases">
-	<test name="cases">
+	<listeners>
+		<listener class-name="cases.SuiteListener" />
+		<listener class-name="cases.TestListener" />
+	</listeners>
+	<test name="only textField">
 		<classes>
-			<class name="cases.beforeAndAfterSuite" />
-			<class name="cases.textFieldCase" />
-			<class name="cases.checkBoxCase" />
-			<class name="cases.radioButtonCase" />
-			<class name="cases.dropDownCase" />
-			<class name="cases.textAreaCase" />
+			<class name="cases.BeforeAndAfterSuite" />
+			<class name="cases.TextFieldCase" />
+		</classes>
+	</test>
+	<test name="everything else">
+		<classes>
+			<class name="cases.BeforeAndAfterSuite" />
+			<class name="cases.CheckBoxCase" />
+			<class name="cases.RadioButtonCase" />
+			<class name="cases.DropDownCase" />
+			<class name="cases.TextAreaCase" />
 		</classes>
 	</test>
 </suite>

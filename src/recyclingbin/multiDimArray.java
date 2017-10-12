@@ -1,3 +1,4 @@
+/*
 package recyclingbin;
 
 import org.openqa.selenium.By;
@@ -25,3 +26,4 @@ for(int value = 1; value < test[testcase].length; value++) {
 	} 
 }
 }
+*/
