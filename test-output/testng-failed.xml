@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [grid suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AllCases]">
   <listeners>
-    <listener class-name="gridcases.SuiteListener"/>
-    <listener class-name="gridcases.TestListener"/>
+    <listener class-name="cases.SuiteListener"/>
+    <listener class-name="cases.TestListener"/>
   </listeners>
-  <test name="text field and check box(failed)">
+  <test name="only textField(failed)">
     <classes>
-      <class name="gridcases.CheckBoxCase">
+      <class name="cases.TextFieldCase">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="intentionalFailcheckBox"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
           <include name="afterTest"/>
-        </methods>
-      </class> <!-- gridcases.CheckBoxCase -->
-      <class name="gridcases.TextFieldCase">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
+          <include name="afterClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
           <include name="intentionalFailTextField"/>
-          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- gridcases.TextFieldCase -->
+      </class> <!-- cases.TextFieldCase -->
     </classes>
-  </test> <!-- text field and check box(failed) -->
-</suite> <!-- Failed suite [grid suite] -->
+  </test> <!-- only textField(failed) -->
+  <test name="everything else(failed)">
+    <classes>
+      <class name="cases.CheckBoxCase">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="intentionalFailcheckBox"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- cases.CheckBoxCase -->
+    </classes>
+  </test> <!-- everything else(failed) -->
+</suite> <!-- Failed suite [AllCases] -->
