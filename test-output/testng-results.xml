@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="2" ignored="12" total="30" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="grid suite" duration-ms="42263" started-at="2017-10-23T05:51:21Z" finished-at="2017-10-23T05:52:03Z">
+  <suite name="grid suite" duration-ms="49476" started-at="2017-10-23T12:41:49Z" finished-at="2017-10-23T12:42:38Z">
     <groups>
     </groups>
-    <test name="text field and check box" duration-ms="22082" started-at="2017-10-23T05:51:21Z" finished-at="2017-10-23T05:51:43Z">
+    <test name="text field and check box" duration-ms="22454" started-at="2017-10-23T12:41:49Z" finished-at="2017-10-23T12:42:11Z">
       <class name="gridcases.TextFieldCase">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeTest" is-config="true" duration-ms="1" started-at="2017-10-23T00:51:21Z" finished-at="2017-10-23T00:51:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeClass" is-config="true" duration-ms="9803" started-at="2017-10-23T00:51:21Z" finished-at="2017-10-23T00:51:31Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeClass" is-config="true" duration-ms="8772" started-at="2017-10-23T07:41:49Z" finished-at="2017-10-23T07:41:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="762" started-at="2017-10-23T00:51:31Z" finished-at="2017-10-23T00:51:32Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-10-23T07:41:49Z" finished-at="2017-10-23T07:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="1250" started-at="2017-10-23T07:41:58Z" finished-at="2017-10-23T07:41:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailTextField()[pri:2, instance:gridcases.TextFieldCase@7cd62f43]" name="intentionalFailTextField" duration-ms="749" started-at="2017-10-23T00:51:32Z" finished-at="2017-10-23T00:51:32Z">
+        <test-method status="FAIL" signature="intentionalFailTextField()[pri:2, instance:gridcases.TextFieldCase@7cd62f43]" name="intentionalFailTextField" duration-ms="813" started-at="2017-10-23T07:41:59Z" finished-at="2017-10-23T07:42:00Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [This should fail] but found [Please fail]]]>
@@ -64,101 +64,101 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intentionalFailTextField -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-10-23T00:51:32Z" finished-at="2017-10-23T00:51:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:00Z" finished-at="2017-10-23T07:42:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="168" started-at="2017-10-23T00:51:32Z" finished-at="2017-10-23T00:51:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="beforeMethod" is-config="true" duration-ms="172" started-at="2017-10-23T07:42:00Z" finished-at="2017-10-23T07:42:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testTextField()[pri:2, instance:gridcases.TextFieldCase@7cd62f43]" name="testTextField" duration-ms="329" started-at="2017-10-23T00:51:33Z" finished-at="2017-10-23T00:51:33Z">
+        <test-method status="PASS" signature="testTextField()[pri:2, instance:gridcases.TextFieldCase@7cd62f43]" name="testTextField" duration-ms="203" started-at="2017-10-23T07:42:00Z" finished-at="2017-10-23T07:42:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTextField -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:33Z" finished-at="2017-10-23T00:51:33Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:00Z" finished-at="2017-10-23T07:42:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterClass" is-config="true" duration-ms="154" started-at="2017-10-23T00:51:33Z" finished-at="2017-10-23T00:51:33Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterClass" is-config="true" duration-ms="266" started-at="2017-10-23T07:42:00Z" finished-at="2017-10-23T07:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-10-23T00:51:43Z" finished-at="2017-10-23T00:51:43Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:gridcases.TextFieldCase@7cd62f43]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- gridcases.TextFieldCase -->
       <class name="gridcases.CheckBoxCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeClass" is-config="true" duration-ms="4274" started-at="2017-10-23T00:51:33Z" finished-at="2017-10-23T00:51:37Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeClass" is-config="true" duration-ms="5524" started-at="2017-10-23T07:42:01Z" finished-at="2017-10-23T07:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="524" started-at="2017-10-23T00:51:37Z" finished-at="2017-10-23T00:51:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="907" started-at="2017-10-23T07:42:06Z" finished-at="2017-10-23T07:42:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxAll()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxAll" duration-ms="975" started-at="2017-10-23T00:51:38Z" finished-at="2017-10-23T00:51:39Z">
+        <test-method status="PASS" signature="checkBoxAll()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxAll" duration-ms="889" started-at="2017-10-23T07:42:07Z" finished-at="2017-10-23T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxAll -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="157" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="checkBoxNone()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxNone" duration-ms="163" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="143" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkBoxNone()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxNone" duration-ms="109" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxNone -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="175" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="125" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneThree()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxOneThree" duration-ms="778" started-at="2017-10-23T00:51:39Z" finished-at="2017-10-23T00:51:40Z">
+        <test-method status="PASS" signature="checkBoxOneThree()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxOneThree" duration-ms="624" started-at="2017-10-23T07:42:08Z" finished-at="2017-10-23T07:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxOneThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:40Z" finished-at="2017-10-23T00:51:40Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:09Z" finished-at="2017-10-23T07:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="191" started-at="2017-10-23T00:51:40Z" finished-at="2017-10-23T00:51:40Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="142" started-at="2017-10-23T07:42:09Z" finished-at="2017-10-23T07:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneTwo()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxOneTwo" duration-ms="705" started-at="2017-10-23T00:51:40Z" finished-at="2017-10-23T00:51:41Z">
+        <test-method status="PASS" signature="checkBoxOneTwo()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxOneTwo" duration-ms="593" started-at="2017-10-23T07:42:09Z" finished-at="2017-10-23T07:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxOneTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:41Z" finished-at="2017-10-23T00:51:41Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:10Z" finished-at="2017-10-23T07:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="222" started-at="2017-10-23T00:51:41Z" finished-at="2017-10-23T00:51:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="125" started-at="2017-10-23T07:42:10Z" finished-at="2017-10-23T07:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxTwoThree()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxTwoThree" duration-ms="727" started-at="2017-10-23T00:51:41Z" finished-at="2017-10-23T00:51:42Z">
+        <test-method status="PASS" signature="checkBoxTwoThree()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="checkBoxTwoThree" duration-ms="625" started-at="2017-10-23T07:42:10Z" finished-at="2017-10-23T07:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxTwoThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:42Z" finished-at="2017-10-23T00:51:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:10Z" finished-at="2017-10-23T07:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="145" started-at="2017-10-23T00:51:42Z" finished-at="2017-10-23T00:51:42Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="beforeMethod" is-config="true" duration-ms="126" started-at="2017-10-23T07:42:10Z" finished-at="2017-10-23T07:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailcheckBox()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="intentionalFailcheckBox" duration-ms="745" started-at="2017-10-23T00:51:42Z" finished-at="2017-10-23T00:51:43Z">
+        <test-method status="FAIL" signature="intentionalFailcheckBox()[pri:2, instance:gridcases.CheckBoxCase@6d4b1c02]" name="intentionalFailcheckBox" duration-ms="609" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:11Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -197,179 +197,179 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intentionalFailcheckBox -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterClass" is-config="true" duration-ms="147" started-at="2017-10-23T00:51:43Z" finished-at="2017-10-23T00:51:43Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterClass" is-config="true" duration-ms="265" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:43Z" finished-at="2017-10-23T00:51:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.CheckBoxCase@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- gridcases.CheckBoxCase -->
     </test> <!-- text field and check box -->
-    <test name="everything else" duration-ms="20157" started-at="2017-10-23T05:51:43Z" finished-at="2017-10-23T05:52:03Z">
-      <class name="gridcases.TextAreaCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeClass" is-config="true" duration-ms="4270" started-at="2017-10-23T00:51:57Z" finished-at="2017-10-23T00:52:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeMethod" is-config="true" duration-ms="505" started-at="2017-10-23T00:52:02Z" finished-at="2017-10-23T00:52:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="textAreaLongString()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="textAreaLongString" duration-ms="389" started-at="2017-10-23T00:52:02Z" finished-at="2017-10-23T00:52:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textAreaLongString -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeMethod" is-config="true" duration-ms="148" started-at="2017-10-23T00:52:02Z" finished-at="2017-10-23T00:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:52:02Z" finished-at="2017-10-23T00:52:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="textAreaWithEnter()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="textAreaWithEnter" duration-ms="491" started-at="2017-10-23T00:52:03Z" finished-at="2017-10-23T00:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textAreaWithEnter -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:52:03Z" finished-at="2017-10-23T00:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterClass" is-config="true" duration-ms="143" started-at="2017-10-23T00:52:03Z" finished-at="2017-10-23T00:52:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- gridcases.TextAreaCase -->
+    <test name="everything else" duration-ms="26990" started-at="2017-10-23T12:42:11Z" finished-at="2017-10-23T12:42:38Z">
       <class name="gridcases.RadioButtonCase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeSuite" is-config="true" duration-ms="9" started-at="2017-10-23T00:51:21Z" finished-at="2017-10-23T00:51:21Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2017-10-23T07:41:49Z" finished-at="2017-10-23T07:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:43Z" finished-at="2017-10-23T00:51:43Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeClass" is-config="true" duration-ms="4350" started-at="2017-10-23T00:51:43Z" finished-at="2017-10-23T00:51:47Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeClass" is-config="true" duration-ms="6545" started-at="2017-10-23T07:42:11Z" finished-at="2017-10-23T07:42:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="532" started-at="2017-10-23T00:51:47Z" finished-at="2017-10-23T00:51:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="1000" started-at="2017-10-23T07:42:18Z" finished-at="2017-10-23T07:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceA()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceA" duration-ms="488" started-at="2017-10-23T00:51:48Z" finished-at="2017-10-23T00:51:48Z">
+        <test-method status="PASS" signature="radioChoiceA()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceA" duration-ms="390" started-at="2017-10-23T07:42:19Z" finished-at="2017-10-23T07:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioChoiceA -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:48Z" finished-at="2017-10-23T00:51:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="153" started-at="2017-10-23T00:51:48Z" finished-at="2017-10-23T00:51:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="126" started-at="2017-10-23T07:42:19Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceB()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceB" duration-ms="405" started-at="2017-10-23T00:51:49Z" finished-at="2017-10-23T00:51:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:19Z" finished-at="2017-10-23T07:42:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="radioChoiceB()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceB" duration-ms="360" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioChoiceB -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:49Z" finished-at="2017-10-23T00:51:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="147" started-at="2017-10-23T00:51:49Z" finished-at="2017-10-23T00:51:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="124" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceC()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceC" duration-ms="481" started-at="2017-10-23T00:51:49Z" finished-at="2017-10-23T00:51:50Z">
+        <test-method status="PASS" signature="radioChoiceC()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioChoiceC" duration-ms="359" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioChoiceC -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="315" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:50Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="beforeMethod" is-config="true" duration-ms="125" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioDefault()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioDefault" duration-ms="226" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioDefault -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterClass" is-config="true" duration-ms="139" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:50Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:20Z" finished-at="2017-10-23T07:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-10-23T00:52:03Z" finished-at="2017-10-23T00:52:03Z">
+        <test-method status="PASS" signature="radioDefault()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="radioDefault" duration-ms="110" started-at="2017-10-23T07:42:21Z" finished-at="2017-10-23T07:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioDefault -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:21Z" finished-at="2017-10-23T07:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterClass" is-config="true" duration-ms="281" started-at="2017-10-23T07:42:21Z" finished-at="2017-10-23T07:42:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-10-23T00:52:03Z" finished-at="2017-10-23T00:52:03Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:gridcases.RadioButtonCase@42dafa95]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:39Z" finished-at="2017-10-23T07:42:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- gridcases.RadioButtonCase -->
-      <class name="gridcases.DropDownCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeClass" is-config="true" duration-ms="4259" started-at="2017-10-23T00:51:50Z" finished-at="2017-10-23T00:51:55Z">
+      <class name="gridcases.TextAreaCase">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeClass" is-config="true" duration-ms="6527" started-at="2017-10-23T07:42:30Z" finished-at="2017-10-23T07:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="579" started-at="2017-10-23T00:51:55Z" finished-at="2017-10-23T00:51:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeMethod" is-config="true" duration-ms="891" started-at="2017-10-23T07:42:36Z" finished-at="2017-10-23T07:42:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownDefault()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownDefault" duration-ms="190" started-at="2017-10-23T00:51:55Z" finished-at="2017-10-23T00:51:55Z">
+        <test-method status="PASS" signature="textAreaLongString()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="textAreaLongString" duration-ms="499" started-at="2017-10-23T07:42:37Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textAreaLongString -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="beforeMethod" is-config="true" duration-ms="141" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="textAreaWithEnter()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="textAreaWithEnter" duration-ms="407" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textAreaWithEnter -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.TextAreaCase@402a079c]" name="afterClass" is-config="true" duration-ms="265" started-at="2017-10-23T07:42:38Z" finished-at="2017-10-23T07:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- gridcases.TextAreaCase -->
+      <class name="gridcases.DropDownCase">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeClass" is-config="true" duration-ms="5585" started-at="2017-10-23T07:42:21Z" finished-at="2017-10-23T07:42:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="1442" started-at="2017-10-23T07:42:26Z" finished-at="2017-10-23T07:42:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="dropDownDefault()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownDefault" duration-ms="158" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownDefault -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:55Z" finished-at="2017-10-23T00:51:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="154" started-at="2017-10-23T00:51:55Z" finished-at="2017-10-23T00:51:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="110" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownMustard()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownMustard" duration-ms="305" started-at="2017-10-23T00:51:55Z" finished-at="2017-10-23T00:51:56Z">
+        <test-method status="PASS" signature="dropDownMustard()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownMustard" duration-ms="187" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownMustard -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:56Z" finished-at="2017-10-23T00:51:56Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="147" started-at="2017-10-23T00:51:56Z" finished-at="2017-10-23T00:51:56Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="125" started-at="2017-10-23T07:42:28Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownOnion()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownOnion" duration-ms="542" started-at="2017-10-23T00:51:56Z" finished-at="2017-10-23T00:51:56Z">
+        <test-method status="PASS" signature="dropDownOnion()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownOnion" duration-ms="436" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownOnion -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:56Z" finished-at="2017-10-23T00:51:56Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="153" started-at="2017-10-23T00:51:56Z" finished-at="2017-10-23T00:51:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="beforeMethod" is-config="true" duration-ms="127" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownTomato()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownTomato" duration-ms="485" started-at="2017-10-23T00:51:57Z" finished-at="2017-10-23T00:51:57Z">
+        <test-method status="PASS" signature="dropDownTomato()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="dropDownTomato" duration-ms="390" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownTomato -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T00:51:57Z" finished-at="2017-10-23T00:51:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterClass" is-config="true" duration-ms="147" started-at="2017-10-23T00:51:57Z" finished-at="2017-10-23T00:51:57Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:gridcases.DropDownCase@6500df86]" name="afterClass" is-config="true" duration-ms="265" started-at="2017-10-23T07:42:29Z" finished-at="2017-10-23T07:42:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
