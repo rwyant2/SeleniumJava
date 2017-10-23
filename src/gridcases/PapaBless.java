@@ -42,6 +42,8 @@ public class PapaBless {
 	
 	private boolean onGrid = false;
 	
+	private String options;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -72,7 +74,7 @@ public class PapaBless {
 	
 	@BeforeClass //before each <class> in the xml
 	public void beforeClass() {
-		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
+		//System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
 		// parmeticize this, for now hard coding params to get a baseline working
 		// then let parameters decide which flavor of driver we're using
 		System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
