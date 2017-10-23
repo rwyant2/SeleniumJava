@@ -1,4 +1,4 @@
-package gridcases;
+package cases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -40,7 +40,7 @@ public class PapaBless {
 	
 	protected WebDriver driver; //for the child classes
 	
-	private boolean onGrid = false;
+	private boolean onGrid = true;
 	
 	private String options;
 	

@@ -9,6 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <<<<<<< HEAD
+<tr><th colspan="7">text and checkbox</th></tr>
+<tr><td><a href="#t0">text field and check box</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,801</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">everything else</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">27,996</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">16</th><th class="num">0</th><th class="num attn">2</th><th class="num">51,797</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">text and checkbox</th></tr></tbody><tbody id="t0"><tr><th colspan="4">text field and check box &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cases.CheckBoxCase</td><td><a href="#m0">intentionalFailcheckBox</a></td><td rowspan="1">1508765079180</td><td rowspan="1">705</td></tr><tr class="failedodd"><td rowspan="1">cases.TextFieldCase</td><td><a href="#m1">intentionalFailTextField</a></td><td rowspan="1">1508765064863</td><td rowspan="1">1365</td></tr><tr><th colspan="4">text field and check box &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">cases.CheckBoxCase</td><td><a href="#m2">checkBoxAll</a></td><td rowspan="1">1508765074866</td><td rowspan="1">974</td></tr><tr class="passedeven"><td><a href="#m3">checkBoxNone</a></td><td rowspan="1">1508765076044</td><td rowspan="1">150</td></tr><tr class="passedeven"><td><a href="#m4">checkBoxOneThree</a></td><td rowspan="1">1508765076390</td><td rowspan="1">711</td></tr><tr class="passedeven"><td><a href="#m5">checkBoxOneTwo</a></td><td rowspan="1">1508765077274</td><td rowspan="1">713</td></tr><tr class="passedeven"><td><a href="#m6">checkBoxTwoThree</a></td><td rowspan="1">1508765078196</td><td rowspan="1">788</td></tr><tr class="passedodd"><td rowspan="1">cases.TextFieldCase</td><td><a href="#m7">testTextField</a></td><td rowspan="1">1508765066542</td><td rowspan="1">301</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">everything else &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">cases.DropDownCase</td><td><a href="#m8">dropDownDefault</a></td><td rowspan="1">1508765096826</td><td rowspan="1">229</td></tr><tr class="passedeven"><td><a href="#m9">dropDownMustard</a></td><td rowspan="1">1508765097251</td><td rowspan="1">344</td></tr><tr class="passedeven"><td><a href="#m10">dropDownOnion</a></td><td rowspan="1">1508765097783</td><td rowspan="1">532</td></tr><tr class="passedeven"><td><a href="#m11">dropDownTomato</a></td><td rowspan="1">1508765098498</td><td rowspan="1">557</td></tr><tr class="passedodd"><td rowspan="4">cases.RadioButtonCase</td><td><a href="#m12">radioChoiceA</a></td><td rowspan="1">1508765087672</td><td rowspan="1">503</td></tr><tr class="passedodd"><td><a href="#m13">radioChoiceB</a></td><td rowspan="1">1508765088370</td><td rowspan="1">413</td></tr><tr class="passedodd"><td><a href="#m14">radioChoiceC</a></td><td rowspan="1">1508765088969</td><td rowspan="1">443</td></tr><tr class="passedodd"><td><a href="#m15">radioDefault</a></td><td rowspan="1">1508765089586</td><td rowspan="1">139</td></tr><tr class="passedeven"><td rowspan="2">cases.TextAreaCase</td><td><a href="#m16">textAreaLongString</a></td><td rowspan="1">1508765106756</td><td rowspan="1">433</td></tr><tr class="passedeven"><td><a href="#m17">textAreaWithEnter</a></td><td rowspan="1">1508765107381</td><td rowspan="1">565</td></tr></tbody>
+</table>
+<h2>text field and check box</h2><h3 id="m0">cases.CheckBoxCase#intentionalFailcheckBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at cases.CheckBoxCase.intentionalFailcheckBox(CheckBoxCase.java:58)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cases.TextFieldCase#intentionalFailTextField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [This should fail] but found [Please fail]
+	at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:31)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cases.CheckBoxCase#checkBoxAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">cases.CheckBoxCase#checkBoxNone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">cases.CheckBoxCase#checkBoxOneThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">cases.CheckBoxCase#checkBoxOneTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">cases.CheckBoxCase#checkBoxTwoThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">cases.TextFieldCase#testTextField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>everything else</h2><h3 id="m8">cases.DropDownCase#dropDownDefault</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+=======
+<<<<<<< HEAD
 <tr><th colspan="7">AllCases</th></tr>
 <tr><td><a href="#t0">only textField</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,403</td><td></td><td></td></tr>
 <tr class="stripe"><td><a href="#t1">everything else</a></td><td class="num">15</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,358</td><td></td><td></td></tr>
@@ -42,6 +68,7 @@
 <h3 id="m6">cases.CheckBoxCase#checkBoxOneTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m7">cases.CheckBoxCase#checkBoxTwoThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m8">cases.DropDownCase#dropDownDefault</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+>>>>>>> master
 <h3 id="m9">cases.DropDownCase#dropDownMustard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m10">cases.DropDownCase#dropDownOnion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m11">cases.DropDownCase#dropDownTomato</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

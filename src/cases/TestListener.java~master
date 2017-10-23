@@ -26,7 +26,7 @@ public class TestListener implements ITestListener {
 	public void onTestFailure(ITestResult result) { // after each failed @Test method
 		System.out.println("onTestFailure kicks off for " + result.getMethod());
 		Object currentClass = result.getInstance();
-		WebDriver driver = ((PapaBless)currentClass).getDriver();
+		WebDriver driver = ((BaseCase)currentClass).getDriver();
 		TakesScreenshot driverWithScrShot = (TakesScreenshot)driver; // cast driver obj as driver obj with screenshot
 		File scrShot = driverWithScrShot.getScreenshotAs(OutputType.FILE); // get the actual screenshot
 		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy_hh-mm-ss-SSS"); // format for date
