@@ -14,6 +14,10 @@ import org.openqa.selenium.Platform;
 //import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.io.FileInputStream;
+//import java.io.InputStreamReader;
+import org.apache.commons.io.IOUtils;
+
 // The original example I plagarized had an abstract class. This caused adventure because the childlins
 // didn't have a parent driver to refer to by the time annotations involving the driver were being kicked off.
 // Using getters didn't help. I had to revert to shenanigans that made the point of a parent class m00t.
@@ -23,19 +27,22 @@ public class PapaBless {
 	// pernaminate these
 	private static String localUrl = "http://localhost:8080";
 	private static int timeout = 10;
+	private static String timeoutValue;
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
-	// private static String remoteUrl = "http://localhost:4444/wd/hub"; // for localhost
-	private static String hubUrl = "http://10.40.98.44";
-	private static String nodeUrl = "http://10.40.98.44"; 
-	private static String connectToHubUrl = hubUrl + ":4444/wd/hub"; 
-	private static String landingPageUrl = hubUrl+ ":8080";
+	private String hubUrl = "http://the hub at my home network";
+	private String nodeUrl = "http://the node I'm interested in";
+	private String connectToHubUrl = nodeUrl + ":5555/wd/hub";
+	private String landingPageUrl = hubUrl+ ":8080";
+	
 	private URL url;
 	
 	protected WebDriver driver; //for the child classes
 	
-	private boolean onGrid = true;
+	private boolean onGrid = false;
+	
+	private String options = "timeout= 'magical pants' localURL='your mom' ";
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -47,6 +54,12 @@ public class PapaBless {
 	
 	public String getLocalURL() {
 		return localUrl;
+	}
+	
+	private String getParmValue(String parm) {
+		int start = options.indexOf(parm + "='") + parm.length() + 2;
+	    int end = options.indexOf("'",start);
+	    return options.substring(start , end);
 	}
 	
 	@BeforeSuite // before each <suite> in the xml
@@ -62,18 +75,27 @@ public class PapaBless {
 	@BeforeClass //before each <class> in the xml
 	public void beforeClass() {
 		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
-		// parmeticize this, for now hard coding it to onGrid
+		// parmeticize this, for now hard coding params to get a baseline working
 		// then let parameters decide which flavor of driver we're using
+		System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
 		if(onGrid) {
-			capability = new DesiredCapabilities();
+			capability = new DesiredCapabilities().firefox();
 			capability.setBrowserName("firefox");
 			capability.setPlatform(Platform.VISTA);
+//			capability.setPlatform(Platform.WIN10);
+			capability.setVersion("latest");
+			capability.setCapability("marionette", true);
 			try {
 				url = new URL(connectToHubUrl);
 			} catch(Exception e) {
-				//i dunno, lol
+				System.out.println(e.getMessage());
 			}
-			driver = new RemoteWebDriver(url,capability);
+			try {
+				System.out.println("*****************************Trying to connect to " + connectToHubUrl);
+				driver = new RemoteWebDriver(url,capability);
+			} catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
 			driver.get(landingPageUrl);
 		} else {	
 			System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
