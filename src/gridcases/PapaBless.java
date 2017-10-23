@@ -31,8 +31,8 @@ public class PapaBless {
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
-	private String hubUrl = "http://the hub at my home network";
-	private String nodeUrl = "http://the node I'm interested in";
+	private String hubUrl = "http://hub on my home network";
+	private String nodeUrl = "http://node i'm interested in";
 	private String connectToHubUrl = nodeUrl + ":5555/wd/hub";
 	private String landingPageUrl = hubUrl+ ":8080";
 	
@@ -41,8 +41,6 @@ public class PapaBless {
 	protected WebDriver driver; //for the child classes
 	
 	private boolean onGrid = false;
-	
-	private String options = "timeout= 'magical pants' localURL='your mom' ";
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -56,11 +54,11 @@ public class PapaBless {
 		return localUrl;
 	}
 	
-	private String getParmValue(String parm) {
-		int start = options.indexOf(parm + "='") + parm.length() + 2;
-	    int end = options.indexOf("'",start);
-	    return options.substring(start , end);
-	}
+//	private String getParmValue(String parm) {
+//		int start = options.indexOf(parm + "='") + parm.length() + 2;
+//	    int end = options.indexOf("'",start);
+//	    return options.substring(start , end);
+//	}
 	
 	@BeforeSuite // before each <suite> in the xml
 	public void beforeSuite() {
