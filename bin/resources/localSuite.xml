@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllCases">
+	<listeners>
+		<listener class-name="localcases.SuiteListener" />
+		<listener class-name="localcases.TestListener" />
+	</listeners>
+	<test name="only textField">
+		<classes>
+			<class name="localcases.BeforeAndAfterSuite" />
+			<class name="localcases.TextFieldCase" />
+		</classes>
+	</test>
+	<test name="everything else">
+		<classes>
+			<class name="localcases.BeforeAndAfterSuite" />
+			<class name="localcases.CheckBoxCase" />
+			<class name="localcases.RadioButtonCase" />
+			<class name="localcases.DropDownCase" />
+			<class name="localcases.TextAreaCase" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="grid suite">
+	<listeners>
+		<listener class-name="gridcases.SuiteListener" />
+		<listener class-name="gridcases.TestListener" />
+	</listeners>
+	<test name="text field and check box">
+		<classes>
+			<class name="gridcases.TextFieldCase" />
+			<class name="gridcases.CheckBoxCase" />
+		</classes>
+	</test>
+	<test name="everything else">
+		<classes>
+			<class name="gridcases.RadioButtonCase" />
+			<class name="gridcases.DropDownCase" />
+			<class name="gridcases.TextAreaCase" />
+		</classes>
+	</test>
+</suite>

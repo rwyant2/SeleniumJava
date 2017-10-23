@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [text field only]">
+  <listeners>
+    <listener class-name="gridcases.SuiteListener"/>
+    <listener class-name="gridcases.TestListener"/>
+  </listeners>
+  <test name="only textField(failed)">
+    <classes>
+      <class name="gridcases.TextFieldCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="intentionalFailTextField"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- gridcases.TextFieldCase -->
+    </classes>
+  </test> <!-- only textField(failed) -->
+</suite> <!-- Failed suite [text field only] -->
