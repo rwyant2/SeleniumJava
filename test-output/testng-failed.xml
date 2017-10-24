@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [text and checkbox]">
-=======
-<suite guice-stage="DEVELOPMENT" name="Failed suite [AllCases]">
->>>>>>> master
   <listeners>
     <listener class-name="cases.SuiteListener"/>
     <listener class-name="cases.TestListener"/>
   </listeners>
-  <test name="only textField(failed)">
+  <test name="text field and check box(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="cases.CheckBoxCase">
         <methods>
           <include name="beforeSuite"/>
@@ -41,34 +36,3 @@
     </classes>
   </test> <!-- text field and check box(failed) -->
 </suite> <!-- Failed suite [text and checkbox] -->
-=======
-      <class name="cases.TextFieldCase">
-        <methods>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="intentionalFailTextField"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- cases.TextFieldCase -->
-    </classes>
-  </test> <!-- only textField(failed) -->
-  <test name="everything else(failed)">
-    <classes>
-      <class name="cases.CheckBoxCase">
-        <methods>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="intentionalFailcheckBox"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- cases.CheckBoxCase -->
-    </classes>
-  </test> <!-- everything else(failed) -->
-</suite> <!-- Failed suite [AllCases] -->
->>>>>>> master

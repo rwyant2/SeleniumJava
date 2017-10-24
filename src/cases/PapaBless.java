@@ -31,8 +31,8 @@ public class PapaBless {
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
-	private String hubUrl = "http://hub on my home network";
-	private String nodeUrl = "http://node i'm interested in";
+	private String hubUrl = "http://my hub's IP";
+	private String nodeUrl = "http://my node's IP";
 	private String connectToHubUrl = nodeUrl + ":5555/wd/hub";
 	private String landingPageUrl = hubUrl+ ":8080";
 	
@@ -81,8 +81,8 @@ public class PapaBless {
 		if(onGrid) {
 			capability = new DesiredCapabilities().firefox();
 			capability.setBrowserName("firefox");
-			capability.setPlatform(Platform.VISTA);
-//			capability.setPlatform(Platform.WIN10);
+//			capability.setPlatform(Platform.VISTA);
+			capability.setPlatform(Platform.WIN10);
 			capability.setVersion("latest");
 			capability.setCapability("marionette", true);
 			try {
