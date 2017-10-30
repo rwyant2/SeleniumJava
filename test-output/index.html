@@ -214,25 +214,6 @@
           <div class="suite-text_and_checkbox-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">cases.TextFieldCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="intentionalFailTextField">
-                  </a> <!-- intentionalFailTextField -->
-                  <span class="method-name">intentionalFailTextField</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [This should fail] but found [Please fail]
-	at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:31)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-text_and_checkbox-class-failed -->
-          <div class="suite-text_and_checkbox-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">cases.CheckBoxCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -247,6 +228,25 @@
 	at org.junit.Assert.assertTrue(Assert.java:52)
 	at cases.CheckBoxCase.intentionalFailcheckBox(CheckBoxCase.java:58)
 ... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-text_and_checkbox-class-failed -->
+          <div class="suite-text_and_checkbox-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cases.TextFieldCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="intentionalFailTextField">
+                  </a> <!-- intentionalFailTextField -->
+                  <span class="method-name">intentionalFailTextField</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [This should fail] but found [Please fail]
+	at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:31)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -313,28 +313,6 @@
           <div class="suite-text_and_checkbox-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">cases.TextAreaCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="textAreaLongString">
-                  </a> <!-- textAreaLongString -->
-                  <span class="method-name">textAreaLongString</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="textAreaWithEnter">
-                  </a> <!-- textAreaWithEnter -->
-                  <span class="method-name">textAreaWithEnter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-text_and_checkbox-class-passed -->
-          <div class="suite-text_and_checkbox-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">cases.RadioButtonCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -364,6 +342,28 @@
                   <a name="radioDefault">
                   </a> <!-- radioDefault -->
                   <span class="method-name">radioDefault</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-text_and_checkbox-class-passed -->
+          <div class="suite-text_and_checkbox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cases.TextAreaCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="textAreaLongString">
+                  </a> <!-- textAreaLongString -->
+                  <span class="method-name">textAreaLongString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textAreaWithEnter">
+                  </a> <!-- textAreaWithEnter -->
+                  <span class="method-name">textAreaWithEnter</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -473,82 +473,82 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'textAreaLongString')
+data.setCell(0, 1, 'textAreaWithEnter')
 data.setCell(0, 2, 'cases.TextAreaCase')
-data.setCell(0, 3, 4855);
+data.setCell(0, 3, 7408);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'intentionalFailTextField')
-data.setCell(1, 2, 'cases.TextFieldCase')
-data.setCell(1, 3, 2655);
+data.setCell(1, 1, 'checkBoxOneThree')
+data.setCell(1, 2, 'cases.CheckBoxCase')
+data.setCell(1, 3, 7364);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkBoxAll')
+data.setCell(2, 1, 'intentionalFailcheckBox')
 data.setCell(2, 2, 'cases.CheckBoxCase')
-data.setCell(2, 3, 2297);
+data.setCell(2, 3, 6585);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'radioChoiceB')
-data.setCell(3, 2, 'cases.RadioButtonCase')
-data.setCell(3, 3, 2124);
+data.setCell(3, 1, 'textAreaLongString')
+data.setCell(3, 2, 'cases.TextAreaCase')
+data.setCell(3, 3, 5961);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'dropDownMustard')
-data.setCell(4, 2, 'cases.DropDownCase')
-data.setCell(4, 3, 1388);
+data.setCell(4, 1, 'checkBoxAll')
+data.setCell(4, 2, 'cases.CheckBoxCase')
+data.setCell(4, 3, 5788);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'textAreaWithEnter')
-data.setCell(5, 2, 'cases.TextAreaCase')
-data.setCell(5, 3, 1311);
+data.setCell(5, 1, 'checkBoxOneTwo')
+data.setCell(5, 2, 'cases.CheckBoxCase')
+data.setCell(5, 3, 4541);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'dropDownDefault')
-data.setCell(6, 2, 'cases.DropDownCase')
-data.setCell(6, 3, 1093);
+data.setCell(6, 1, 'checkBoxTwoThree')
+data.setCell(6, 2, 'cases.CheckBoxCase')
+data.setCell(6, 3, 4416);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'intentionalFailcheckBox')
-data.setCell(7, 2, 'cases.CheckBoxCase')
-data.setCell(7, 3, 1092);
+data.setCell(7, 1, 'intentionalFailTextField')
+data.setCell(7, 2, 'cases.TextFieldCase')
+data.setCell(7, 3, 3823);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'dropDownTomato')
-data.setCell(8, 2, 'cases.DropDownCase')
-data.setCell(8, 3, 1082);
+data.setCell(8, 1, 'radioChoiceA')
+data.setCell(8, 2, 'cases.RadioButtonCase')
+data.setCell(8, 3, 3308);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkBoxOneThree')
-data.setCell(9, 2, 'cases.CheckBoxCase')
-data.setCell(9, 3, 1031);
+data.setCell(9, 1, 'dropDownOnion')
+data.setCell(9, 2, 'cases.DropDownCase')
+data.setCell(9, 3, 3167);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'checkBoxOneTwo')
-data.setCell(10, 2, 'cases.CheckBoxCase')
-data.setCell(10, 3, 967);
+data.setCell(10, 1, 'radioChoiceC')
+data.setCell(10, 2, 'cases.RadioButtonCase')
+data.setCell(10, 3, 3152);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'checkBoxTwoThree')
-data.setCell(11, 2, 'cases.CheckBoxCase')
-data.setCell(11, 3, 937);
+data.setCell(11, 1, 'testTextField')
+data.setCell(11, 2, 'cases.TextFieldCase')
+data.setCell(11, 3, 3027);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'dropDownOnion')
-data.setCell(12, 2, 'cases.DropDownCase')
-data.setCell(12, 3, 890);
+data.setCell(12, 1, 'radioChoiceB')
+data.setCell(12, 2, 'cases.RadioButtonCase')
+data.setCell(12, 3, 3027);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'radioChoiceA')
-data.setCell(13, 2, 'cases.RadioButtonCase')
-data.setCell(13, 3, 859);
+data.setCell(13, 1, 'dropDownTomato')
+data.setCell(13, 2, 'cases.DropDownCase')
+data.setCell(13, 3, 2778);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'radioChoiceC')
-data.setCell(14, 2, 'cases.RadioButtonCase')
-data.setCell(14, 3, 780);
+data.setCell(14, 1, 'dropDownMustard')
+data.setCell(14, 2, 'cases.DropDownCase')
+data.setCell(14, 3, 2653);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testTextField')
-data.setCell(15, 2, 'cases.TextFieldCase')
-data.setCell(15, 3, 608);
+data.setCell(15, 1, 'dropDownDefault')
+data.setCell(15, 2, 'cases.DropDownCase')
+data.setCell(15, 3, 2076);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'checkBoxNone')
-data.setCell(16, 2, 'cases.CheckBoxCase')
-data.setCell(16, 3, 312);
+data.setCell(16, 1, 'radioDefault')
+data.setCell(16, 2, 'cases.RadioButtonCase')
+data.setCell(16, 3, 1982);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'radioDefault')
-data.setCell(17, 2, 'cases.RadioButtonCase')
-data.setCell(17, 3, 312);
+data.setCell(17, 1, 'checkBoxNone')
+data.setCell(17, 2, 'cases.CheckBoxCase')
+data.setCell(17, 3, 1811);
 window.suiteTableData['text_and_checkbox']= { tableData: data, tableDiv: 'times-div-text_and_checkbox'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-text_and_checkbox">
               </div> <!-- times-div-text_and_checkbox -->
             </div> <!-- times-div -->
@@ -623,301 +623,301 @@ return data;
               <div class="chronological-class-name">cases.TextFieldCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">80019 ms</span>
+                <span class="method-start">25133 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">intentionalFailTextField</span>
-                <span class="method-start">86621 ms</span>
+                <span class="method-start">28582 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">89511 ms</span>
+                <span class="method-start">32749 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">89511 ms</span>
+                <span class="method-start">32749 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTextField</span>
-                <span class="method-start">89948 ms</span>
+                <span class="method-start">37382 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">90556 ms</span>
+                <span class="method-start">40409 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">90556 ms</span>
+                <span class="method-start">40409 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.CheckBoxCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">91774 ms</span>
+                <span class="method-start">40442 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">122646 ms</span>
+                <span class="method-start">50166 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBoxAll</span>
-                <span class="method-start">124331 ms</span>
+                <span class="method-start">52117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">126643 ms</span>
+                <span class="method-start">57905 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">126643 ms</span>
+                <span class="method-start">57905 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBoxNone</span>
-                <span class="method-start">127143 ms</span>
+                <span class="method-start">59794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">127455 ms</span>
+                <span class="method-start">61605 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">127455 ms</span>
+                <span class="method-start">61605 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBoxOneThree</span>
-                <span class="method-start">127845 ms</span>
+                <span class="method-start">64741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">128876 ms</span>
+                <span class="method-start">72121 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">128876 ms</span>
+                <span class="method-start">72121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBoxOneTwo</span>
-                <span class="method-start">129205 ms</span>
+                <span class="method-start">73838 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">130172 ms</span>
+                <span class="method-start">78379 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">130172 ms</span>
+                <span class="method-start">78379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBoxTwoThree</span>
-                <span class="method-start">130594 ms</span>
+                <span class="method-start">80220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">131531 ms</span>
+                <span class="method-start">84652 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">131531 ms</span>
+                <span class="method-start">84652 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">intentionalFailcheckBox</span>
-                <span class="method-start">131984 ms</span>
+                <span class="method-start">86384 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">133249 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">133249 ms</span>
+                <span class="method-start">93094 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">93110 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.TextFieldCase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">133857 ms</span>
+                <span class="method-start">93172 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.RadioButtonCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">133873 ms</span>
+                <span class="method-start">93188 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">133873 ms</span>
+                <span class="method-start">93188 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">148247 ms</span>
+                <span class="method-start">101504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">radioChoiceA</span>
-                <span class="method-start">149808 ms</span>
+                <span class="method-start">103377 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">150667 ms</span>
+                <span class="method-start">106685 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">150667 ms</span>
+                <span class="method-start">106685 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">radioChoiceB</span>
-                <span class="method-start">151072 ms</span>
+                <span class="method-start">108496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">153196 ms</span>
+                <span class="method-start">111523 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">153196 ms</span>
+                <span class="method-start">111523 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">radioChoiceC</span>
-                <span class="method-start">153571 ms</span>
+                <span class="method-start">113349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">154351 ms</span>
+                <span class="method-start">116501 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">154351 ms</span>
+                <span class="method-start">116501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">radioDefault</span>
-                <span class="method-start">154695 ms</span>
+                <span class="method-start">118390 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">155007 ms</span>
+                <span class="method-start">120372 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">155007 ms</span>
+                <span class="method-start">120372 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.DropDownCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">155585 ms</span>
+                <span class="method-start">120436 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">171112 ms</span>
+                <span class="method-start">132199 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dropDownDefault</span>
-                <span class="method-start">172548 ms</span>
+                <span class="method-start">133994 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">173641 ms</span>
+                <span class="method-start">136070 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">173641 ms</span>
+                <span class="method-start">136070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dropDownMustard</span>
-                <span class="method-start">174079 ms</span>
+                <span class="method-start">137818 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">175467 ms</span>
+                <span class="method-start">140471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">175467 ms</span>
+                <span class="method-start">140471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dropDownOnion</span>
-                <span class="method-start">175842 ms</span>
+                <span class="method-start">142282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">176732 ms</span>
+                <span class="method-start">145449 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">176732 ms</span>
+                <span class="method-start">145449 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dropDownTomato</span>
-                <span class="method-start">177216 ms</span>
+                <span class="method-start">147151 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">178298 ms</span>
+                <span class="method-start">149929 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">178298 ms</span>
+                <span class="method-start">149929 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.TextAreaCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">179001 ms</span>
+                <span class="method-start">149961 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">197569 ms</span>
+                <span class="method-start">156685 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">textAreaLongString</span>
-                <span class="method-start">200160 ms</span>
+                <span class="method-start">159338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">205030 ms</span>
+                <span class="method-start">165299 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">205030 ms</span>
+                <span class="method-start">165299 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">textAreaWithEnter</span>
-                <span class="method-start">205343 ms</span>
+                <span class="method-start">167187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">206669 ms</span>
+                <span class="method-start">174595 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">206669 ms</span>
+                <span class="method-start">174595 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">cases.RadioButtonCase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">207263 ms</span>
+                <span class="method-start">174627 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">207279 ms</span>
+                <span class="method-start">174643 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
