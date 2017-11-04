@@ -26,7 +26,6 @@ import org.apache.commons.io.IOUtils;
 // I want all this stuff in one place so I can encapsulate parnemamitrazation logic. With this as something real,
 // the kids can refer to the driver here once I figure out which driver to use.
 public class PapaBless {
-	// pernaminate these
 	private String localUrl;
 	private static int timeout;
 	private static String timeoutValue;

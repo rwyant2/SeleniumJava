@@ -1,0 +1,13 @@
+﻿'hub','node','browser','OS','timeout'
+'localhost','localhost','firefox','win7',10
+'localhost','localhost','chrome','win7',10
+'localhost','localhost','internet explorer','win7',10
+'192.168.0.5','192.168.0.2','firefox','win10',10
+'192.168.0.5','192.168.0.2','chrome','win10',10
+'192.168.0.5','192.168.0.2','internet explorer','win10',10
+'192.168.0.7','192.168.0.2','firefox','win7',10
+'192.168.0.7','192.168.0.2','chrome','win7',10
+'192.168.0.7','192.168.0.2','internet explorer','win7',10
+'192.168.0.5','192.168.0.5','firefox','win10',10
+'192.168.0.5','192.168.0.5','chrome','win10',10
+'192.168.0.5','192.168.0.5','internet explorer','win10',10
