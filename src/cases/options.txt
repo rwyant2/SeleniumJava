@@ -1,19 +1,8 @@
 'firefox' 'chrome' or 'internet explorer'
 browser='internet explorer'
 hubUrl ='192.168.0.5'
-nodeUrl = '192.168.0.7'
-OS='win7'
-
-			+ "timeout='10' "
-			+ " " // space =
-			+  " // space = space 
-			+ "onGrid='t' " // no spaces
-			+ "OS='Win10' "
-			+ "
-			+ "ipAdressWithPort='http://192.168.0.2:5555' "
-			+ "missingParam= "
-			+ "blankParam='' "
-			+ "noEqualsParam'' "
-			+ "intParam='banana' "
-			+ "missingEndQuote='will this end? "
-			+ "missingStartQuote=will this start?' "
+nodeUrl = '192.168.0.10'
+OS='win10'
+onGrid='t'
+timeout='10'
+			
