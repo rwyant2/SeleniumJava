@@ -1,24 +1,25 @@
 package cases;
 
+import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import java.net.URL;
-import org.openqa.selenium.remote.RemoteWebDriver;
-//import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Platform;
-//import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.FileInputStream;
+import java.net.URL;
+
+//import org.openqa.selenium.Dimension;
+//import org.openqa.selenium.WebElement;
 //import java.io.InputStreamReader;
-import org.apache.commons.io.IOUtils;
 
 // The original example I plagarized had an abstract class. This caused adventure because the childlins
 // didn't have a parent driver to refer to by the time annotations involving the driver were being kicked off.
@@ -38,7 +39,7 @@ public class PapaBless {
 	private String browser;
 	private String OS;
 	
-	private boolean everythingsSwell = true;
+	protected boolean everythingsSwell = true;
 	
 	private URL url;
 	
@@ -169,7 +170,8 @@ public class PapaBless {
 	public void beforeTest() {
 		System.out.println("@BeforeTest kicks off");
 	}
-	
+
+
 	@BeforeClass //before each <class> in the xml
 	public void beforeClass() {
 		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
