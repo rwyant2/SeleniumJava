@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.io.FileInputStream;
+import java.io.File;
 import java.net.URL;
 
 //import org.openqa.selenium.Dimension;
@@ -37,6 +38,10 @@ public class PapaBless {
 	private String nodeUrl;
 	private String landingPageUrl;
 	private String browser;
+	private String hubOS;
+	private String nodeOS;
+	private String absPath = new File("").getAbsolutePath();
+	private String optionsPath;
 	private String OS;
 	
 	protected boolean everythingsSwell = true;
@@ -51,7 +56,15 @@ public class PapaBless {
 	
 	public PapaBless() {  // let's fugur out teh prenimitters
 		
-		try(FileInputStream inStream = new FileInputStream("C:\\Users\\Richard\\git\\SeleniumJava\\src\\cases\\options.txt")) {     
+		hubOS = System.getProperty("os.name");
+		
+		if(hubOS.equals("Linux")) {
+			optionsPath = absPath + "/src/cases/options.txt";
+		} else {
+			optionsPath = absPath + "\\src\\cases\\options.txt";
+		}
+		
+		try(FileInputStream inStream = new FileInputStream(optionsPath)) {  
 			options = IOUtils.toString(inStream,"UTF-8");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -81,11 +94,11 @@ public class PapaBless {
 	    	}
 	    }
 	    
-	    if(everythingsSwell) {
-	    	OS = getParmValue("OS");
-	    	if(!OS.equals("win7") && !OS.equals("win10")) {
-	    		System.out.println(OS + " is not a recognized OS. Defaulting to win 7");
-	    		OS = "win7";
+	    if(everythingsSwell && onGrid) {
+	    	nodeOS = getParmValue("nodeOS");
+	    	if(!nodeOS.equals("win7") && !nodeOS.equals("win10") && !nodeOS.equals("linux")) {
+	    		System.out.println(OS + " is not a recognized nodeOS. Defaulting to win 7");
+	    		nodeOS = "win7";
 	    	}
 	    }
 	    	    
@@ -102,12 +115,14 @@ public class PapaBless {
 		}
 
 	    if(everythingsSwell) {
-	    	System.out.println("**************************** Fun times for all");
-	    	System.out.println("OS:" + OS + " browser:" + browser + " timeout:" + timeout + " onGrid:" + onGrid);
+	    	System.out.println("**************************** Fun tiems for all");
 	    	if(onGrid) {
+	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeout + " onGrid:" + onGrid);
 	    		System.out.println("hubUrl = " + hubUrl);
 	    		System.out.println("landingPageUrl = " + landingPageUrl);
 	    		System.out.println("nodeUrl = " + nodeUrl);
+	    	} else {
+	    		System.out.println("hubOS:" + hubOS + " browser:" + browser + " timeout:" + timeout + " onGrid:" + onGrid);
 	    	}
 	    	System.out.println("****************************");
 	    }
@@ -196,7 +211,7 @@ public class PapaBless {
 			
 			try {
 				System.out.println("*****************************Trying to connect to " +
-						nodeUrl + " " + OS + " " + browser);
+						nodeUrl + " " + nodeOS + " " + browser);
 				driver = new RemoteWebDriver(url,capability);
 			} catch(Exception e) {
 				System.out.println(e.getMessage());
@@ -204,11 +219,20 @@ public class PapaBless {
 			
 			driver.get(landingPageUrl);
 		}
-		
-		if (!onGrid) {	
+// You are here, to do: Linux + IE = kek		
+		if (!onGrid) {
+			String exeExt = new String();
+			String driverPath = new String();
+			if(hubOS.equals("Linux")) {
+				exeExt = "";
+				driverPath = "/webdrivers/";
+			} else {
+				exeExt = ".exe";
+				driverPath = "C:\\webdrivers\\";
+			}
 			switch(browser) {
 			case "firefox":
-				System.setProperty("webdriver.gecko.driver","C:\\webdrivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver",driverPath + "geckodriver" + exeExt);
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":

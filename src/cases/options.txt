@@ -1,8 +1,8 @@
 'firefox' 'chrome' or 'internet explorer'
-browser='internet explorer'
+browser='firefox'
 hubUrl ='192.168.0.5'
 nodeUrl = '192.168.0.10'
-OS='win10'
-onGrid='t'
+nodeOS='win10'
+onGrid='f'
 timeout='10'
 			

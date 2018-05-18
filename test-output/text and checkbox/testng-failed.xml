@@ -5,7 +5,7 @@
     <listener class-name="cases.SuiteListener"/>
     <listener class-name="cases.TestListener"/>
   </listeners>
-  <test name="text field and check box(failed)">
+  <test thread-count="5" name="text field and check box(failed)">
     <classes>
       <class name="cases.CheckBoxCase">
         <methods>
