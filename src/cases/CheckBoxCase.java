@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
 
 public class CheckBoxCase extends PapaBless {
+	
 	private static String actualText;
 	
 	@Test(priority=2)	

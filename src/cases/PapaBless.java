@@ -18,6 +18,8 @@ import java.io.FileInputStream;
 import java.io.File;
 import java.net.URL;
 
+import java.net.InetAddress;
+
 //import org.openqa.selenium.Dimension;
 //import org.openqa.selenium.WebElement;
 //import java.io.InputStreamReader;
@@ -34,15 +36,15 @@ public class PapaBless {
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
-	private String hubUrl;
-	private String nodeUrl;
-	private String landingPageUrl;
-	private String browser;
-	private String hubOS;
-	private String nodeOS;
+	private static String hubUrl;
+	private static String nodeUrl;
+	private static String landingPageUrl;
+	private static String browser;
+	private static String hubOS;
+	private static String nodeOS;
 	private String absPath = new File("").getAbsolutePath();
 	private String optionsPath;
-	private String OS;
+	private static String OS;
 	
 	protected boolean everythingsSwell = true;
 	
@@ -50,11 +52,12 @@ public class PapaBless {
 	
 	protected WebDriver driver; //for the child classes
 	
-	private boolean onGrid = true;
+	private static boolean onGrid = false;
 	
 	private String options;
-	
-	public PapaBless() {  // let's fugur out teh prenimitters
+	private String multiple;
+		
+	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue) {
 		
 		hubOS = System.getProperty("os.name");
 		
@@ -64,20 +67,14 @@ public class PapaBless {
 			optionsPath = absPath + "\\src\\cases\\options.txt";
 		}
 		
-		try(FileInputStream inStream = new FileInputStream(optionsPath)) {  
-			options = IOUtils.toString(inStream,"UTF-8");
+		try(FileInputStream optStream = new FileInputStream(optionsPath)) {  
+			options = IOUtils.toString(optStream,"UTF-8");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			everythingsSwell = false;
 		}
-		
+
 	    if(everythingsSwell) {
-	    	if(getParmValue("onGrid").equals("t")) onGrid = true;
-	    	else onGrid = false;
-	    }
-		
-	    if(everythingsSwell) {
-	    	timeoutValue = getParmValue("timeout");
 	    	try { 
 	    		timeout = Integer.parseInt(timeoutValue);
 	    	} catch (Exception e) {
@@ -87,42 +84,72 @@ public class PapaBless {
 	    }
 	    
 	    if(everythingsSwell) {
-	    	browser = getParmValue("browser");
-	    	if(!browser.equals("firefox") && !browser.equals("chrome") && !browser.equals("internet explorer")) {
+	    	if(validateIPAddr(nodeUrlP)) {
+	    		if(nodeUrlP.matches("127.0.0.1|localhost")) {
+	    			onGrid = false;
+	    			nodeUrl = nodeUrlP;
+	    		} else {
+	    			onGrid = true;
+	    			nodeUrl = "http://" + nodeUrlP + ":5555/wd/hub";
+	    		}	
+	    	} else {
+	    		everythingsSwell = false;
+	    	}
+		}
+	    
+	    if(everythingsSwell) {
+	    	if(!browserP.equals("firefox") && !browserP.equals("chrome") && !browserP.equals("internet explorer")) {
 	    		System.out.println(browser + " is not a recognized browser. Defaulting to firefox");
 	    		browser = "firefox";
+	    	} else {
+	    		browser = browserP;
 	    	}
 	    }
 	    
-	    if(everythingsSwell && onGrid) {
-	    	nodeOS = getParmValue("nodeOS");
-	    	if(!nodeOS.equals("win7") && !nodeOS.equals("win10") && !nodeOS.equals("linux")) {
-	    		System.out.println(OS + " is not a recognized nodeOS. Defaulting to win 7");
-	    		nodeOS = "win7";
+	    if(everythingsSwell) {
+	    	if(onGrid) {
+	    		if(!nodeOSP.equals("win7") && !nodeOSP.equals("win10") && !nodeOSP.equals("linux")) {
+	    			System.out.println(nodeOS + " is not a recognized nodeOS. Defaulting to win 7");
+	    			nodeOS = "win7";
+	    		} else {
+	    		nodeOS = nodeOSP;
+	    		}
 	    	}
+	    	
+	    	if(!onGrid) {nodeOS = hubOS;}
 	    }
 	    	    
-	    if(everythingsSwell && onGrid) {
-	    	hubUrl = getParmValue("hubUrl");
-	    	if(validateIPAddr(hubUrl)) {
-	    		landingPageUrl = "http://" + hubUrl + ":8080";
-	    	} 
-		}
+	    if(everythingsSwell) {
+	    	try {
+	    		InetAddress localhost = InetAddress.getLocalHost();
+	    		landingPageUrl = localhost.getHostAddress().trim() + ":8080";
+	    	} catch (Exception e) {
+	    		System.out.println(e.getMessage());
+	    		everythingsSwell = false;
+	    	}
+
+	    	
+//	    if(everythingsSwell) {
+//	    	if(onGrid && (validateIPAddr(hubUrl)) {
+////	    		landingPageUrl = "http://" + hubUrl + ":8080";
+//	    	
+	    }
+	    	
+//	    	} 
 		
-	    if(everythingsSwell && onGrid) {
-	    	nodeUrl = getParmValue("nodeUrl");
-	    	if(validateIPAddr(nodeUrl)) { nodeUrl = "http://" + nodeUrl + ":5555/wd/hub"; } 
-		}
+		
+//	    if(everythingsSwell && onGrid) {
+
 
 	    if(everythingsSwell) {
 	    	System.out.println("**************************** Fun tiems for all");
 	    	if(onGrid) {
-	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeout + " onGrid:" + onGrid);
-	    		System.out.println("hubUrl = " + hubUrl);
+	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
+//	    		System.out.println("hubUrl = " + hubUrl);
 	    		System.out.println("landingPageUrl = " + landingPageUrl);
 	    		System.out.println("nodeUrl = " + nodeUrl);
 	    	} else {
-	    		System.out.println("hubOS:" + hubOS + " browser:" + browser + " timeout:" + timeout + " onGrid:" + onGrid);
+	    		System.out.println("hubOS:" + hubOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
 	    	}
 	    	System.out.println("****************************");
 	    }
@@ -136,9 +163,9 @@ public class PapaBless {
 	    return options.substring(start , end).toLowerCase();
 	}
 	
-	private boolean validateIPAddr(String parm) {
+	private static boolean validateIPAddr(String parm) {
 		
-//		if(parm.equals("localhost")) { return true; }
+		if(parm.equals("localhost")) { return true; }
 		
 		if(parm.contains(":")) {
 			System.out.println("ey b0ss, no http or port, please: " + parm);
@@ -177,8 +204,10 @@ public class PapaBless {
 	}
 	
 	@BeforeSuite // before each <suite> in the xml
-	public void beforeSuite() {
-		System.out.println("@BeforeSuite kicks off");
+	@Parameters ({"nodeOSP", "nodeURLP", "browserP", "timeoutP"})
+	public void beforeSuite(String nodeOSP, String nodeURLP, String browserP, String timeoutP) {
+		System.out.println("@BeforeSuite kicks off for " + this.getClass().getName());
+		someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
 	}
 
 	@BeforeTest // before each <test> in the xml
@@ -194,7 +223,7 @@ public class PapaBless {
 		if(onGrid) {
 			capability = new DesiredCapabilities();
 			capability.setBrowserName(browser);
-			switch(OS) {
+			switch(nodeOS) {
 				case "win7": capability.setPlatform(Platform.VISTA); break;
 				case "win10": capability.setPlatform(Platform.WIN10); break;
 				case "linux": capability.setPlatform(Platform.LINUX); break;
@@ -219,7 +248,7 @@ public class PapaBless {
 			
 			driver.get(landingPageUrl);
 		}
-// You are here, to do: Linux + IE = kek		
+		
 		if (!onGrid) {
 			String exeExt = new String();
 			String driverPath = new String();
@@ -236,7 +265,7 @@ public class PapaBless {
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver","C:\\webdrivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver",driverPath + "chromedriver" + exeExt);
 				ChromeOptions ugh = new ChromeOptions();
 				ugh.addArguments("disable-infobars");
 //				// On Linux start-maximized does not expand browser window to max screen size. Always set a window size and position.

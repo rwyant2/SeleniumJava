@@ -1,8 +1,8 @@
 'firefox' 'chrome' or 'internet explorer'
 browser='firefox'
 hubUrl ='192.168.0.5'
-nodeUrl = '192.168.0.10'
-nodeOS='win10'
+nodeUrl = '192.168.0.9'
+nodeOS='Linux'
 onGrid='f'
 timeout='10'
 			
