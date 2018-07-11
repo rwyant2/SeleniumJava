@@ -58,7 +58,12 @@ public class GrandpaBless {
 			System.out.println(sc.nextLine()); // assuming 1st line is header
 			while(sc.hasNext()) {
 				String params = sc.nextLine();
-//				System.out.println(params); // for debugging
+				
+//				ignore comments and empty lines
+				if(params.isEmpty()) {continue;}
+				if(params.substring(0,2).equals("//")) {continue;}
+				
+				
 				int first = params.indexOf(",");
 				int second = params.indexOf(",",first+1);
 				int third = params.indexOf(",",second+1);				
@@ -67,12 +72,13 @@ public class GrandpaBless {
 				String browser = params.substring(second+1, third);
 				int timeout = Integer.parseInt(params.substring(third+1, params.length()));
 				suites.add(buildSuite(nodeOS,nodeURL,browser,timeout));
+				TestNG tng = new TestNG();
+				tng.addListener(tListener);
+				tng.addListener(sListener);
+				tng.setXmlSuites(suites);
+				tng.run();
 			}
 		}
-		tng.addListener(tListener);
-		tng.addListener(sListener);
-		tng.setXmlSuites(suites);
-		tng.run();
 	}
 	
 	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, int timeout) {

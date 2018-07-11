@@ -98,17 +98,8 @@ public class PapaBless {
 		}
 	    
 	    if(everythingsSwell) {
-	    	if(!browserP.equals("firefox") && !browserP.equals("chrome") && !browserP.equals("internet explorer")) {
-	    		System.out.println(browser + " is not a recognized browser. Defaulting to firefox");
-	    		browser = "firefox";
-	    	} else {
-	    		browser = browserP;
-	    	}
-	    }
-	    
-	    if(everythingsSwell) {
 	    	if(onGrid) {
-	    		if(!nodeOSP.equals("win7") && !nodeOSP.equals("win10") && !nodeOSP.equals("linux")) {
+	    		if(!nodeOSP.matches("win7|win10|linux")) {
 	    			System.out.println(nodeOS + " is not a recognized nodeOS. Defaulting to win 7");
 	    			nodeOS = "win7";
 	    		} else {
@@ -118,11 +109,30 @@ public class PapaBless {
 	    	
 	    	if(!onGrid) {nodeOS = hubOS;}
 	    }
-	    	    
+	    
+	    if(everythingsSwell) {
+	    	if(nodeOS == "Linux") {
+	    		if(browserP.matches("firefox|chrome")) {
+	    			browser = browserP;
+	    		} else {
+	    			System.out.println(browser + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
+		    		browser = "firefox";
+	    		}
+	    	} else {
+	    		if(browserP.matches("firefox|chrome|ie")) {
+	    			browser = browserP;
+	    		} else {
+	    			System.out.println(browser + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
+		    		browser = "firefox";
+	    		}
+	    	} 
+	    }
+	    
 	    if(everythingsSwell) {
 	    	try {
 	    		InetAddress localhost = InetAddress.getLocalHost();
-	    		landingPageUrl = localhost.getHostAddress().trim() + ":8080";
+	    		hubUrl = localhost.getHostAddress().trim();
+	    		landingPageUrl = hubUrl + ":8080";
 	    	} catch (Exception e) {
 	    		System.out.println(e.getMessage());
 	    		everythingsSwell = false;
@@ -206,7 +216,10 @@ public class PapaBless {
 	@BeforeSuite // before each <suite> in the xml
 	@Parameters ({"nodeOSP", "nodeURLP", "browserP", "timeoutP"})
 	public void beforeSuite(String nodeOSP, String nodeURLP, String browserP, String timeoutP) {
+		System.out.println("**********************************************************************");
 		System.out.println("@BeforeSuite kicks off for " + this.getClass().getName());
+		System.out.println(nodeOSP + " " + nodeURLP + " " + browserP + " " + timeoutP);
+		System.out.println("**********************************************************************");
 		someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
 	}
 
