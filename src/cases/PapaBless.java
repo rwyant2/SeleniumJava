@@ -12,13 +12,18 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 import org.testng.annotations.*;
 
 import java.io.FileInputStream;
+
+import static org.testng.Assert.fail;
+
 import java.io.File;
 import java.net.URL;
-
+import java.util.Enumeration;
 import java.net.InetAddress;
+import java.net.NetworkInterface;
 
 //import org.openqa.selenium.Dimension;
 //import org.openqa.selenium.WebElement;
@@ -57,7 +62,8 @@ public class PapaBless {
 	private String options;
 	private String multiple;
 		
-	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue) {
+	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue)
+	throws SkipException {
 		
 		hubOS = System.getProperty("os.name");
 		
@@ -84,7 +90,7 @@ public class PapaBless {
 	    }
 	    
 	    if(everythingsSwell) {
-	    	if(validateIPAddr(nodeUrlP)) {
+	    	if(isValidIP(nodeUrlP,true)) {
 	    		if(nodeUrlP.matches("127.0.0.1|localhost")) {
 	    			onGrid = false;
 	    			nodeUrl = nodeUrlP;
@@ -100,7 +106,7 @@ public class PapaBless {
 	    if(everythingsSwell) {
 	    	if(onGrid) {
 	    		if(!nodeOSP.matches("win7|win10|linux")) {
-	    			System.out.println(nodeOS + " is not a recognized nodeOS. Defaulting to win 7");
+	    			System.out.println(nodeOSP + " is not a recognized nodeOS. Defaulting to win 7");
 	    			nodeOS = "win7";
 	    		} else {
 	    		nodeOS = nodeOSP;
@@ -111,11 +117,11 @@ public class PapaBless {
 	    }
 	    
 	    if(everythingsSwell) {
-	    	if(nodeOS == "Linux") {
+	    	if(nodeOS.equals("Linux")) {
 	    		if(browserP.matches("firefox|chrome")) {
 	    			browser = browserP;
 	    		} else {
-	    			System.out.println(browser + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
+	    			System.out.println(browserP + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
 		    		browser = "firefox";
 	    		}
 	    	} else {
@@ -128,7 +134,7 @@ public class PapaBless {
 	    	} 
 	    }
 	    
-	    if(everythingsSwell) {
+	    if(everythingsSwell && !onGrid) {
 	    	try {
 	    		InetAddress localhost = InetAddress.getLocalHost();
 	    		hubUrl = localhost.getHostAddress().trim();
@@ -137,25 +143,35 @@ public class PapaBless {
 	    		System.out.println(e.getMessage());
 	    		everythingsSwell = false;
 	    	}
-
-	    	
-//	    if(everythingsSwell) {
-//	    	if(onGrid && (validateIPAddr(hubUrl)) {
-////	    		landingPageUrl = "http://" + hubUrl + ":8080";
-//	    	
 	    }
-	    	
-//	    	} 
-		
-		
-//	    if(everythingsSwell && onGrid) {
-
-
+	    
+	    if(everythingsSwell && onGrid) { // TODO: strip out relevant hub ip, normally on grid only
+	    	hubUrl = " ";
+	    	try { 
+	    		Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+	            while (interfaces.hasMoreElements()) {
+	                NetworkInterface iface = interfaces.nextElement();
+	                
+	                // filters out 127.0.0.1 and inactive interfaces
+	                if (iface.isLoopback() || !iface.isUp()) continue;
+	                
+	                Enumeration<InetAddress> addresses = iface.getInetAddresses();
+	                while(addresses.hasMoreElements() && hubUrl.equals(" ")) {
+	                    InetAddress addr = addresses.nextElement();
+	                    String ip = addr.getHostAddress();
+	                    if(isValidIP(ip,false)) {hubUrl = ip;}
+	                }
+	            }
+	        } catch (Exception e) {
+	            throw new RuntimeException(e);
+	        }  
+	    }
+	    		
 	    if(everythingsSwell) {
 	    	System.out.println("**************************** Fun tiems for all");
 	    	if(onGrid) {
 	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
-//	    		System.out.println("hubUrl = " + hubUrl);
+	    		System.out.println("hubUrl = " + hubUrl);
 	    		System.out.println("landingPageUrl = " + landingPageUrl);
 	    		System.out.println("nodeUrl = " + nodeUrl);
 	    	} else {
@@ -163,22 +179,29 @@ public class PapaBless {
 	    	}
 	    	System.out.println("****************************");
 	    }
+	    
+	    if(!everythingsSwell) {
+	    	throw new SkipException("");	
+	    }
 	}
 
-	private String getParmValue(String parm) {
-		int start = options.indexOf(parm);
-		start = options.indexOf("=",start);
-		start = options.indexOf("'",start) + 1;
-	    int end = options.indexOf("'",start);
-	    return options.substring(start , end).toLowerCase();
-	}
+//	private String getParmValue(String parm) {
+//		int start = options.indexOf(parm);
+//		start = options.indexOf("=",start);
+//		start = options.indexOf("'",start) + 1;
+//	    int end = options.indexOf("'",start);
+//	    return options.substring(start , end).toLowerCase();
+//	}
 	
-	private static boolean validateIPAddr(String parm) {
+	// returns whether the IPv4 Address is valid or not.
+	// TODO: support for v6
+	// TODO: add a flag to print error message or not
+	private static boolean isValidIP(String parm, boolean sillyFlag) { 
 		
-		if(parm.equals("localhost")) { return true; }
+		if(parm.equals("localhost")) {return true;}
 		
 		if(parm.contains(":")) {
-			System.out.println("ey b0ss, no http or port, please: " + parm);
+			if(sillyFlag) {System.out.println("ey b0ss, no http or port, please: " + parm);}
 			return false;
 		}
 		
@@ -194,8 +217,10 @@ public class PapaBless {
 				return true;
 			}
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			System.out.println(parm + " is not a valid IP address. You are silly.");
+			if(sillyFlag) {
+				System.out.println(e.getMessage());
+				System.out.println(parm + " is not a valid IP address. You are silly.");
+			}
 			return false;
 		}
 		return false; // default
@@ -220,7 +245,11 @@ public class PapaBless {
 		System.out.println("@BeforeSuite kicks off for " + this.getClass().getName());
 		System.out.println(nodeOSP + " " + nodeURLP + " " + browserP + " " + timeoutP);
 		System.out.println("**********************************************************************");
-		someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
+		try {
+			someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
+		} catch (SkipException s) {
+			throw s;
+		}
 	}
 
 	@BeforeTest // before each <test> in the xml
@@ -236,14 +265,14 @@ public class PapaBless {
 		if(onGrid) {
 			capability = new DesiredCapabilities();
 			capability.setBrowserName(browser);
-			switch(nodeOS) {
-				case "win7": capability.setPlatform(Platform.VISTA); break;
-				case "win10": capability.setPlatform(Platform.WIN10); break;
-				case "linux": capability.setPlatform(Platform.LINUX); break;
-				default: capability.setPlatform(Platform.VISTA); break;
-			}
+//			switch(nodeOS) {  // TODO: why does this break it?!?!
+//				case "win7": capability.setPlatform(Platform.VISTA); break;
+//				case "win10": capability.setPlatform(Platform.WIN10); break;
+//				case "linux": capability.setPlatform(Platform.LINUX); break;
+//				default: capability.setPlatform(Platform.VISTA); break;
+//			}
 
-			capability.setVersion("latest");
+//			capability.setVersion("latest");
 			
 			try {
 				url = new URL(nodeUrl);
@@ -292,7 +321,7 @@ public class PapaBless {
 //				} 
 				driver = new ChromeDriver(ugh);
 				break;
-			case "internet explorer":
+			case "ie":
 				System.setProperty("webdriver.internetexplorer.driver","C:\\webdrivers\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 				break;

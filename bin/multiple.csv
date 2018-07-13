@@ -1,17 +1,35 @@
 nodeOS,nodeURL,browser,timeout
-//linux,192.168.0.17,chrome,10
+linux,localhost,chrome,10
+linux,localhost,firefox,10
+//win7,192.168.0.13,firefox,10
+
+//todo:
+//install grid on linux node right
+//fix bug when connecting to win7
+//flesh out skipexceptioning gracefully
+
+
+linux,booper,firefox,10
+linux,localhost,dooper,10
+linux,localhost,firefox,pooper
+
+//should default to firefox
+linux,localhost,ie,10
+
+this should still work,localhost,firefox,10
+linux,this should fail,firefox,10
+
+
+
 
 linux,localhost,chrome,10
 linux,localhost,firefox,10
-linux,localhost,ie,10
+
 linux,127.0.0.1,chrome,10
 linux,127.0.0.1,firefox,10
 linux,127.0.0.1,ie,10
 
-the above row is intentionally left blank,localhost,firefox,10
-linux,booper,firefox,10
-linux,localhost,dooper,10
-linux,localhost,firefox,pooper
+
 linux,192.168.0.18,firefox,10
 linux,192.168.0.18,chrome,10
 linux,192.168.0.18,ie,10

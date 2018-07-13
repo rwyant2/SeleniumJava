@@ -63,7 +63,6 @@ public class GrandpaBless {
 				if(params.isEmpty()) {continue;}
 				if(params.substring(0,2).equals("//")) {continue;}
 				
-				
 				int first = params.indexOf(",");
 				int second = params.indexOf(",",first+1);
 				int third = params.indexOf(",",second+1);				
