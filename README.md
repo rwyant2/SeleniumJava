@@ -8,7 +8,7 @@ Accomplishments (the branch for some of this is still w.i.p.):<br/>
 ☑ Migrated to Ubuntu 16.04 LTS as a development environment.<br/>
 ☑ Scripts can be ran locally on Ubuntu.<br/>
 ☑ Instead of an options.txt file, options are now set on a .csv spreadsheet.<br/>
-☑ Blank lines and lines starting with "//" are ingored. This allows spacing and "commenting" so I don't have to re-arrange the .csv when I code on the bus and not using Selenium Grid.<br/>
+☑ Blank lines and lines starting with "//" are ignored. This allows spacing and "commenting" so I don't have to re-arrange the .csv when I code on the bus and not using Selenium Grid.<br/>
 ☑ Testng.xml "file" is built dynamically as a class in GrandpaBless now. Which calls, PapaBless. Which the test classes are extending. Speaking of which, it would be interesting to hear H3H3's reaction to the current controversy around John Schnatter. I watch too much YouTube.<br/>
 ☑ Installed the Dell DVD Store on the new Ubuntu environment using PostgreSQL. Tables, schemas, and data are on the laptop, but not here. If you're interested: http://linux.dell.com/dvdstore/ <br/>
 <br/>
