@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [dynamic suite for linux and firefox]">
+<suite name="Failed suite [dynamic suite for linux and chrome]">
   <parameter name="nodeURLP" value="localhost"/>
   <parameter name="timeoutP" value="10"/>
   <parameter name="nodeOSP" value="linux"/>
-  <parameter name="browserP" value="firefox"/>
+  <parameter name="browserP" value="chrome"/>
   <test thread-count="5" name="dynamic test 1(failed)">
     <classes>
       <class name="cases.CheckBoxCase">
@@ -35,4 +35,4 @@
       </class> <!-- cases.TextFieldCase -->
     </classes>
   </test> <!-- dynamic test 1(failed) -->
-</suite> <!-- Failed suite [dynamic suite for linux and firefox] -->
+</suite> <!-- Failed suite [dynamic suite for linux and chrome] -->

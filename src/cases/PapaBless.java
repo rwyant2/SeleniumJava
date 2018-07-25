@@ -138,7 +138,6 @@ public class PapaBless {
 	    	try {
 	    		InetAddress localhost = InetAddress.getLocalHost();
 	    		hubUrl = localhost.getHostAddress().trim();
-	    		landingPageUrl = hubUrl + ":8080";
 	    	} catch (Exception e) {
 	    		System.out.println(e.getMessage());
 	    		everythingsSwell = false;
@@ -168,6 +167,7 @@ public class PapaBless {
 	    }
 	    		
 	    if(everythingsSwell) {
+	    	landingPageUrl = "http://" + hubUrl + ":8080";
 	    	System.out.println("**************************** Fun tiems for all");
 	    	if(onGrid) {
 	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
@@ -195,7 +195,6 @@ public class PapaBless {
 	
 	// returns whether the IPv4 Address is valid or not.
 	// TODO: support for v6
-	// TODO: add a flag to print error message or not
 	private static boolean isValidIP(String parm, boolean sillyFlag) { 
 		
 		if(parm.equals("localhost")) {return true;}
@@ -265,14 +264,16 @@ public class PapaBless {
 		if(onGrid) {
 			capability = new DesiredCapabilities();
 			capability.setBrowserName(browser);
-//			switch(nodeOS) {  // TODO: why does this break it?!?!
+			// TODO: "Vista" doesn't work, need to change to "Windows"
+			// https://github.com/SeleniumHQ/selenium/issues/5084
+//			switch(nodeOS) {  
 //				case "win7": capability.setPlatform(Platform.VISTA); break;
 //				case "win10": capability.setPlatform(Platform.WIN10); break;
 //				case "linux": capability.setPlatform(Platform.LINUX); break;
 //				default: capability.setPlatform(Platform.VISTA); break;
 //			}
 
-//			capability.setVersion("latest");
+			capability.setVersion("latest");
 			
 			try {
 				url = new URL(nodeUrl);
@@ -287,8 +288,6 @@ public class PapaBless {
 			} catch(Exception e) {
 				System.out.println(e.getMessage());
 			}
-			
-			driver.get(landingPageUrl);
 		}
 		
 		if (!onGrid) {
@@ -326,10 +325,9 @@ public class PapaBless {
 				driver = new InternetExplorerDriver();
 				break;
 			}
-			
-			driver.get("http://localhost:8080");
 		}
 		
+		driver.get(landingPageUrl);
 		wait = new WebDriverWait(driver, timeout);
 	}
 	

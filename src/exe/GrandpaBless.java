@@ -71,12 +71,13 @@ public class GrandpaBless {
 				String browser = params.substring(second+1, third);
 				int timeout = Integer.parseInt(params.substring(third+1, params.length()));
 				suites.add(buildSuite(nodeOS,nodeURL,browser,timeout));
-				TestNG tng = new TestNG();
-				tng.addListener(tListener);
-				tng.addListener(sListener);
-				tng.setXmlSuites(suites);
-				tng.run();
 			}
+			
+			TestNG tng = new TestNG();
+			tng.addListener(tListener);
+			tng.addListener(sListener);
+			tng.setXmlSuites(suites);
+			tng.run();
 		}
 	}
 	
@@ -122,10 +123,10 @@ public class GrandpaBless {
 		xt2.setClasses(xClasses2); 		
 		
 		xs.setName("dynamic suite for " + nodeOS + " and " + browser);
-//		xs.setParallel(xs.DEFAULT_PARALLEL);
 		xs.addTest(xt1);
 		xs.addTest(xt2);
-
+		xs.setParallel(XmlSuite.ParallelMode.NONE);
+		
 		return xs;
 	}
 }				
