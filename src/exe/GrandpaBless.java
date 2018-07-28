@@ -2,22 +2,22 @@
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.testng.ISuiteListener;
-import org.testng.ITestListener;
-import org.testng.ITestNGListener;
-import org.testng.TestNG;
-import org.testng.xml.*;
 
 import org.apache.commons.io.IOUtils;
+import org.testng.ITestNGListener;
+import org.testng.TestNG;
+import org.testng.xml.XmlClass;
+import org.testng.xml.XmlSuite;
+import org.testng.xml.XmlTest;
 
-import cases.TestListener;
 import cases.SuiteListener;
+import cases.TestListener;
+import cases.MethodListener;
 
 
 // The purpose of this is the one that drives everything else for onGrid.
@@ -39,6 +39,7 @@ public class GrandpaBless {
 	private static List<XmlSuite> suites = new ArrayList<XmlSuite>();
 	private static ITestNGListener sListener = new SuiteListener();
 	private static ITestNGListener tListener = new TestListener();
+//	private static ITestNGListener mListener = new MethodListener();
 	
 	public static void main (String[] args) {
 		System.out.println("Is this even running?");
@@ -69,11 +70,12 @@ public class GrandpaBless {
 				String nodeOS = params.substring(0, first);
 				String nodeURL = params.substring(first+1, second);
 				String browser = params.substring(second+1, third);
-				int timeout = Integer.parseInt(params.substring(third+1, params.length()));
+				String timeout = params.substring(third+1, params.length());
 				suites.add(buildSuite(nodeOS,nodeURL,browser,timeout));
 			}
 			
 			TestNG tng = new TestNG();
+//			tng.addListener(mListener);
 			tng.addListener(tListener);
 			tng.addListener(sListener);
 			tng.setXmlSuites(suites);
@@ -81,7 +83,7 @@ public class GrandpaBless {
 		}
 	}
 	
-	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, int timeout) {
+	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, String timeout) {
 		XmlSuite xs = new XmlSuite();
 //		List<XmlTest> xTests = new ArrayList<XmlTest>();
 		
@@ -90,11 +92,12 @@ public class GrandpaBless {
 		xp.put("nodeOSP", nodeOS);
 		xp.put("nodeURLP", nodeURL);
 		xp.put("browserP", browser);
-		xp.put("timeoutP", Integer.toString(timeout)); // you are here
+		xp.put("timeoutP", timeout); // you are here
 		xs.setParameters(xp);
 		
 		// equivalent to <class> tag
 		List<XmlClass> xClasses = new ArrayList<XmlClass>();
+
 		XmlClass xCCheckBox = new XmlClass(cases.CheckBoxCase.class);
 		xClasses.add(xCCheckBox);
 		
@@ -125,62 +128,9 @@ public class GrandpaBless {
 		xs.setName("dynamic suite for " + nodeOS + " and " + browser);
 		xs.addTest(xt1);
 		xs.addTest(xt2);
-		xs.setParallel(XmlSuite.ParallelMode.NONE);
+		xs.setParallel(XmlSuite.ParallelMode.NONE);// TestNG 6.13 version
+//		xs.setParallel(XmlSuite.PARALLEL_NONE); // TestNG 6.8 version
 		
 		return xs;
 	}
 }				
-				//				tng.addListener();
-				
-				
-				
-				// make a virtual testng.xml
-//				<suite name="text and checkbox">
-//				<listeners>
-//					<listener class-name="cases.SuiteListener" />
-//					<listener class-name="cases.TestListener" />
-//				</listeners>
-//				<test name="text field and check box">
-//					<classes>
-//						<class name="cases.TextFieldCase" />
-//						<class name="cases.CheckBoxCase" />
-//					</classes>
-//				</test>
-//				<test name="everything else">
-//					<classes>
-//						<class name="cases.RadioButtonCase" />
-//						<class name="cases.DropDownCase" />
-//						<class name="cases.TextAreaCase" />
-//					</classes>
-//				</test>
-//			</suite> 
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-//				System.out.println(nodeOS + nodeURL + browser + timeout); // for debugging
-//				System.out.println(); // for debugging
-				
-			
-			
-			 
-			// the first row is assumed to be a header
-			// create new scanner object
-			// set deleimiter
-			// read.ant@riseupnext see what happens
-
-		
-	
-//	open the cvs
-//	do until eof or not swell {
-//		read the file
-//		pas params to xml suite
-//		execute xml suite
-//		read next

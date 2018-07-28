@@ -1,9 +1,9 @@
 package env;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver; 
-import org.testng.annotations.Test;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 // This class is meant to see if the app itself is up and ready for testing.
 

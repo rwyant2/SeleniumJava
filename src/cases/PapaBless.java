@@ -1,8 +1,14 @@
 package cases;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.URL;
+import java.util.Enumeration;
+
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,18 +18,18 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.SkipException;
-import org.testng.annotations.*;
-
-import java.io.FileInputStream;
-
-import static org.testng.Assert.fail;
-
-import java.io.File;
-import java.net.URL;
-import java.util.Enumeration;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
+//import org.testng.SkipException;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.ITestResult;
 
 //import org.openqa.selenium.Dimension;
 //import org.openqa.selenium.WebElement;
@@ -51,7 +57,7 @@ public class PapaBless {
 	private String optionsPath;
 	private static String OS;
 	
-	protected boolean everythingsSwell = true;
+	private static boolean everythingsSwell;
 	
 	private URL url;
 	
@@ -62,8 +68,9 @@ public class PapaBless {
 	private String options;
 	private String multiple;
 		
-	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue)
-	throws SkipException {
+	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue) {
+		
+		everythingsSwell = true;
 		
 		hubOS = System.getProperty("os.name");
 		
@@ -179,10 +186,6 @@ public class PapaBless {
 	    	}
 	    	System.out.println("****************************");
 	    }
-	    
-	    if(!everythingsSwell) {
-	    	throw new SkipException("");	
-	    }
 	}
 
 //	private String getParmValue(String parm) {
@@ -237,6 +240,10 @@ public class PapaBless {
 		return localUrl;
 	}
 	
+	public boolean getEverythingsSwell() {
+		return everythingsSwell;
+	}
+	
 	@BeforeSuite // before each <suite> in the xml
 	@Parameters ({"nodeOSP", "nodeURLP", "browserP", "timeoutP"})
 	public void beforeSuite(String nodeOSP, String nodeURLP, String browserP, String timeoutP) {
@@ -244,24 +251,19 @@ public class PapaBless {
 		System.out.println("@BeforeSuite kicks off for " + this.getClass().getName());
 		System.out.println(nodeOSP + " " + nodeURLP + " " + browserP + " " + timeoutP);
 		System.out.println("**********************************************************************");
-		try {
-			someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
-		} catch (SkipException s) {
-			throw s;
-		}
+		someoneSetUsUpTheDriver(nodeOSP, nodeURLP, browserP, timeoutP);
 	}
-
+	
 	@BeforeTest // before each <test> in the xml
 	public void beforeTest() {
-		System.out.println("@BeforeTest kicks off");
+		System.out.println("@BeforeTest kicks off when everythingsSwell = " + everythingsSwell + " for " + this.getClass().getName());
 	}
-
 
 	@BeforeClass //before each <class> in the xml
 	public void beforeClass() {
 		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
-
-		if(onGrid) {
+	
+		if(onGrid && everythingsSwell) {
 			capability = new DesiredCapabilities();
 			capability.setBrowserName(browser);
 			// TODO: "Vista" doesn't work, need to change to "Windows"
@@ -290,7 +292,7 @@ public class PapaBless {
 			}
 		}
 		
-		if (!onGrid) {
+		if (!onGrid && everythingsSwell) {
 			String exeExt = new String();
 			String driverPath = new String();
 			if(hubOS.equals("Linux")) {
@@ -327,15 +329,18 @@ public class PapaBless {
 			}
 		}
 		
-		driver.get(landingPageUrl);
-		wait = new WebDriverWait(driver, timeout);
+		if(everythingsSwell) {
+			driver.get(landingPageUrl);
+			wait = new WebDriverWait(driver, timeout);
+		} 
 	}
 	
 	@BeforeMethod // before each @Test method in this class
 	public void beforeMethod() {
-		System.out.println("@BeforeMethod kicks off");
+		System.out.println("@BeforeMethod kicks off");		
 		driver.findElement(By.xpath("//a[@href='/html5']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='checkBoxSelection1']")));
+
 	}
 	
 	@AfterMethod // after each @Test method in this class

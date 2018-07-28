@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [dynamic suite for linux and firefox (0)]">
-  <parameter name="nodeURLP" value="192.168.0.13"/>
+  <parameter name="nodeURLP" value="127.0.0.1"/>
   <parameter name="timeoutP" value="10"/>
   <parameter name="nodeOSP" value="linux"/>
   <parameter name="browserP" value="firefox"/>
