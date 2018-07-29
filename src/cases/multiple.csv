@@ -1,9 +1,0 @@
-nodeOS,nodeURL,browser,timeout
-linux,192.168.0.?,chrome,10
-linux,192.168.0.?,firefox,10
-win7,192.168.0.7,chrome,10
-win7,192.168.0.7,firefox,10
-win7,192.168.0.7,ie,10
-win10,192.168.0.10,chrome,10
-win10,192.168.0.10,firefox,10
-win10,192.168.0.10,ie,10

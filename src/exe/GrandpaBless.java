@@ -15,14 +15,14 @@ import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
-import cases.SuiteListener;
-import cases.TestListener;
-import cases.MethodListener;
+import bricks.MethodListener;
+import bricks.SuiteListener;
+import bricks.TestListener;
 
 
-// The purpose of this is the one that drives everything else for onGrid.
-// Ran from the hub machine, it reads the .csv file and loops through
-// until end of file.
+// This is the one that drives everything and is ran from the hub machine.
+// * Reads the .csv file and loops through until no more configs.
+// * TODO: Reads options.txt to determine environmental options.
 
 public class GrandpaBless {
 //	private String csvFile = new String();
@@ -42,8 +42,7 @@ public class GrandpaBless {
 //	private static ITestNGListener mListener = new MethodListener();
 	
 	public static void main (String[] args) {
-		System.out.println("Is this even running?");
-		
+	
 		// For now, I'm assuming the hub machine will be my dev env on Ubutnu
 		csvPath = absPath + "/src/exe/multiple.csv";
 		
@@ -85,7 +84,7 @@ public class GrandpaBless {
 	
 	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, String timeout) {
 		XmlSuite xs = new XmlSuite();
-//		List<XmlTest> xTests = new ArrayList<XmlTest>();
+		//TODO: automate this so I just dump a case in the cases.package and not have to edit this
 		
 		// equivalient of <parameters> tag
 		Map <String, String> xp = new HashMap <String, String>();
@@ -125,7 +124,12 @@ public class GrandpaBless {
 		xt2.setSuite(xs);
 		xt2.setClasses(xClasses2); 		
 		
-		xs.setName("dynamic suite for " + nodeOS + " and " + browser);
+		xs.setName("dynamic suite with "
+			+ nodeOS + "/"
+			+ nodeURL + "/"
+			+ browser + "/"
+			+ timeout
+		);
 		xs.addTest(xt1);
 		xs.addTest(xt2);
 		xs.setParallel(XmlSuite.ParallelMode.NONE);// TestNG 6.13 version

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import bricks.PapaBless;
+
 public class CheckBoxCase extends PapaBless {
 	
 	private static String actualText;
