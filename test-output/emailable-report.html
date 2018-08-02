@@ -8,38 +8,140 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">text and checkbox</th></tr>
-<tr><td><a href="#t0">text field and check box</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,996</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">everything else</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">26,039</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">16</th><th class="num">0</th><th class="num attn">2</th><th class="num">53,035</th><th colspan="2"></th></tr>
+<tr><th colspan="7">dynamic suite with linux/192.168.0.17/firefox/10</th></tr>
+<tr><td><a href="#t0">dynamic test 1</a></td><td class="num">0</td><td class="num attn">8</td><td class="num">0</td><td class="num">1,648</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">dynamic test 2</a></td><td class="num">0</td><td class="num attn">10</td><td class="num">0</td><td class="num">458</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">18</th><th class="num">0</th><th class="num">2,106</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">text and checkbox</th></tr></tbody><tbody id="t0"><tr><th colspan="4">text field and check box &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cases.CheckBoxCase</td><td><a href="#m0">intentionalFailcheckBox</a></td><td rowspan="1">1526595889164</td><td rowspan="1">596</td></tr><tr class="failedodd"><td rowspan="1">cases.TextFieldCase</td><td><a href="#m1">intentionalFailTextField</a></td><td rowspan="1">1526595879968</td><td rowspan="1">732</td></tr><tr><th colspan="4">text field and check box &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">cases.CheckBoxCase</td><td><a href="#m2">checkBoxAll</a></td><td rowspan="1">1526595885967</td><td rowspan="1">877</td></tr><tr class="passedeven"><td><a href="#m3">checkBoxNone</a></td><td rowspan="1">1526595886925</td><td rowspan="1">74</td></tr><tr class="passedeven"><td><a href="#m4">checkBoxOneThree</a></td><td rowspan="1">1526595887082</td><td rowspan="1">624</td></tr><tr class="passedeven"><td><a href="#m5">checkBoxOneTwo</a></td><td rowspan="1">1526595887794</td><td rowspan="1">610</td></tr><tr class="passedeven"><td><a href="#m6">checkBoxTwoThree</a></td><td rowspan="1">1526595888486</td><td rowspan="1">603</td></tr><tr class="passedodd"><td rowspan="1">cases.TextFieldCase</td><td><a href="#m7">testTextField</a></td><td rowspan="1">1526595880959</td><td rowspan="1">133</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">everything else &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">cases.DropDownCase</td><td><a href="#m8">dropDownDefault</a></td><td rowspan="1">1526595904932</td><td rowspan="1">99</td></tr><tr class="passedeven"><td><a href="#m9">dropDownMustard</a></td><td rowspan="1">1526595905112</td><td rowspan="1">105</td></tr><tr class="passedeven"><td><a href="#m10">dropDownOnion</a></td><td rowspan="1">1526595905294</td><td rowspan="1">397</td></tr><tr class="passedeven"><td><a href="#m11">dropDownTomato</a></td><td rowspan="1">1526595905776</td><td rowspan="1">346</td></tr><tr class="passedodd"><td rowspan="4">cases.RadioButtonCase</td><td><a href="#m12">radioChoiceA</a></td><td rowspan="1">1526595894718</td><td rowspan="1">472</td></tr><tr class="passedodd"><td><a href="#m13">radioChoiceB</a></td><td rowspan="1">1526595895269</td><td rowspan="1">469</td></tr><tr class="passedodd"><td><a href="#m14">radioChoiceC</a></td><td rowspan="1">1526595895819</td><td rowspan="1">1378</td></tr><tr class="passedodd"><td><a href="#m15">radioDefault</a></td><td rowspan="1">1526595897283</td><td rowspan="1">58</td></tr><tr class="passedeven"><td rowspan="2">cases.TextAreaCase</td><td><a href="#m16">textAreaLongString</a></td><td rowspan="1">1526595911770</td><td rowspan="1">578</td></tr><tr class="passedeven"><td><a href="#m17">textAreaWithEnter</a></td><td rowspan="1">1526595912420</td><td rowspan="1">633</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">dynamic suite with linux/192.168.0.17/firefox/10</th></tr></tbody><tbody id="t0"><tr><th colspan="4">dynamic test 1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">cases.CheckBoxCase</td><td><a href="#m0">beforeClass</a></td><td rowspan="1">1533056244589</td><td rowspan="1">1624</td></tr><tr><th colspan="4">dynamic test 1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="14">cases.CheckBoxCase</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1533056246224</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">afterMethod</a></td><td rowspan="6">1533056246224</td><td rowspan="6">0</td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m4">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m5">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m6">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m7">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m8">afterTest</a></td><td rowspan="1">1533056246227</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">beforeMethod</a></td><td rowspan="6">1533056246223</td><td rowspan="6">0</td></tr><tr class="skippedeven"><td><a href="#m10">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m11">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m12">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m13">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m14">beforeMethod</a></td></tr><tr class="skippedodd"><td rowspan="6">cases.TextFieldCase</td><td><a href="#m15">afterClass</a></td><td rowspan="1">1533056246227</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m16">afterMethod</a></td><td rowspan="2">1533056246227</td><td rowspan="2">0</td></tr><tr class="skippedodd"><td><a href="#m17">afterMethod</a></td></tr><tr class="skippedodd"><td><a href="#m18">beforeClass</a></td><td rowspan="1">1533056246226</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m19">beforeMethod</a></td><td rowspan="2">1533056246227</td><td rowspan="2">0</td></tr><tr class="skippedodd"><td><a href="#m20">beforeMethod</a></td></tr><tr><th colspan="4">dynamic test 1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">cases.CheckBoxCase</td><td><a href="#m21">checkBoxAll</a></td><td rowspan="1">1533056246220</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m22">checkBoxNone</a></td><td rowspan="1">1533056246221</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m23">checkBoxOneThree</a></td><td rowspan="1">1533056246222</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m24">checkBoxOneTwo</a></td><td rowspan="1">1533056246223</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m25">checkBoxTwoThree</a></td><td rowspan="1">1533056246224</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m26">intentionalFailcheckBox</a></td><td rowspan="1">1533056246224</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">cases.TextFieldCase</td><td><a href="#m27">intentionalFailTextField</a></td><td rowspan="1">1533056246226</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m28">testTextField</a></td><td rowspan="1">1533056246227</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">dynamic test 2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">cases.RadioButtonCase</td><td><a href="#m29">beforeClass</a></td><td rowspan="1">1533056246259</td><td rowspan="1">450</td></tr><tr><th colspan="4">dynamic test 2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="10">cases.DropDownCase</td><td><a href="#m30">afterClass</a></td><td rowspan="1">1533056246715</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m31">afterMethod</a></td><td rowspan="4">1533056246714</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m32">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m33">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m34">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m35">beforeClass</a></td><td rowspan="1">1533056246712</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m36">beforeMethod</a></td><td rowspan="4">1533056246714</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m37">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m38">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m39">beforeMethod</a></td></tr><tr class="skippedodd"><td rowspan="11">cases.RadioButtonCase</td><td><a href="#m40">afterClass</a></td><td rowspan="1">1533056246711</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m41">afterMethod</a></td><td rowspan="4">1533056246709</td><td rowspan="4">0</td></tr><tr class="skippedodd"><td><a href="#m42">afterMethod</a></td></tr><tr class="skippedodd"><td><a href="#m43">afterMethod</a></td></tr><tr class="skippedodd"><td><a href="#m44">afterMethod</a></td></tr><tr class="skippedodd"><td><a href="#m45">afterSuite</a></td><td rowspan="1">1533056246731</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m46">afterTest</a></td><td rowspan="1">1533056246716</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m47">beforeMethod</a></td><td rowspan="4">1533056246710</td><td rowspan="4">0</td></tr><tr class="skippedodd"><td><a href="#m48">beforeMethod</a></td></tr><tr class="skippedodd"><td><a href="#m49">beforeMethod</a></td></tr><tr class="skippedodd"><td><a href="#m50">beforeMethod</a></td></tr><tr class="skippedeven"><td rowspan="6">cases.TextAreaCase</td><td><a href="#m51">afterClass</a></td><td rowspan="1">1533056246716</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m52">afterMethod</a></td><td rowspan="2">1533056246716</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m53">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m54">beforeClass</a></td><td rowspan="1">1533056246715</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m55">beforeMethod</a></td><td rowspan="2">1533056246715</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m56">beforeMethod</a></td></tr><tr><th colspan="4">dynamic test 2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">cases.DropDownCase</td><td><a href="#m57">dropDownDefault</a></td><td rowspan="1">1533056246712</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m58">dropDownMustard</a></td><td rowspan="1">1533056246713</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m59">dropDownOnion</a></td><td rowspan="1">1533056246714</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m60">dropDownTomato</a></td><td rowspan="1">1533056246714</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="4">cases.RadioButtonCase</td><td><a href="#m61">radioChoiceA</a></td><td rowspan="1">1533056246709</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m62">radioChoiceB</a></td><td rowspan="1">1533056246710</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m63">radioChoiceC</a></td><td rowspan="1">1533056246711</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m64">radioDefault</a></td><td rowspan="1">1533056246711</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">cases.TextAreaCase</td><td><a href="#m65">textAreaLongString</a></td><td rowspan="1">1533056246715</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m66">textAreaWithEnter</a></td><td rowspan="1">1533056246716</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>text field and check box</h2><h3 id="m0">cases.CheckBoxCase#intentionalFailcheckBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at cases.CheckBoxCase.intentionalFailcheckBox(CheckBoxCase.java:58)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">cases.TextFieldCase#intentionalFailTextField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [This should fail] but found [Please fail]
-	at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:31)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">cases.CheckBoxCase#checkBoxAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">cases.CheckBoxCase#checkBoxNone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">cases.CheckBoxCase#checkBoxOneThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">cases.CheckBoxCase#checkBoxOneTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">cases.CheckBoxCase#checkBoxTwoThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">cases.TextFieldCase#testTextField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>everything else</h2><h3 id="m8">cases.DropDownCase#dropDownDefault</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">cases.DropDownCase#dropDownMustard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">cases.DropDownCase#dropDownOnion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">cases.DropDownCase#dropDownTomato</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">cases.RadioButtonCase#radioChoiceA</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">cases.RadioButtonCase#radioChoiceB</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">cases.RadioButtonCase#radioChoiceC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">cases.RadioButtonCase#radioDefault</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">cases.TextAreaCase#textAreaLongString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">cases.TextAreaCase#textAreaWithEnter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>dynamic test 1</h2><h3 id="m0">cases.CheckBoxCase#beforeClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cases.CheckBoxCase#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">cases.CheckBoxCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">cases.CheckBoxCase#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">cases.CheckBoxCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">cases.TextFieldCase#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">cases.TextFieldCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">cases.TextFieldCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">cases.TextFieldCase#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">cases.TextFieldCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">cases.TextFieldCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">cases.CheckBoxCase#checkBoxAll</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">cases.CheckBoxCase#checkBoxNone</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">cases.CheckBoxCase#checkBoxOneThree</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">cases.CheckBoxCase#checkBoxOneTwo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">cases.CheckBoxCase#checkBoxTwoThree</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">cases.CheckBoxCase#intentionalFailcheckBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">cases.TextFieldCase#intentionalFailTextField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">cases.TextFieldCase#testTextField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>dynamic test 2</h2><h3 id="m29">cases.RadioButtonCase#beforeClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">cases.DropDownCase#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">cases.DropDownCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">cases.DropDownCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">cases.DropDownCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">cases.DropDownCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">cases.DropDownCase#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">cases.DropDownCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">cases.DropDownCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">cases.DropDownCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">cases.DropDownCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">cases.RadioButtonCase#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">cases.RadioButtonCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">cases.RadioButtonCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">cases.RadioButtonCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">cases.RadioButtonCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">cases.RadioButtonCase#afterSuite</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">cases.RadioButtonCase#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">cases.RadioButtonCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">cases.RadioButtonCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">cases.RadioButtonCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">cases.RadioButtonCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">cases.TextAreaCase#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">cases.TextAreaCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">cases.TextAreaCase#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">cases.TextAreaCase#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">cases.TextAreaCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">cases.TextAreaCase#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">cases.DropDownCase#dropDownDefault</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">cases.DropDownCase#dropDownMustard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">cases.DropDownCase#dropDownOnion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">cases.DropDownCase#dropDownTomato</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">cases.RadioButtonCase#radioChoiceA</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">cases.RadioButtonCase#radioChoiceB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">cases.RadioButtonCase#radioChoiceC</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">cases.RadioButtonCase#radioDefault</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">cases.TextAreaCase#textAreaLongString</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">cases.TextAreaCase#textAreaWithEnter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at bricks.PapaBless.beforeClass(PapaBless.java:358)
+	at GrandpaBless.main(GrandpaBless.java:81)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,14 +1,14 @@
 package cases;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
-import org.openqa.selenium.Keys;
-
 import org.junit.Assert;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import bricks.PapaBless;
 
 public class TextAreaCase extends PapaBless {
 	private WebDriver driver = this.getDriver();

@@ -1,0 +1,6 @@
+//This is a comment and should be ignored
+defaultNodeUrl='localhost'
+defaultBrowser='firefox'
+defaultTimeout='10'
+useCustomReporter='y'
+useCustomLogger='y'

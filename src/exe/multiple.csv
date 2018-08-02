@@ -1,0 +1,35 @@
+nodeOS,nodeURL,browser,timeout
+
+//todo:
+//install grid on linux node right
+
+//untested
+//linux,192.168.0.17,chrome,10
+//linux,192.168.0.17,firefox,10
+//linux,192.168.0.17,ie,10
+
+//these are working
+linux,localhost,chrome,10
+linux,localhost,firefox,10
+//linux,127.0.0.1,chrome,10
+//linux,127.0.0.1,firefox,10
+
+// should skip out
+//booper,192.168.0.12,firefox,10
+//linux,dooper,firefox,10
+//linux,192.168.0.255,firefox,10
+//linux,localhost,pooper,10
+//linux,localhost,ie,10
+//linux,localhost,firefox,vaya con dios
+
+// should be fine, should default to hubOS
+//booper,localhost,firefox,10
+
+//win10,192.168.0.12,chrome,10
+//win10,192.168.0.12,firefox,10
+//win10,192.168.0.12,ie,10
+
+//win7,192.168.0.13,chrome,10
+//win7,192.168.0.13,firefox,10
+//win7,192.168.0.13,ie,10
+

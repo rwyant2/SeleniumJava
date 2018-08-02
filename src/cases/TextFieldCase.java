@@ -1,9 +1,11 @@
 package cases;
 
-import org.testng.Assert;
-import org.testng.annotations.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import bricks.PapaBless;
 
 public class TextFieldCase extends PapaBless {
 	private static String actualText;

@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="text and checkbox">
+<suite name="everything using testng.xml">
 	<listeners>
 		<listener class-name="cases.SuiteListener" />
 		<listener class-name="cases.TestListener" />

@@ -1,13 +1,17 @@
 package cases;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
-import org.testng.Assert;
-import org.testng.annotations.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import static org.junit.Assert.assertTrue;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import bricks.PapaBless;
 
 public class CheckBoxCase extends PapaBless {
+	
 	private static String actualText;
 	
 	@Test(priority=2)	

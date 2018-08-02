@@ -1,14 +1,13 @@
 package cases;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
 import org.junit.Assert;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import bricks.PapaBless;
 
 public class RadioButtonCase extends PapaBless {
 	private WebDriver driver = this.getDriver();

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [dynamic suite with linux/localhost/firefox/vaya con dios]">
+  <parameter name="nodeURLP" value="localhost"/>
+  <parameter name="timeoutP" value="vaya con dios"/>
+  <parameter name="nodeOSP" value="linux"/>
+  <parameter name="browserP" value="firefox"/>
+  <test thread-count="5" name="dynamic test 1(failed)">
+    <classes>
+      <class name="cases.CheckBoxCase">
+        <methods>
+          <include name="checkBoxOneTwo"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="checkBoxNone"/>
+          <include name="beforeMethod"/>
+          <include name="checkBoxAll"/>
+          <include name="checkBoxOneThree"/>
+          <include name="beforeClass"/>
+          <include name="checkBoxTwoThree"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="intentionalFailcheckBox"/>
+        </methods>
+      </class> <!-- cases.CheckBoxCase -->
+      <class name="cases.TextFieldCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="testTextField"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="intentionalFailTextField"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- cases.TextFieldCase -->
+    </classes>
+  </test> <!-- dynamic test 1(failed) -->
+  <test thread-count="5" name="dynamic test 2(failed)">
+    <classes>
+      <class name="cases.DropDownCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="dropDownMustard"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="dropDownDefault"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="dropDownOnion"/>
+          <include name="dropDownTomato"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- cases.DropDownCase -->
+      <class name="cases.TextAreaCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="textAreaWithEnter"/>
+          <include name="beforeMethod"/>
+          <include name="textAreaLongString"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- cases.TextAreaCase -->
+      <class name="cases.RadioButtonCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="radioChoiceA"/>
+          <include name="radioDefault"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="radioChoiceC"/>
+          <include name="beforeClass"/>
+          <include name="radioChoiceB"/>
+        </methods>
+      </class> <!-- cases.RadioButtonCase -->
+    </classes>
+  </test> <!-- dynamic test 2(failed) -->
+</suite> <!-- Failed suite [dynamic suite with linux/localhost/firefox/vaya con dios] -->
