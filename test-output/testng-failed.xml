@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [dynamic suite with booper/192.168.0.7/firefox/10]">
-  <parameter name="nodeURLP" value="192.168.0.7"/>
+<suite name="Failed suite [dynamic suite with linux/192.168.0.17/firefox/10]">
+  <parameter name="nodeURLP" value="192.168.0.17"/>
   <parameter name="timeoutP" value="10"/>
-  <parameter name="nodeOSP" value="booper"/>
+  <parameter name="nodeOSP" value="linux"/>
   <parameter name="browserP" value="firefox"/>
   <test thread-count="5" name="dynamic test 1(failed)">
     <classes>
@@ -91,4 +91,4 @@
       </class> <!-- cases.RadioButtonCase -->
     </classes>
   </test> <!-- dynamic test 2(failed) -->
-</suite> <!-- Failed suite [dynamic suite with booper/192.168.0.7/firefox/10] -->
+</suite> <!-- Failed suite [dynamic suite with linux/192.168.0.17/firefox/10] -->

@@ -9,6 +9,7 @@ import java.util.Enumeration;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -30,6 +31,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 //import org.openqa.selenium.Dimension;
 //import org.openqa.selenium.WebElement;
@@ -88,6 +90,7 @@ public class PapaBless {
 	    		timeout = Integer.parseInt(timeoutValue);
 	    	} catch (Exception e) {
 	    		System.out.println(timeoutValue + " is not a nubmer for timeout. You are silly.");
+	    		Reporter.log(timeoutValue + " is not a nubmer for timeout. You are silly.");
 	    		everythingsSwell = false;
 	    	}
 	    }
@@ -109,8 +112,9 @@ public class PapaBless {
 	    if(everythingsSwell) {
 	    	if(onGrid) {
 	    		if(!nodeOSP.matches("win7|win10|linux")) {
-	    			System.out.println(nodeOSP + " is not a recognized nodeOS. Defaulting to win 7");
-	    			nodeOS = "win7";
+	    			System.out.println(nodeOSP + " is not a recognized nodeOS.");
+	    			Reporter.log(nodeOSP + " is not a recognized nodeOS.");
+	    			everythingsSwell = false;
 	    		} else {
 	    		nodeOS = nodeOSP;
 	    		}
@@ -124,17 +128,20 @@ public class PapaBless {
 	    		if(browserP.matches("firefox|chrome")) {
 	    			browser = browserP;
 	    		} else {
-	    			System.out.println(browserP + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
-		    		browser = "firefox";
+	    			everythingsSwell = false;
 	    		}
 	    	} else {
 	    		if(browserP.matches("firefox|chrome|ie")) {
 	    			browser = browserP;
 	    		} else {
-	    			System.out.println(browser + " is not a recognized browser for " + nodeOS + ". Defaulting to firefox");
-		    		browser = "firefox";
+	    			everythingsSwell = false;
 	    		}
 	    	} 
+	    	
+	    	if(!everythingsSwell) {
+	    		System.out.println(browserP + " is not a supported browser for " + nodeOS);
+	    		Reporter.log(browserP + " is not a supported browser for " + nodeOS);
+	    	}
 	    }
 	    
 	    if(everythingsSwell && !onGrid) {
@@ -147,7 +154,7 @@ public class PapaBless {
 	    	}
 	    }
 	    
-	    if(everythingsSwell && onGrid) { // TODO: strip out relevant hub ip, normally on grid only
+	    if(everythingsSwell && onGrid) {
 	    	hubUrl = " ";
 	    	try { 
 	    		Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
@@ -171,16 +178,16 @@ public class PapaBless {
 	    		
 	    if(everythingsSwell) {
 	    	landingPageUrl = "http://" + hubUrl + ":8080";
-	    	System.out.println("**************************** Fun tiems for all");
-	    	if(onGrid) {
-	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
-	    		System.out.println("hubUrl = " + hubUrl);
-	    		System.out.println("landingPageUrl = " + landingPageUrl);
-	    		System.out.println("nodeUrl = " + nodeUrl);
-	    	} else {
-	    		System.out.println("hubOS:" + hubOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
-	    	}
-	    	System.out.println("****************************");
+//	    	System.out.println("**************************** Fun tiems for all");
+//	    	if(onGrid) {
+//	    		System.out.println("nodeOS:" + nodeOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
+//	    		System.out.println("hubUrl = " + hubUrl);
+//	    		System.out.println("landingPageUrl = " + landingPageUrl);
+//	    		System.out.println("nodeUrl = " + nodeUrl);
+//	    	} else {
+//	    		System.out.println("hubOS:" + hubOS + " browser:" + browser + " timeout:" + timeoutValue + " onGrid:" + onGrid);
+//	    	}
+//	    	System.out.println("****************************");
 	    }
 	}
 
@@ -199,7 +206,10 @@ public class PapaBless {
 		if(parm.equals("localhost")) {return true;}
 		
 		if(parm.contains(":")) {
-			if(sillyFlag) {System.out.println("ey b0ss, no http or port, please: " + parm);}
+			if(sillyFlag) {
+				System.out.println("ey b0ss, no http or port, please: " + parm);
+				Reporter.log("ey b0ss, no http or port, please: " + parm);
+			}
 			return false;
 		}
 		
@@ -217,7 +227,9 @@ public class PapaBless {
 		} catch (Exception e) {
 			if(sillyFlag) {
 				System.out.println(e.getMessage());
+				Reporter.log(e.getMessage());
 				System.out.println(parm + " is not a valid IP address. You are silly.");
+				Reporter.log(parm + " is not a valid IP address. You are silly.");
 			}
 			return false;
 		}
@@ -261,7 +273,11 @@ public class PapaBless {
 	
 		if(onGrid && everythingsSwell) {
 			capability = new DesiredCapabilities();
+			if(browser.equals("ie")) {
+				browser = "internet explorer";
+			}
 			capability.setBrowserName(browser);
+			
 			// TODO: "Vista" doesn't work, need to change to "Windows"
 			// https://github.com/SeleniumHQ/selenium/issues/5084
 //			switch(nodeOS) {  
@@ -272,6 +288,19 @@ public class PapaBless {
 //			}
 
 			capability.setVersion("latest");
+			
+			// If I have a Firefox based browser like Waterfox, Windows can get confuzzled and start Waterfox, which makes geckodriver cry.
+			// Setting an absolute path assuming the node was Firefox in it's default location.
+			// TODO: Figure out how to set this up on the node instead. The hub should not have to care about this, IMHO.
+			if(browser.equals("firefox") && nodeOS.equals("win10")) {
+				String pathToBinary = "C:\\Program Files\\Mozilla Firefox\\firefox.exe";
+				capability.setCapability(FirefoxDriver.BINARY, pathToBinary);
+			}
+			
+			if(browser.equals("firefox") && nodeOS.equals("win7")) {
+				String pathToBinary = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
+				capability.setCapability(FirefoxDriver.BINARY, pathToBinary);
+			}
 			
 			try {
 				url = new URL(nodeUrl);
