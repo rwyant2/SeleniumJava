@@ -12,8 +12,18 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.TestNG;
 
 public class TestListener implements ITestListener {
+	TestNG whoThisIsListeningTo;
+	
+	//experiment, can I access the object this is listening to?!?!
+	//This causes goofs in GrandpaBless. I would have to explicitly tie
+	//this object to the TestNG object, which is already done in TestNG's
+	//guts somewhere.
+	//	public TestListener(TestNG in) {
+//		whoThisIsListeningTo = in;
+//	}
 	
 	@Override
 	public void onTestStart(ITestResult result) { // before each @Test method 
@@ -57,7 +67,8 @@ public class TestListener implements ITestListener {
 		System.out.println("onTestSkipped kicks off for " + result.getMethod());
 		Object currentClass = result.getInstance();
 		WebDriver driver = ((PapaBless)currentClass).getDriver();
-		if(driver != null) { // if there's an error from the spreadsheet, we won't have a driver
+		
+		if(driver != null) { // If we get a driver somehow, try to take a screenshot
 			TakesScreenshot driverWithScrShot = (TakesScreenshot)driver; // cast driver obj as driver obj with screenshot
 			File scrShot = driverWithScrShot.getScreenshotAs(OutputType.FILE); // get the actual screenshot
 			SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy_hh-mm-ss-SSS"); // format for date
@@ -70,6 +81,12 @@ public class TestListener implements ITestListener {
 				System.out.println("screenshot of " + timestamp + " failed.");
 			}
 		}
+		
+		// If PapaBless caught an error, get the error and Reporter.log it.
+		if(!((PapaBless)currentClass).getEverythingsSwell()) { 
+			Reporter.log(((PapaBless)currentClass).getWhatDoneSploded());
+		}
+		
 	}
 
 	@Override

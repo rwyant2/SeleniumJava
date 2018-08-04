@@ -2,7 +2,9 @@
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -124,12 +126,17 @@ public class GrandpaBless {
 		xt2.setSuite(xs);
 		xt2.setClasses(xClasses2); 		
 		
-		xs.setName("dynamic suite with "
+		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy hh:mm:ss a");
+		Date date = new Date();
+		String timestamp = new String(dateFormat.format(date));
+		
+		xs.setName(timestamp + " "
 			+ nodeOS + "/"
 			+ nodeURL + "/"
 			+ browser + "/"
 			+ timeout
 		);
+		
 		xs.addTest(xt1);
 		xs.addTest(xt2);
 		xs.setParallel(XmlSuite.ParallelMode.NONE);// TestNG 6.13 version

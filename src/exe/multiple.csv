@@ -11,19 +11,37 @@ nodeOS,nodeURL,browser,timeout
 //these are working
 linux,localhost,chrome,10
 linux,localhost,firefox,10
-//linux,127.0.0.1,chrome,10
-//linux,127.0.0.1,firefox,10
+linux,127.0.0.1,chrome,10
+linux,127.0.0.1,firefox,10
 
 // should skip out
-//booper,192.168.0.12,firefox,10
-//linux,dooper,firefox,10
-//linux,192.168.0.255,firefox,10
-//linux,localhost,pooper,10
-//linux,localhost,ie,10
-//linux,localhost,firefox,vaya con dios
+// bad nodeOS
+booper,192.168.0.12,firefox,10
+
+// bad ip address
+linux,dooper,firefox,10
+
+// valid address, but not on grid
+linux,192.168.0.255,firefox,10
+
+// ports unsupported 
+linux,192.168.0.12:123,firefox,10
+
+// numerically silly ip address
+linux,192.168.0.9001,firefox,10
+
+// bad browser
+linux,localhost,pooper,10
+
+// kek
+linux,localhost,ie,10
+
+// bad timeout
+linux,localhost,firefox,vaya con dios
 
 // should be fine, should default to hubOS
-//booper,localhost,firefox,10
+scooper,localhost,firefox,10
+scooper,127.0.0.1,firefox,10
 
 //win10,192.168.0.12,chrome,10
 //win10,192.168.0.12,firefox,10
