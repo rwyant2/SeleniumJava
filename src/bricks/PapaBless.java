@@ -60,6 +60,7 @@ public class PapaBless {
 	private static String OS;
 	
 	private static boolean everythingsSwell;
+	private static String whatDoneSploded;
 	
 	private URL url;
 	
@@ -67,36 +68,43 @@ public class PapaBless {
 	
 	private static boolean onGrid = false;
 	
+	private final static boolean HANDLE_ERROR = true;
+	private final static boolean IGNORE_ERROR = false;
+	
 	private String options;
 	private String multiple;
+	
+	//private static Logger Log = Logger.getLogger(Log.class.getName());
 		
 	private void someoneSetUsUpTheDriver(String nodeOSP, String nodeUrlP, String browserP, String timeoutValue) {
 		
 		everythingsSwell = true;
+		whatDoneSploded = ""; //im making an empty immutable string and nobody can stop me. HA HA!
 		
-		optionsPath = absPath + "/src/exe/options.txt";
+//		optionsPath = absPath + "/src/exe/options.txt";
 		
 		hubOS = System.getProperty("os.name");
 		
-		try(FileInputStream optStream = new FileInputStream(optionsPath)) {  
-			options = IOUtils.toString(optStream,"UTF-8");
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			everythingsSwell = false;
-		}
+//		try(FileInputStream optStream = new FileInputStream(optionsPath)) {  
+//			options = IOUtils.toString(optStream,"UTF-8");
+//		} catch (Exception e) {
+//			System.out.println(e.getMessage());
+//			everythingsSwell = false;
+//		}
 
 	    if(everythingsSwell) {
 	    	try { 
 	    		timeout = Integer.parseInt(timeoutValue);
 	    	} catch (Exception e) {
-	    		System.out.println(timeoutValue + " is not a nubmer for timeout. You are silly.");
-	    		Reporter.log(timeoutValue + " is not a nubmer for timeout. You are silly.");
+//	    		System.out.println(timeoutValue + " is not a nubmer for timeout. You are silly.");
+//	    		Reporter.log(timeoutValue + " is not a nubmer for timeout. You are silly.");
+	    		whatDoneSploded = timeoutValue + " is not a number for timeout. You are silly.";
 	    		everythingsSwell = false;
 	    	}
 	    }
 	    
 	    if(everythingsSwell) {
-	    	if(isValidIP(nodeUrlP,true)) {
+	    	if(isValidIP(nodeUrlP,HANDLE_ERROR)) {
 	    		if(nodeUrlP.matches("127.0.0.1|localhost")) {
 	    			onGrid = false;
 	    			nodeUrl = nodeUrlP;
@@ -104,16 +112,15 @@ public class PapaBless {
 	    			onGrid = true;
 	    			nodeUrl = "http://" + nodeUrlP + ":5555/wd/hub";
 	    		}	
-	    	} else {
-	    		everythingsSwell = false;
 	    	}
 		}
 	    
 	    if(everythingsSwell) {
 	    	if(onGrid) {
 	    		if(!nodeOSP.matches("win7|win10|linux")) {
-	    			System.out.println(nodeOSP + " is not a recognized nodeOS.");
-	    			Reporter.log(nodeOSP + " is not a recognized nodeOS.");
+//	    			System.out.println(nodeOSP + " is not a recognized nodeOS.");
+//	    			Reporter.log(nodeOSP + " is not a recognized nodeOS.");
+	    			whatDoneSploded = nodeOSP + " is not a recognized nodeOS. You are silly.";
 	    			everythingsSwell = false;
 	    		} else {
 	    		nodeOS = nodeOSP;
@@ -139,8 +146,9 @@ public class PapaBless {
 	    	} 
 	    	
 	    	if(!everythingsSwell) {
-	    		System.out.println(browserP + " is not a supported browser for " + nodeOS);
-	    		Reporter.log(browserP + " is not a supported browser for " + nodeOS);
+//	    		System.out.println(browserP + " is not a supported browser for " + nodeOS);
+//	    		Reporter.log(browserP + " is not a supported browser for " + nodeOS);
+	    		whatDoneSploded = browserP + " is not a supported browser for " + nodeOS;
 	    	}
 	    }
 	    
@@ -191,49 +199,58 @@ public class PapaBless {
 	    }
 	}
 
-	private String getParmValue(String parm) {
-		int start = options.indexOf(parm);
-		start = options.indexOf("=",start);
-		start = options.indexOf("'",start) + 1;
-	    int end = options.indexOf("'",start);
-	    return options.substring(start , end).toLowerCase();
-	}
+//	private String getParmValue(String parm) {
+//		int start = options.indexOf(parm);
+//		start = options.indexOf("=",start);
+//		start = options.indexOf("'",start) + 1;
+//	    int end = options.indexOf("'",start);
+//	    return options.substring(start , end).toLowerCase();
+//	}
 	
-	// returns whether the IPv4 Address is valid or not.
+	// Returns whether the IPv4 Address is valid or not.
+	// If handlingError, sets error flags and message to log.
 	// TODO: support for v6
-	private static boolean isValidIP(String parm, boolean sillyFlag) { 
+	private static boolean isValidIP(String parm, boolean handlingError) { 
 		
-		if(parm.equals("localhost")) {return true;}
+		if(parm.matches("127.0.0.1|localhost")) {return true;}
 		
 		if(parm.contains(":")) {
-			if(sillyFlag) {
-				System.out.println("ey b0ss, no http or port, please: " + parm);
-				Reporter.log("ey b0ss, no http or port, please: " + parm);
+			if(handlingError) {
+				whatDoneSploded = "ey b0ss, no http or port, please: " + parm;
+				everythingsSwell = false;
+//				System.out.println("ey b0ss, no http or port, please: " + parm);
+//				Reporter.log("ey b0ss, no http or port, please: " + parm);
 			}
 			return false;
 		}
 		
-		int firstDot = parm.indexOf(".",1);
-		int secondDot = parm.indexOf(".",firstDot + 1);
-		int thirdDot = parm.indexOf(".",secondDot + 1);
-		try {
-			int number1 = Integer.parseInt(parm.substring(0,firstDot));
-			int number2 = Integer.parseInt(parm.substring(firstDot + 1,secondDot));
-			int number3 = Integer.parseInt(parm.substring(secondDot + 1,thirdDot));
-			int number4 = Integer.parseInt(parm.substring(thirdDot + 1));
-			if((number1 < 256) && (number2 < 256) && (number3 < 256) && (number4 < 256) ) {
-				return true;
+		if(everythingsSwell) {
+			int firstDot = parm.indexOf(".",1);
+			int secondDot = parm.indexOf(".",firstDot + 1);
+			int thirdDot = parm.indexOf(".",secondDot + 1);
+			try {
+				int number1 = Integer.parseInt(parm.substring(0,firstDot));
+				int number2 = Integer.parseInt(parm.substring(firstDot + 1,secondDot));
+				int number3 = Integer.parseInt(parm.substring(secondDot + 1,thirdDot));
+				int number4 = Integer.parseInt(parm.substring(thirdDot + 1));
+				if((number1 < 256) && (number2 < 256) && (number3 < 256) && (number4 < 256) ) {
+					return true;
+				}
+			} catch (Exception e) {
+				if(handlingError) {
+	//				TODO:Set this up to handle >1 error messages
+	//				System.out.println(e.getMessage());
+	//				Reporter.log(e.getMessage());
+	//				System.out.println(parm + " is not a valid IP address. You are silly.");
+	//				Reporter.log(parm + " is not a valid IP address. You are silly.");
+					whatDoneSploded = parm + " is not a valid IP address. You are silly.";
+					everythingsSwell = false;
+				}
+				return false;
 			}
-		} catch (Exception e) {
-			if(sillyFlag) {
-				System.out.println(e.getMessage());
-				Reporter.log(e.getMessage());
-				System.out.println(parm + " is not a valid IP address. You are silly.");
-				Reporter.log(parm + " is not a valid IP address. You are silly.");
-			}
-			return false;
 		}
-		return false; // default
+		
+		return false; // defaults to here not returning earlier
 	}	
 		
 	public WebDriver getDriver() {
@@ -250,6 +267,10 @@ public class PapaBless {
 	
 	public boolean getEverythingsSwell() {
 		return everythingsSwell;
+	}
+	
+	public String getWhatDoneSploded() {
+		return whatDoneSploded;
 	}
 	
 	@BeforeSuite // before each <suite> in the xml
@@ -289,7 +310,7 @@ public class PapaBless {
 
 			capability.setVersion("latest");
 			
-			// If I have a Firefox based browser like Waterfox, Windows can get confuzzled and start Waterfox, which makes geckodriver cry.
+			// If I have a Firefox based browser like Waterfox, Windows can get confuzzled and start Waterfox.
 			// Setting an absolute path assuming the node was Firefox in it's default location.
 			// TODO: Figure out how to set this up on the node instead. The hub should not have to care about this, IMHO.
 			if(browser.equals("firefox") && nodeOS.equals("win10")) {
@@ -314,12 +335,16 @@ public class PapaBless {
 				driver = new RemoteWebDriver(url,capability);
 			} catch(Exception e) {
 				System.out.println(e.getMessage());
+				whatDoneSploded = e.getMessage();
+				everythingsSwell = false;
 			}
 		}
 		
 		if (!onGrid && everythingsSwell) {
 			String exeExt = new String();
 			String driverPath = new String();
+//			TODO: make this an option with a default
+//			Ubuntu 18.04 no lieky /webdrivers/ right off the hard drive
 			if(hubOS.equals("Linux")) {
 				exeExt = "";
 				driverPath = "/webdrivers/";
@@ -361,11 +386,15 @@ public class PapaBless {
 	}
 	
 	@BeforeMethod // before each @Test method in this class
-	public void beforeMethod() {
-		System.out.println("@BeforeMethod kicks off");		
+	public void beforeMethod(ITestResult r) {
+		System.out.println("@BeforeMethod kicks off");
+		if(!everythingsSwell) {
+			Object[] parnimiters = null;
+			parnimiters[0] = "shit's banans, b-a-n-a-n-a-s";
+			r.setParameters(parnimiters);
+		}
 		driver.findElement(By.xpath("//a[@href='/html5']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='checkBoxSelection1']")));
-
 	}
 	
 	@AfterMethod // after each @Test method in this class
