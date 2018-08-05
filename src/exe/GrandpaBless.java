@@ -14,6 +14,7 @@ import org.apache.commons.io.IOUtils;
 import org.testng.ITestNGListener;
 import org.testng.TestNG;
 import org.testng.xml.XmlClass;
+import org.testng.xml.XmlPackage;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
@@ -85,47 +86,9 @@ public class GrandpaBless {
 	}
 	
 	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, String timeout) {
+		
+		// equivalient of <suite> tag
 		XmlSuite xs = new XmlSuite();
-		//TODO: automate this so I just dump a case in the cases.package and not have to edit this
-		
-		// equivalient of <parameters> tag
-		Map <String, String> xp = new HashMap <String, String>();
-		xp.put("nodeOSP", nodeOS);
-		xp.put("nodeURLP", nodeURL);
-		xp.put("browserP", browser);
-		xp.put("timeoutP", timeout); // you are here
-		xs.setParameters(xp);
-		
-		// equivalent to <class> tag
-		List<XmlClass> xClasses = new ArrayList<XmlClass>();
-
-		XmlClass xCCheckBox = new XmlClass(cases.CheckBoxCase.class);
-		xClasses.add(xCCheckBox);
-		
-		XmlClass xCTextField = new XmlClass(cases.TextFieldCase.class);
-		xClasses.add(xCTextField);
-
-		// equivalent to <test> tag
-		XmlTest xt1 = new XmlTest();
-		xt1.setName("dynamic test 1"); 
-		xt1.setSuite(xs);
-		xt1.setClasses(xClasses); 		
-		
-		List<XmlClass> xClasses2 = new ArrayList<XmlClass>();
-		XmlClass xCRadioButton = new XmlClass(cases.RadioButtonCase.class);
-		xClasses2.add(xCRadioButton);
-
-		XmlClass xCDropDown = new XmlClass(cases.DropDownCase.class);
-		xClasses2.add(xCDropDown);
-
-		XmlClass xCTextArea = new XmlClass(cases.TextAreaCase.class);
-		xClasses2.add(xCTextArea);
-		
-		XmlTest xt2 = new XmlTest();
-		xt2.setName("dynamic test 2"); 
-		xt2.setSuite(xs);
-		xt2.setClasses(xClasses2); 		
-		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy hh:mm:ss a");
 		Date date = new Date();
 		String timestamp = new String(dateFormat.format(date));
@@ -137,10 +100,29 @@ public class GrandpaBless {
 			+ timeout
 		);
 		
-		xs.addTest(xt1);
-		xs.addTest(xt2);
 		xs.setParallel(XmlSuite.ParallelMode.NONE);// TestNG 6.13 version
 //		xs.setParallel(XmlSuite.PARALLEL_NONE); // TestNG 6.8 version
+		
+		// equivalent of <parameters> tag
+		Map <String, String> xp = new HashMap <String, String>();
+		xp.put("nodeOSP", nodeOS);
+		xp.put("nodeURLP", nodeURL);
+		xp.put("browserP", browser);
+		xp.put("timeoutP", timeout); // you are here
+		xs.setParameters(xp);
+		
+		// equivalent of <packages> tag
+		List<XmlPackage> xPackages = new ArrayList<XmlPackage>();
+		xPackages.add(new XmlPackage("cases"));
+		xs.setPackages(xPackages);
+		
+		// equivalent to <test> tag
+		XmlTest xtp = new XmlTest();
+		xtp.setName("dynamic test with packages"); 
+		xtp.setSuite(xs);
+		xtp.setPackages(xPackages);
+		
+		xs.addTest(xtp); // add <test> to the <suite>
 		
 		return xs;
 	}
