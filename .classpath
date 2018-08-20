@@ -22,5 +22,6 @@
 	<classpathentry exported="true" kind="lib" path="/home/richard/Desktop/portfolio libraries/selenium-java-3.11.0/libs/commons-exec-1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/richard/Desktop/portfolio libraries/selenium-java-3.11.0/libs/commons-codec-1.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/richard/Desktop/portfolio libraries/selenium-java-3.11.0/libs/byte-buddy-1.7.9.jar"/>
+	<classpathentry kind="lib" path="/home/richard/Desktop/portfolio libraries/jsoup-1.11.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

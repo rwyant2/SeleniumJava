@@ -92,7 +92,7 @@ public class PapaBless {
 
 	    if(everythingsSwell) {
 	    	try { 
-	    		timeout = Integer.parseInt(timeoutValue);
+	    		timeout = Integer.parseInt(timeoutValue.trim());
 	    	} catch (Exception e) {
 	    		whatDoneSploded = timeoutValue + " is not a number for timeout. You are silly.";
 	    		everythingsSwell = false;
@@ -179,14 +179,6 @@ public class PapaBless {
 	    if(everythingsSwell) {landingPageUrl = "http://" + hubUrl + ":8080";}
 	}
 
-//	private String getParmValue(String parm) {
-//		int start = options.indexOf(parm);
-//		start = options.indexOf("=",start);
-//		start = options.indexOf("'",start) + 1;
-//	    int end = options.indexOf("'",start);
-//	    return options.substring(start , end).toLowerCase();
-//	}
-	
 	// Returns whether the IPv4 Address is valid or not.
 	// If handlingError, sets error flags and message to log.
 	// TODO: support for IPv6
@@ -276,35 +268,19 @@ public class PapaBless {
 	
 		if(onGrid && everythingsSwell) {
 			capability = new DesiredCapabilities();
-			if(browser.equals("ie")) {
-				browser = "internet explorer";
+			
+			switch(browser) {
+				case "ie": capability = DesiredCapabilities.internetExplorer(); break;
+				case "internet explorer": capability = DesiredCapabilities.internetExplorer(); break;
+//				case "ie":
+//				case "internet explorer":	
+//					capability.setBrowserName("internet explorer");
+////					capability.setPlatform(Platform.WINDOWS);
+//					break;
+				case "firefox": capability = DesiredCapabilities.firefox(); break;
+				case "chrome": capability = DesiredCapabilities.chrome(); break;
 			}
-			capability.setBrowserName(browser);
-			
-			// TODO: "Vista" doesn't work, need to change to "Windows"
-			// https://github.com/SeleniumHQ/selenium/issues/5084
-//			switch(nodeOS) {  
-//				case "win7": capability.setPlatform(Platform.VISTA); break;
-//				case "win10": capability.setPlatform(Platform.WIN10); break;
-//				case "linux": capability.setPlatform(Platform.LINUX); break;
-//				default: capability.setPlatform(Platform.VISTA); break;
-//			}
-
-			capability.setVersion("latest");
-			
-			// If I have a Firefox based browser like Waterfox, Windows can get confuzzled and start Waterfox.
-			// Setting an absolute path assuming the node was Firefox in it's default location.
-			// TODO: Figure out how to set this up on the node instead. The hub should not have to care about this, IMHO.
-			if(browser.equals("firefox") && nodeOS.equals("win10")) {
-				String pathToBinary = "C:\\Program Files\\Mozilla Firefox\\firefox.exe";
-				capability.setCapability(FirefoxDriver.BINARY, pathToBinary);
-			}
-			
-			if(browser.equals("firefox") && nodeOS.equals("win7")) {
-				String pathToBinary = "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe";
-				capability.setCapability(FirefoxDriver.BINARY, pathToBinary);
-			}
-			
+				
 			try {
 				url = new URL(nodeUrl);
 			} catch(Exception e) {
