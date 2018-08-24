@@ -50,8 +50,9 @@ public class GrandpaBless {
 	private static boolean everythingsSwell = true;
 	//private boolean eofFlag = false;
 	private static String absPath = new File("").getAbsolutePath();
-	private static String csvPath;
+	private static String filePath;
 	private static String csvStream;
+	private static String optStream;
 	private static Scanner sc;
 	//private static TestNG tng = new TestNG();
 	private static List<XmlSuite> suites = new ArrayList<XmlSuite>();
@@ -66,6 +67,8 @@ public class GrandpaBless {
 	// from scratch.
 	private static Map<String, ArrayList<String>> capMap = new HashMap<String, ArrayList<String>>();
 	private static int capKey = 0;
+	
+	private static boolean usingCSV = false;
 	
 	private static void eyB0ssCanIHabeNoedsPlz() {
 		// Go forth and find me nodes... NODES!!1!.
@@ -164,24 +167,44 @@ public class GrandpaBless {
 		System.out.println(capMap); // troubleshooting
 //		System.out.println(); // troubleshooting
 	}
-		
+	
 	public static void main (String[] args) {
 		eyB0ssCanIHabeNoedsPlz();
 		
 		// For now, I'm assuming the hub machine will be my dev env on Ubutnu
-		csvPath = absPath + "/src/exe/multiple.csv";
+		filePath = absPath + "/src/exe/";
 		
-		//TODO: Add options here with ability to just run against whatever's
-		//on the grid at this moment.
-		
-		try(FileInputStream fis = new FileInputStream(csvPath)) {  
-			csvStream = IOUtils.toString(fis,"UTF-8");
+		try(FileInputStream fis = new FileInputStream(filePath + "options.txt")) {  
+			optStream = IOUtils.toString(fis,"UTF-8");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			everythingsSwell = false;
 		}
 		
 		if(everythingsSwell) {
+			sc = new Scanner(optStream);
+			while(sc.hasNext()) {
+				String params = sc.nextLine();
+				int start = params.indexOf("useCSV");
+				if(start > 0) { 
+					start = params.indexOf("'",start) + 1;
+					int end = params.indexOf("'",start + 1);
+					if(params.substring(start, end).matches("y|Y")) {usingCSV = true;}
+					else {usingCSV = false;}
+				}
+			}
+		}
+		
+		if(usingCSV && everythingsSwell) {
+			try(FileInputStream fis = new FileInputStream(filePath + "multiple.csv")) {  
+				csvStream = IOUtils.toString(fis,"UTF-8");
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				everythingsSwell = false;
+			}
+		}
+		
+		if(everythingsSwell && usingCSV) {
 			sc = new Scanner(csvStream);
 			System.out.println(sc.nextLine()); // assuming 1st line is header
 			while(sc.hasNext()) {
@@ -222,6 +245,20 @@ public class GrandpaBless {
 				}
 				System.out.println(nodeOS + " " + nodeURL + " " + browser + " " + timeout); // troubleshooting
 				suites.add(buildSuite(nodeOS,nodeURL,browser,timeout));
+			}
+			
+			
+			// If we're not using the spreadsheet, make suites based on what's out there. 
+			if(everythingsSwell && !usingCSV) {
+				Iterator<?> i = capMap.entrySet().iterator();
+				while (i.hasNext()) {
+					Map.Entry capEntry = (Map.Entry) i.next();
+					ArrayList capList = (ArrayList) capEntry.getValue();
+					String nodeOS = (String) capList.get(2);
+					String nodeURL = (String) capList.get(0);
+					String browser = (String) capList.get(1);
+					suites.add(buildSuite(nodeOS,nodeURL,browser,"10"));
+				}
 			}
 			
 			TestNG tng = new TestNG();

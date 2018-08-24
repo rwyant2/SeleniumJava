@@ -49,6 +49,7 @@ public class PapaBless {
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
+	private ChromeOptions cOpt;
 	private static String hubUrl;
 	private static String nodeUrl;
 	private static String landingPageUrl;
@@ -266,17 +267,12 @@ public class PapaBless {
 	public void beforeClass() {
 		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
 	
-		if(onGrid && everythingsSwell) {
-			capability = new DesiredCapabilities();
+		if(onGrid && everythingsSwell) { 
+//			capability = new DesiredCapabilities();
 			
 			switch(browser) {
 				case "ie": capability = DesiredCapabilities.internetExplorer(); break;
 				case "internet explorer": capability = DesiredCapabilities.internetExplorer(); break;
-//				case "ie":
-//				case "internet explorer":	
-//					capability.setBrowserName("internet explorer");
-////					capability.setPlatform(Platform.WINDOWS);
-//					break;
 				case "firefox": capability = DesiredCapabilities.firefox(); break;
 				case "chrome": capability = DesiredCapabilities.chrome(); break;
 			}

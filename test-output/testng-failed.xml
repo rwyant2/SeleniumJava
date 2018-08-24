@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [05Aug2018 01:39:47 PM linux/localhost/firefox/10]">
-  <parameter name="nodeURLP" value="localhost"/>
-  <parameter name="timeoutP" value="10"/>
+<suite name="Failed suite [21Aug2018 03:05:25 PM linux/172.23.0.136/chrome/35]">
+  <parameter name="nodeURLP" value="172.23.0.136"/>
+  <parameter name="timeoutP" value="35"/>
   <parameter name="nodeOSP" value="linux"/>
-  <parameter name="browserP" value="firefox"/>
+  <parameter name="browserP" value="chrome"/>
   <packages>
     <package name="cases"/>
   </packages>
   <test thread-count="5" name="dynamic test with packages(failed)">
     <classes>
-      <class name="cases.CheckBoxCase">
+      <class name="cases.RadioButtonCase">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterSuite"/>
+          <include name="radioChoiceA"/>
+          <include name="radioDefault"/>
           <include name="afterTest"/>
+          <include name="afterSuite"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="intentionalFailcheckBox"/>
+          <include name="beforeMethod"/>
+          <include name="radioChoiceC"/>
+          <include name="beforeClass"/>
+          <include name="radioChoiceB"/>
+        </methods>
+      </class> <!-- cases.RadioButtonCase -->
+      <class name="cases.DropDownCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="dropDownMustard"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="dropDownDefault"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="dropDownOnion"/>
+          <include name="dropDownTomato"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- cases.CheckBoxCase -->
+      </class> <!-- cases.DropDownCase -->
       <class name="cases.TextFieldCase">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterSuite"/>
           <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="testTextField"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="beforeMethod"/>
@@ -36,6 +56,38 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- cases.TextFieldCase -->
+      <class name="cases.CheckBoxCase">
+        <methods>
+          <include name="checkBoxOneTwo"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="checkBoxNone"/>
+          <include name="beforeMethod"/>
+          <include name="checkBoxAll"/>
+          <include name="checkBoxOneThree"/>
+          <include name="beforeClass"/>
+          <include name="checkBoxTwoThree"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="intentionalFailcheckBox"/>
+        </methods>
+      </class> <!-- cases.CheckBoxCase -->
+      <class name="cases.TextAreaCase">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="textAreaWithEnter"/>
+          <include name="beforeMethod"/>
+          <include name="textAreaLongString"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- cases.TextAreaCase -->
     </classes>
   </test> <!-- dynamic test with packages(failed) -->
-</suite> <!-- Failed suite [05Aug2018 01:39:47 PM linux/localhost/firefox/10] -->
+</suite> <!-- Failed suite [21Aug2018 03:05:25 PM linux/172.23.0.136/chrome/35] -->
