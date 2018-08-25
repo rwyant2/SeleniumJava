@@ -1,6 +1,7 @@
-//This is a comment and should be ignored
+// These are options being used
+useCSV='n'
+
+// These aren't used yet
 defaultNodeUrl='localhost'
 defaultBrowser='firefox'
 defaultTimeout='10'
-useCustomReporter='y'
-useCustomLogger='y'

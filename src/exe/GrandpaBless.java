@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.io.StringReader;
+//import java.io.StringReader;
 import java.net.HttpURLConnection;
-import java.net.ProtocolException;
+//import java.net.ProtocolException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -15,11 +15,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.function.Consumer;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-
+//import java.util.function.Consumer;
+//import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
 import org.testng.ITestNGListener;
@@ -31,29 +30,23 @@ import org.testng.xml.XmlTest;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.xml.sax.InputSource;
-
-import bricks.MethodListener;
+//import org.xml.sax.InputSource;
+//import bricks.MethodListener;
 import bricks.SuiteListener;
 import bricks.TestListener;
 
 
 // This is the one that drives everything and is ran from the hub machine.
 // * Reads the .csv file and loops through until no more configs.
-// * TODO: Reads options.txt to determine environmental options.
+// * Reads options.txt to determine environmental options.
 
 public class GrandpaBless {
-	//private String csvFile = new String();
-	//private String browser = new String();
-	//private String nodeOS = new String();
-	//private String nodeIP = new String();
 	private static boolean everythingsSwell = true;
-	//private boolean eofFlag = false;
 	private static String absPath = new File("").getAbsolutePath();
-	private static String csvPath;
+	private static String filePath;
 	private static String csvStream;
+	private static String optStream;
 	private static Scanner sc;
-	//private static TestNG tng = new TestNG();
 	private static List<XmlSuite> suites = new ArrayList<XmlSuite>();
 	private static ITestNGListener sListener = new SuiteListener();
 	private static ITestNGListener tListener = new TestListener();
@@ -64,8 +57,12 @@ public class GrandpaBless {
 	// in a relational database. I'm guessing this will come up in
 	// reality some day and it would be good to have an example I made
 	// from scratch.
-	private static Map<String, ArrayList<String>> capMap = new HashMap<String, ArrayList<String>>();
+	
+	private static HashMap<String, HashMap<String,String>> capMap = new HashMap<String, HashMap<String,String>>();
+	
 	private static int capKey = 0;
+	
+	private static boolean usingCSV = false;
 	
 	private static void eyB0ssCanIHabeNoedsPlz() {
 		// Go forth and find me nodes... NODES!!1!.
@@ -124,25 +121,28 @@ public class GrandpaBless {
 //				for each cap in there
 				Elements caps = config.select("p:contains(capabilities)");
 				for(Element cap : caps) {
-					ArrayList<String> capList = new ArrayList<String>();
+					HashMap<String,String> nodeCapMap = new HashMap<String,String>();
+					
 					int start; int end;
 					String ipElement = config.select("p:contains(remoteHost)").toString();
 					start = ipElement.indexOf("/") + 2;
 					end = ipElement.indexOf(":",start);
-					capList.add(ipElement.substring(start,end));
+					nodeCapMap.put("ip",ipElement.substring(start,end));
 					
 					String capElement = cap.select("p:contains(browser)").toString();
 					start = capElement.indexOf("browserName");
 					start = capElement.indexOf(":",start) + 2;
 					end = capElement.indexOf(",",start);
-					String browser = capElement.substring(start,end).toLowerCase();
-					capList.add(browser);
+					String browser = capElement.substring(start,end).toLowerCase();			
 					
 					// Oooookay. So. Ie has to always be "windows" regardless of if it's Windows 10 or 7.
 					// So I put in a "capability" ignored by grid that allows me to determine the original OS.
+					// This comes from the scripts in grid-scripts that kickoff the nodes. 
 					if(browser.equals("internet explorer")) {
+						nodeCapMap.put("browser", "ie"); // Papabless still looks for "ie"
 						start = capElement.indexOf("originalOS");
 					} else {
+						nodeCapMap.put("browser", browser);
 						start = capElement.indexOf("platform");
 					}
 
@@ -150,38 +150,81 @@ public class GrandpaBless {
 					end = capElement.indexOf(",",start);
 					String platform = capElement.substring(start,end).toLowerCase();
 					if(platform.equals("vista")) {
-						capList.add("win7");
+						nodeCapMap.put("os","win7");
 					} else {
-						capList.add(platform);
+						nodeCapMap.put("os",platform);
 					}
 
-					capMap.put((Integer.toString(capKey)), capList);
+					capMap.put((Integer.toString(capKey)), nodeCapMap);
 					capKey++;
 				}
 			}
 		}
 		
+		// Regardless of if the grid is present or not, I still want to include the localhost as a "node" like the spreadsheet can.
+		HashMap<String,String> hostFFMap = new HashMap<String,String>();
+		hostFFMap.put("os",System.getProperty("os.name").toLowerCase());
+		hostFFMap.put("ip","localhost");
+		hostFFMap.put("browser","firefox");
+		capMap.put((Integer.toString(capKey)), hostFFMap);
+		capKey++;
+		
+		HashMap<String,String> hostCHMap = new HashMap<String,String>();
+		hostCHMap.putAll(hostFFMap);
+		hostCHMap.put("browser","chrome");		
+		capMap.put((Integer.toString(capKey)), hostCHMap);
+		capKey++;
+		
+		if(!System.getProperty("os.name").toLowerCase().equals("linux")) {
+			HashMap<String,String> hostIEMap = new HashMap<String,String>();
+			hostIEMap.putAll(hostFFMap);
+			hostIEMap.put("browser","ie");		
+			capMap.put((Integer.toString(capKey)), hostIEMap);
+			capKey++;
+		}
+		
+		
 		System.out.println(capMap); // troubleshooting
 //		System.out.println(); // troubleshooting
 	}
-		
+	
 	public static void main (String[] args) {
 		eyB0ssCanIHabeNoedsPlz();
 		
 		// For now, I'm assuming the hub machine will be my dev env on Ubutnu
-		csvPath = absPath + "/src/exe/multiple.csv";
+		filePath = absPath + "/src/exe/";
 		
-		//TODO: Add options here with ability to just run against whatever's
-		//on the grid at this moment.
-		
-		try(FileInputStream fis = new FileInputStream(csvPath)) {  
-			csvStream = IOUtils.toString(fis,"UTF-8");
+		try(FileInputStream fis = new FileInputStream(filePath + "options.txt")) {  
+			optStream = IOUtils.toString(fis,"UTF-8");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			everythingsSwell = false;
 		}
 		
 		if(everythingsSwell) {
+			sc = new Scanner(optStream);
+			while(sc.hasNext()) {
+				String params = sc.nextLine();
+				int start = params.indexOf("useCSV");
+				if(start > -1) { 
+					start = params.indexOf("'",start) + 1;
+					int end = params.indexOf("'",start + 1);
+					if(params.substring(start, end).matches("y|Y")) {usingCSV = true;}
+					else {usingCSV = false;}
+				}
+			}
+		}
+		
+		if(usingCSV && everythingsSwell) {
+			try(FileInputStream fis = new FileInputStream(filePath + "multiple.csv")) {  
+				csvStream = IOUtils.toString(fis,"UTF-8");
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				everythingsSwell = false;
+			}
+		}
+		
+		if(everythingsSwell && usingCSV) {
 			sc = new Scanner(csvStream);
 			System.out.println(sc.nextLine()); // assuming 1st line is header
 			while(sc.hasNext()) {
@@ -201,21 +244,22 @@ public class GrandpaBless {
 				
 				// If the IP address of the node is empty, check the capMap
 				// for something that has those caps.
+				// TODO: I don't like nesting this deep. Maybe split this into it's own method.
 				if(nodeURL.isEmpty()) {
 					Iterator<?> i = capMap.entrySet().iterator();
 					while (i.hasNext()) {
 						Map.Entry capEntry = (Map.Entry) i.next();
-						ArrayList capList = (ArrayList) capEntry.getValue();
+						HashMap<String,String> capData = (HashMap<String,String>) capEntry.getValue();
 						
 						if(browser.equals("ie") &&
-								capList.get(1).equals("internet explorer") &&
-								capList.get(2).equals(nodeOS)) {
-							nodeURL = (String) capList.get(0); break; // We found our match, moving on.
+								capData.get("browser").equals("internet explorer") &&
+								capData.get("os").equals(nodeOS)) {
+							nodeURL = (String) capData.get("ip"); break; // We found our match, moving on.
 						}
 							
 						// if the browser and nodeOS are a match, use this IP address
-						if((capList.get(1).equals(browser)) && (capList.get(2).equals(nodeOS))) {
-							nodeURL = (String) capList.get(0); break; // We found our match, moving on.
+						if((capData.get("browser").equals(browser)) && (capData.get("os").equals(nodeOS))) {
+							nodeURL = (String) capData.get("ip"); break; // We found our match, moving on.
 						}
 //				        System.out.println(capEntry.getKey() + " = " + capList); // troubleshooting
 					}
@@ -223,14 +267,32 @@ public class GrandpaBless {
 				System.out.println(nodeOS + " " + nodeURL + " " + browser + " " + timeout); // troubleshooting
 				suites.add(buildSuite(nodeOS,nodeURL,browser,timeout));
 			}
-			
-			TestNG tng = new TestNG();
-//			tng.addListener(mListener);
-			tng.addListener(tListener);
-			tng.addListener(sListener);
-			tng.setXmlSuites(suites);
-			tng.run();
 		}
+			
+		// If we're not using the spreadsheet, make suites based on what's out there. 
+		if(everythingsSwell && !usingCSV) {
+			Iterator<?> i = capMap.entrySet().iterator();
+			while (i.hasNext()) {
+				Map.Entry capEntry = (Map.Entry) i.next();
+				HashMap<String,String> capData = (HashMap<String,String>) capEntry.getValue();
+				String nodeOS = capData.get("os");
+				String nodeURL = capData.get("ip");
+				String browser = capData.get("browser");		
+				
+				suites.add(buildSuite(nodeOS,nodeURL,browser,"10"));
+			}
+		}
+			
+		TestNG tng = new TestNG();
+//		tng.addListener(mListener);
+		tng.addListener(tListener);
+		tng.addListener(sListener);
+		tng.setXmlSuites(suites);
+		tng.run();
+		
+		System.out.println("done Done Done done");
+		System.out.println("done Done Done done DOOOOOOOOOOOOOOOOONE");
+		
 	}
 	
 	private static XmlSuite buildSuite(String nodeOS, String nodeURL, String browser, String timeout) {

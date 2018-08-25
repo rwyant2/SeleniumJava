@@ -5,7 +5,7 @@ nodeOS,nodeURL,browser,timeout
 
 // regression testing fun tiems
 // happy path on grid
-win10,192.168.0.11,chrome,10
+win10,192.168.0.11,chrome,10 
 win10,192.168.0.11,firefox,11
 win10,192.168.0.11,ie,12
 
@@ -25,14 +25,15 @@ win10,,firefox,21
 win10,,ie,22
 
 win7,,chrome,23
-win7,,firefox,24
+win7,,firefox,24 
 win7,,ie,25
 
 // should skip out
 // bad nodeOS
 booper,192.168.0.12,firefox,26
 
-// bad ip address :)
+
+// bad ip address
 linux,dooper,firefox,27
 
 // valid address, but not on grid
@@ -58,7 +59,7 @@ scooper,localhost,firefox,33
 scooper,127.0.0.1,firefox,34
 
 //untested
-//linux,192.168.0.17,chrome,35
+//linux,172.23.0.136,chrome,35
 //linux,192.168.0.17,firefox,36
 //linux,192.168.0.17,ie,37
 

@@ -49,6 +49,7 @@ public class PapaBless {
 	protected WebDriverWait wait;  //for the child classes
 	
 	private DesiredCapabilities capability; 
+	private ChromeOptions cOpt;
 	private static String hubUrl;
 	private static String nodeUrl;
 	private static String landingPageUrl;
@@ -78,18 +79,9 @@ public class PapaBless {
 		
 		everythingsSwell = true;
 		whatDoneSploded = ""; //im making an empty immutable string and nobody can stop me. HA HA!
+			
+		hubOS = System.getProperty("os.name").toLowerCase();
 		
-//		optionsPath = absPath + "/src/exe/options.txt";
-		
-		hubOS = System.getProperty("os.name");
-		
-//		try(FileInputStream optStream = new FileInputStream(optionsPath)) {  
-//			options = IOUtils.toString(optStream,"UTF-8");
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//			everythingsSwell = false;
-//		}
-
 	    if(everythingsSwell) {
 	    	try { 
 	    		timeout = Integer.parseInt(timeoutValue.trim());
@@ -125,7 +117,7 @@ public class PapaBless {
 	    }
 	    
 	    if(everythingsSwell) {
-	    	if(nodeOS.equals("Linux")) {
+	    	if(nodeOS.equals("linux")) {
 	    		if(browserP.matches("firefox|chrome")) {
 	    			browser = browserP;
 	    		} else {
@@ -266,17 +258,12 @@ public class PapaBless {
 	public void beforeClass() {
 		System.out.println("@BeforeClass kicks off for " + this.getClass().getName());
 	
-		if(onGrid && everythingsSwell) {
-			capability = new DesiredCapabilities();
+		if(onGrid && everythingsSwell) { 
+//			capability = new DesiredCapabilities();
 			
 			switch(browser) {
 				case "ie": capability = DesiredCapabilities.internetExplorer(); break;
 				case "internet explorer": capability = DesiredCapabilities.internetExplorer(); break;
-//				case "ie":
-//				case "internet explorer":	
-//					capability.setBrowserName("internet explorer");
-////					capability.setPlatform(Platform.WINDOWS);
-//					break;
 				case "firefox": capability = DesiredCapabilities.firefox(); break;
 				case "chrome": capability = DesiredCapabilities.chrome(); break;
 			}
@@ -303,7 +290,7 @@ public class PapaBless {
 			String driverPath = new String();
 //			TODO: make this an option with a default
 //			Ubuntu 18.04 no lieky /webdrivers/ right off the hard drive
-			if(hubOS.equals("Linux")) {
+			if(hubOS.equals("linux")) {
 				exeExt = "";
 				driverPath = "/webdrivers/";
 			} else {

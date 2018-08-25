@@ -1,59 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="32" total="68" passed="32">
+<testng-results skipped="18" failed="0" ignored="16" total="34" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png' height='100' width='100'/> </a>]]>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
     </line>
     <line>
-      <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png' height='100' width='100'/> </a>]]>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
     </line>
     <line>
-      <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png' height='100' width='100'/> </a>]]>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
     </line>
     <line>
-      <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png' height='100' width='100'/> </a>]]>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
     </line>
   </reporter-output>
-  <suite name="05Aug2018 01:39:47 PM linux/localhost/chrome/10" duration-ms="15711" started-at="2018-08-05T18:39:47Z" finished-at="2018-08-05T18:40:03Z">
+  <suite name="21Aug2018 03:05:25 PM linux/172.23.0.136/chrome/35" duration-ms="739" started-at="2018-08-21T20:05:25Z" finished-at="2018-08-21T20:05:26Z">
     <groups>
     </groups>
-    <test name="dynamic test with packages" duration-ms="15711" started-at="2018-08-05T18:39:47Z" finished-at="2018-08-05T18:40:03Z">
+    <test name="dynamic test with packages" duration-ms="739" started-at="2018-08-21T20:05:25Z" finished-at="2018-08-21T20:05:26Z">
       <class name="cases.TextFieldCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.TextFieldCase@763d9750]" name="beforeClass" is-config="true" duration-ms="1553" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:02Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@763d9750]" name="beforeMethod" is-config="true" duration-ms="137" started-at="2018-08-05T18:40:02Z" finished-at="2018-08-05T18:40:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=intentionalFailTextField status=FAILURE method=TextFieldCase.intentionalFailTextField()[pri:2, instance:cases.TextFieldCase@763d9750] output=<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png' height='100' width='100'/> </a>]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailTextField()[pri:2, instance:cases.TextFieldCase@763d9750]" name="intentionalFailTextField" duration-ms="243" started-at="2018-08-05T18:40:02Z" finished-at="2018-08-05T18:40:02Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [This should fail] but found [Please fail]]]>
-            </message>
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testTextField()[pri:2, instance:cases.TextFieldCase@4566e5bd]" name="testTextField" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [This should fail] but found [Please fail]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:33)
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -70,266 +179,665 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at GrandpaBless.main(GrandpaBless.java:84)
+at GrandpaBless.main(GrandpaBless.java:232)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-02-738.png' height='100' width='100'/> </a>]]>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTextField -->
+        <test-method status="SKIP" signature="intentionalFailTextField()[pri:2, instance:cases.TextFieldCase@4566e5bd]" name="intentionalFailTextField" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
             </line>
           </reporter-output>
         </test-method> <!-- intentionalFailTextField -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@763d9750]" name="beforeMethod" is-config="true" duration-ms="100" started-at="2018-08-05T18:40:02Z" finished-at="2018-08-05T18:40:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testTextField status=SUCCESS method=TextFieldCase.testTextField()[pri:2, instance:cases.TextFieldCase@763d9750] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@763d9750]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:02Z" finished-at="2018-08-05T18:40:02Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testTextField()[pri:2, instance:cases.TextFieldCase@763d9750]" name="testTextField" duration-ms="220" started-at="2018-08-05T18:40:02Z" finished-at="2018-08-05T18:40:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTextField -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.TextFieldCase@763d9750]" name="afterClass" is-config="true" duration-ms="159" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:cases.TextFieldCase@4566e5bd]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@763d9750]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- cases.TextFieldCase -->
       <class name="cases.DropDownCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.DropDownCase@2471cca7]" name="beforeClass" is-config="true" duration-ms="2098" started-at="2018-08-05T18:39:47Z" finished-at="2018-08-05T18:39:49Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.DropDownCase@cb644e]" name="beforeClass" is-config="true" duration-ms="647" started-at="2018-08-21T20:05:25Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@2471cca7]" name="beforeMethod" is-config="true" duration-ms="151" started-at="2018-08-05T18:39:49Z" finished-at="2018-08-05T18:39:49Z">
+        <test-method status="FAIL" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@cb644e]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dropDownDefault status=SUCCESS method=DropDownCase.dropDownDefault()[pri:0, instance:cases.DropDownCase@2471cca7] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=DropDownCase.dropDownDefault()[pri:0, instance:cases.DropDownCase@cb644e] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownDefault()[pri:0, instance:cases.DropDownCase@2471cca7]" name="dropDownDefault" duration-ms="162" started-at="2018-08-05T18:39:49Z" finished-at="2018-08-05T18:39:49Z">
+        <test-method status="SKIP" signature="dropDownDefault()[pri:0, instance:cases.DropDownCase@cb644e]" name="dropDownDefault" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- dropDownDefault -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@2471cca7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:49Z" finished-at="2018-08-05T18:39:49Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.DropDownCase@cb644e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@2471cca7]" name="beforeMethod" is-config="true" duration-ms="103" started-at="2018-08-05T18:39:49Z" finished-at="2018-08-05T18:39:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownMustard status=SUCCESS method=DropDownCase.dropDownMustard()[pri:0, instance:cases.DropDownCase@2471cca7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="dropDownMustard()[pri:0, instance:cases.DropDownCase@cb644e]" name="dropDownMustard" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownMustard()[pri:0, instance:cases.DropDownCase@2471cca7]" name="dropDownMustard" duration-ms="185" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- dropDownMustard -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@2471cca7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@2471cca7]" name="beforeMethod" is-config="true" duration-ms="96" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownOnion status=SUCCESS method=DropDownCase.dropDownOnion()[pri:0, instance:cases.DropDownCase@2471cca7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@cb644e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownOnion()[pri:0, instance:cases.DropDownCase@2471cca7]" name="dropDownOnion" duration-ms="195" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.DropDownCase@cb644e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@cb644e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.DropDownCase@cb644e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="dropDownOnion()[pri:0, instance:cases.DropDownCase@cb644e]" name="dropDownOnion" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- dropDownOnion -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@2471cca7]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@2471cca7]" name="beforeMethod" is-config="true" duration-ms="96" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownTomato status=SUCCESS method=DropDownCase.dropDownTomato()[pri:0, instance:cases.DropDownCase@2471cca7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@cb644e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownTomato()[pri:0, instance:cases.DropDownCase@2471cca7]" name="dropDownTomato" duration-ms="219" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownTomato -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@2471cca7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.DropDownCase@cb644e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.DropDownCase@2471cca7]" name="afterClass" is-config="true" duration-ms="160" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:50Z">
+        <test-method status="SKIP" signature="dropDownTomato()[pri:0, instance:cases.DropDownCase@cb644e]" name="dropDownTomato" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- dropDownTomato -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:cases.DropDownCase@cb644e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- cases.DropDownCase -->
       <class name="cases.TextAreaCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="beforeClass" is-config="true" duration-ms="1581" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:55Z">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="beforeMethod" is-config="true" duration-ms="134" started-at="2018-08-05T18:39:55Z" finished-at="2018-08-05T18:39:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=textAreaLongString status=SUCCESS method=TextAreaCase.textAreaLongString()[pri:0, instance:cases.TextAreaCase@6979e8cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="textAreaWithEnter()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="textAreaWithEnter" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="textAreaLongString()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="textAreaLongString" duration-ms="529" started-at="2018-08-05T18:39:55Z" finished-at="2018-08-05T18:39:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textAreaLongString -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:55Z" finished-at="2018-08-05T18:39:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="beforeMethod" is-config="true" duration-ms="96" started-at="2018-08-05T18:39:55Z" finished-at="2018-08-05T18:39:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=textAreaWithEnter status=SUCCESS method=TextAreaCase.textAreaWithEnter()[pri:0, instance:cases.TextAreaCase@6979e8cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="textAreaWithEnter()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="textAreaWithEnter" duration-ms="607" started-at="2018-08-05T18:39:56Z" finished-at="2018-08-05T18:39:56Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- textAreaWithEnter -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:56Z" finished-at="2018-08-05T18:39:56Z">
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="textAreaLongString()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="textAreaLongString" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- textAreaLongString -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.TextAreaCase@6979e8cb]" name="afterClass" is-config="true" duration-ms="107" started-at="2018-08-05T18:39:56Z" finished-at="2018-08-05T18:39:56Z">
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- cases.TextAreaCase -->
       <class name="cases.RadioButtonCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="beforeClass" is-config="true" duration-ms="1488" started-at="2018-08-05T18:39:50Z" finished-at="2018-08-05T18:39:52Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@13805618]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:cases.RadioButtonCase@13805618]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="beforeMethod" is-config="true" duration-ms="139" started-at="2018-08-05T18:39:52Z" finished-at="2018-08-05T18:39:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceA status=SUCCESS method=RadioButtonCase.radioChoiceA()[pri:0, instance:cases.RadioButtonCase@5fe5c6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="radioChoiceA()[pri:0, instance:cases.RadioButtonCase@13805618]" name="radioChoiceA" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceA()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="radioChoiceA" duration-ms="215" started-at="2018-08-05T18:39:52Z" finished-at="2018-08-05T18:39:52Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- radioChoiceA -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:52Z" finished-at="2018-08-05T18:39:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="beforeMethod" is-config="true" duration-ms="105" started-at="2018-08-05T18:39:52Z" finished-at="2018-08-05T18:39:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceB status=SUCCESS method=RadioButtonCase.radioChoiceB()[pri:0, instance:cases.RadioButtonCase@5fe5c6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@13805618]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceB()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="radioChoiceB" duration-ms="170" started-at="2018-08-05T18:39:52Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="radioChoiceB()[pri:0, instance:cases.RadioButtonCase@13805618]" name="radioChoiceB" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- radioChoiceB -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="beforeMethod" is-config="true" duration-ms="99" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceC status=SUCCESS method=RadioButtonCase.radioChoiceC()[pri:0, instance:cases.RadioButtonCase@5fe5c6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@13805618]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@13805618]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="radioChoiceC()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="radioChoiceC" duration-ms="182" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="radioChoiceC()[pri:0, instance:cases.RadioButtonCase@13805618]" name="radioChoiceC" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- radioChoiceC -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@13805618]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="beforeMethod" is-config="true" duration-ms="104" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioDefault status=SUCCESS method=RadioButtonCase.radioDefault()[pri:0, instance:cases.RadioButtonCase@5fe5c6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@13805618]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioDefault()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="radioDefault" duration-ms="124" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioDefault -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@13805618]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.RadioButtonCase@5fe5c6f]" name="afterClass" is-config="true" duration-ms="107" started-at="2018-08-05T18:39:53Z" finished-at="2018-08-05T18:39:53Z">
+        <test-method status="SKIP" signature="radioDefault()[pri:0, instance:cases.RadioButtonCase@13805618]" name="radioDefault" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- radioDefault -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:cases.RadioButtonCase@13805618]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@13805618]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
       </class> <!-- cases.RadioButtonCase -->
       <class name="cases.CheckBoxCase">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2018-08-05T18:39:47Z" finished-at="2018-08-05T18:39:47Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeSuite" is-config="true" duration-ms="13" started-at="2018-08-21T20:05:25Z" finished-at="2018-08-21T20:05:25Z">
           <params>
             <param index="0">
               <value>
@@ -338,7 +846,7 @@ at GrandpaBless.main(GrandpaBless.java:84)
             </param>
             <param index="1">
               <value>
-                <![CDATA[localhost]]>
+                <![CDATA[172.23.0.136]]>
               </value>
             </param>
             <param index="2">
@@ -348,46 +856,35 @@ at GrandpaBless.main(GrandpaBless.java:84)
             </param>
             <param index="3">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[35]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:47Z" finished-at="2018-08-05T18:39:47Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:25Z" finished-at="2018-08-21T20:05:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeClass" is-config="true" duration-ms="1629" started-at="2018-08-05T18:39:56Z" finished-at="2018-08-05T18:39:58Z">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="136" started-at="2018-08-05T18:39:58Z" finished-at="2018-08-05T18:39:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=intentionalFailcheckBox status=FAILURE method=CheckBoxCase.intentionalFailcheckBox()[pri:2, instance:cases.CheckBoxCase@5d3411d] output=<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png' height='100' width='100'/> </a>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailcheckBox()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="intentionalFailcheckBox" duration-ms="263" started-at="2018-08-05T18:39:58Z" finished-at="2018-08-05T18:39:58Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="intentionalFailcheckBox()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="intentionalFailcheckBox" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.assertTrue(Assert.java:41)
-at org.junit.Assert.assertTrue(Assert.java:52)
-at cases.CheckBoxCase.intentionalFailcheckBox(CheckBoxCase.java:62)
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -404,642 +901,301 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at GrandpaBless.main(GrandpaBless.java:84)
+at GrandpaBless.main(GrandpaBless.java:232)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-39-58-897.png' height='100' width='100'/> </a>]]>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
             </line>
           </reporter-output>
         </test-method> <!-- intentionalFailcheckBox -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:58Z" finished-at="2018-08-05T18:39:58Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="97" started-at="2018-08-05T18:39:58Z" finished-at="2018-08-05T18:39:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxTwoThree status=SUCCESS method=CheckBoxCase.checkBoxTwoThree()[pri:2, instance:cases.CheckBoxCase@5d3411d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxTwoThree()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="checkBoxTwoThree" duration-ms="237" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
+        <test-method status="SKIP" signature="checkBoxTwoThree()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="checkBoxTwoThree" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkBoxTwoThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="96" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxOneThree status=SUCCESS method=CheckBoxCase.checkBoxOneThree()[pri:2, instance:cases.CheckBoxCase@5d3411d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneThree()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="checkBoxOneThree" duration-ms="228" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
+        <test-method status="SKIP" signature="checkBoxOneThree()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="checkBoxOneThree" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkBoxOneThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="95" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxAll status=SUCCESS method=CheckBoxCase.checkBoxAll()[pri:2, instance:cases.CheckBoxCase@5d3411d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxAll()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="checkBoxAll" duration-ms="293" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="checkBoxAll()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="checkBoxAll" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkBoxAll -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:39:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="98" started-at="2018-08-05T18:39:59Z" finished-at="2018-08-05T18:40:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxNone status=SUCCESS method=CheckBoxCase.checkBoxNone()[pri:2, instance:cases.CheckBoxCase@5d3411d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxNone()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="checkBoxNone" duration-ms="109" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
+        <test-method status="SKIP" signature="checkBoxNone()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="checkBoxNone" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkBoxNone -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="beforeMethod" is-config="true" duration-ms="106" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxOneTwo status=SUCCESS method=CheckBoxCase.checkBoxOneTwo()[pri:2, instance:cases.CheckBoxCase@5d3411d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="checkBoxOneTwo()[pri:2, instance:cases.CheckBoxCase@5cb9f472]" name="checkBoxOneTwo" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at bricks.PapaBless.beforeMethod(PapaBless.java:345)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at GrandpaBless.main(GrandpaBless.java:232)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneTwo()[pri:2, instance:cases.CheckBoxCase@5d3411d]" name="checkBoxOneTwo" duration-ms="228" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Unable to create new service: ChromeDriverService
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'linux-ThinkPad-E460', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-30-generic', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+Command duration or timeout: 209 milliseconds]]>
+            </line>
           </reporter-output>
         </test-method> <!-- checkBoxOneTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterClass" is-config="true" duration-ms="176" started-at="2018-08-05T18:40:00Z" finished-at="2018-08-05T18:40:00Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
+        <test-method status="SKIP" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:cases.CheckBoxCase@5d3411d]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:cases.CheckBoxCase@5cb9f472]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-08-21T20:05:26Z" finished-at="2018-08-21T20:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- cases.CheckBoxCase -->
     </test> <!-- dynamic test with packages -->
-  </suite> <!-- 05Aug2018 01:39:47 PM linux/localhost/chrome/10 -->
-  <suite name="05Aug2018 01:39:47 PM linux/localhost/firefox/10" duration-ms="34508" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:37Z">
-    <groups>
-    </groups>
-    <test name="dynamic test with packages" duration-ms="34508" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:37Z">
-      <class name="cases.TextFieldCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.TextFieldCase@5474c6c]" name="beforeClass" is-config="true" duration-ms="3210" started-at="2018-08-05T18:40:32Z" finished-at="2018-08-05T18:40:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@5474c6c]" name="beforeMethod" is-config="true" duration-ms="133" started-at="2018-08-05T18:40:35Z" finished-at="2018-08-05T18:40:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=intentionalFailTextField status=FAILURE method=TextFieldCase.intentionalFailTextField()[pri:2, instance:cases.TextFieldCase@5474c6c] output=<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png' height='100' width='100'/> </a>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailTextField()[pri:2, instance:cases.TextFieldCase@5474c6c]" name="intentionalFailTextField" duration-ms="178" started-at="2018-08-05T18:40:35Z" finished-at="2018-08-05T18:40:35Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [This should fail] but found [Please fail]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [This should fail] but found [Please fail]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at cases.TextFieldCase.intentionalFailTextField(TextFieldCase.java:33)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at GrandpaBless.main(GrandpaBless.java:84)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailTextField_05Aug2018_01-40-35-912.png' height='100' width='100'/> </a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- intentionalFailTextField -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@5474c6c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:35Z" finished-at="2018-08-05T18:40:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextFieldCase@5474c6c]" name="beforeMethod" is-config="true" duration-ms="150" started-at="2018-08-05T18:40:35Z" finished-at="2018-08-05T18:40:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testTextField status=SUCCESS method=TextFieldCase.testTextField()[pri:2, instance:cases.TextFieldCase@5474c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testTextField()[pri:2, instance:cases.TextFieldCase@5474c6c]" name="testTextField" duration-ms="277" started-at="2018-08-05T18:40:36Z" finished-at="2018-08-05T18:40:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTextField -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextFieldCase@5474c6c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:36Z" finished-at="2018-08-05T18:40:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.TextFieldCase@5474c6c]" name="afterClass" is-config="true" duration-ms="1411" started-at="2018-08-05T18:40:36Z" finished-at="2018-08-05T18:40:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- cases.TextFieldCase -->
-      <class name="cases.DropDownCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.DropDownCase@7a92922]" name="beforeClass" is-config="true" duration-ms="3231" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@7a92922]" name="beforeMethod" is-config="true" duration-ms="214" started-at="2018-08-05T18:40:06Z" finished-at="2018-08-05T18:40:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownDefault status=SUCCESS method=DropDownCase.dropDownDefault()[pri:0, instance:cases.DropDownCase@7a92922] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownDefault()[pri:0, instance:cases.DropDownCase@7a92922]" name="dropDownDefault" duration-ms="352" started-at="2018-08-05T18:40:06Z" finished-at="2018-08-05T18:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownDefault -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@7a92922]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@7a92922]" name="beforeMethod" is-config="true" duration-ms="126" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownMustard status=SUCCESS method=DropDownCase.dropDownMustard()[pri:0, instance:cases.DropDownCase@7a92922] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownMustard()[pri:0, instance:cases.DropDownCase@7a92922]" name="dropDownMustard" duration-ms="151" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownMustard -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@7a92922]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@7a92922]" name="beforeMethod" is-config="true" duration-ms="193" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownOnion status=SUCCESS method=DropDownCase.dropDownOnion()[pri:0, instance:cases.DropDownCase@7a92922] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownOnion()[pri:0, instance:cases.DropDownCase@7a92922]" name="dropDownOnion" duration-ms="559" started-at="2018-08-05T18:40:07Z" finished-at="2018-08-05T18:40:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownOnion -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@7a92922]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:08Z" finished-at="2018-08-05T18:40:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.DropDownCase@7a92922]" name="beforeMethod" is-config="true" duration-ms="119" started-at="2018-08-05T18:40:08Z" finished-at="2018-08-05T18:40:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dropDownTomato status=SUCCESS method=DropDownCase.dropDownTomato()[pri:0, instance:cases.DropDownCase@7a92922] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dropDownTomato()[pri:0, instance:cases.DropDownCase@7a92922]" name="dropDownTomato" duration-ms="431" started-at="2018-08-05T18:40:08Z" finished-at="2018-08-05T18:40:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownTomato -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.DropDownCase@7a92922]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:08Z" finished-at="2018-08-05T18:40:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.DropDownCase@7a92922]" name="afterClass" is-config="true" duration-ms="1178" started-at="2018-08-05T18:40:08Z" finished-at="2018-08-05T18:40:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- cases.DropDownCase -->
-      <class name="cases.TextAreaCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="beforeClass" is-config="true" duration-ms="3300" started-at="2018-08-05T18:40:16Z" finished-at="2018-08-05T18:40:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="162" started-at="2018-08-05T18:40:19Z" finished-at="2018-08-05T18:40:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=textAreaLongString status=SUCCESS method=TextAreaCase.textAreaLongString()[pri:0, instance:cases.TextAreaCase@2cfb4a64] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="textAreaLongString()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="textAreaLongString" duration-ms="449" started-at="2018-08-05T18:40:20Z" finished-at="2018-08-05T18:40:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textAreaLongString -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:20Z" finished-at="2018-08-05T18:40:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="beforeMethod" is-config="true" duration-ms="163" started-at="2018-08-05T18:40:20Z" finished-at="2018-08-05T18:40:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=textAreaWithEnter status=SUCCESS method=TextAreaCase.textAreaWithEnter()[pri:0, instance:cases.TextAreaCase@2cfb4a64] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="textAreaWithEnter()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="textAreaWithEnter" duration-ms="644" started-at="2018-08-05T18:40:20Z" finished-at="2018-08-05T18:40:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textAreaWithEnter -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:21Z" finished-at="2018-08-05T18:40:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.TextAreaCase@2cfb4a64]" name="afterClass" is-config="true" duration-ms="1604" started-at="2018-08-05T18:40:21Z" finished-at="2018-08-05T18:40:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- cases.TextAreaCase -->
-      <class name="cases.RadioButtonCase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="beforeClass" is-config="true" duration-ms="3162" started-at="2018-08-05T18:40:09Z" finished-at="2018-08-05T18:40:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="beforeMethod" is-config="true" duration-ms="208" started-at="2018-08-05T18:40:12Z" finished-at="2018-08-05T18:40:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceA status=SUCCESS method=RadioButtonCase.radioChoiceA()[pri:0, instance:cases.RadioButtonCase@71f2a7d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioChoiceA()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="radioChoiceA" duration-ms="419" started-at="2018-08-05T18:40:13Z" finished-at="2018-08-05T18:40:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioChoiceA -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="beforeMethod" is-config="true" duration-ms="150" started-at="2018-08-05T18:40:13Z" finished-at="2018-08-05T18:40:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceB status=SUCCESS method=RadioButtonCase.radioChoiceB()[pri:0, instance:cases.RadioButtonCase@71f2a7d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:13Z" finished-at="2018-08-05T18:40:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="radioChoiceB()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="radioChoiceB" duration-ms="455" started-at="2018-08-05T18:40:13Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioChoiceB -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="beforeMethod" is-config="true" duration-ms="147" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioChoiceC status=SUCCESS method=RadioButtonCase.radioChoiceC()[pri:0, instance:cases.RadioButtonCase@71f2a7d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="radioChoiceC()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="radioChoiceC" duration-ms="378" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioChoiceC -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="beforeMethod" is-config="true" duration-ms="139" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=radioDefault status=SUCCESS method=RadioButtonCase.radioDefault()[pri:0, instance:cases.RadioButtonCase@71f2a7d5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioDefault()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="radioDefault" duration-ms="59" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioDefault -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="afterClass" is-config="true" duration-ms="1710" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.RadioButtonCase@71f2a7d5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:14Z" finished-at="2018-08-05T18:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- cases.RadioButtonCase -->
-      <class name="cases.CheckBoxCase">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeSuite" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:03Z" finished-at="2018-08-05T18:40:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeClass" is-config="true" duration-ms="3467" started-at="2018-08-05T18:40:22Z" finished-at="2018-08-05T18:40:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="233" started-at="2018-08-05T18:40:26Z" finished-at="2018-08-05T18:40:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=intentionalFailcheckBox status=FAILURE method=CheckBoxCase.intentionalFailcheckBox()[pri:2, instance:cases.CheckBoxCase@25618e91] output=<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png' height='100' width='100'/> </a>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="intentionalFailcheckBox()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="intentionalFailcheckBox" duration-ms="644" started-at="2018-08-05T18:40:26Z" finished-at="2018-08-05T18:40:27Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.assertTrue(Assert.java:41)
-at org.junit.Assert.assertTrue(Assert.java:52)
-at cases.CheckBoxCase.intentionalFailcheckBox(CheckBoxCase.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at GrandpaBless.main(GrandpaBless.java:84)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png'> <img src='/home/richard/git/SeleniumJava/target/surefire-reports/failure_screenshots/intentionalFailcheckBox_05Aug2018_01-40-27-487.png' height='100' width='100'/> </a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- intentionalFailcheckBox -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:27Z" finished-at="2018-08-05T18:40:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="164" started-at="2018-08-05T18:40:27Z" finished-at="2018-08-05T18:40:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxTwoThree status=SUCCESS method=CheckBoxCase.checkBoxTwoThree()[pri:2, instance:cases.CheckBoxCase@25618e91] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxTwoThree()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="checkBoxTwoThree" duration-ms="639" started-at="2018-08-05T18:40:27Z" finished-at="2018-08-05T18:40:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxTwoThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:28Z" finished-at="2018-08-05T18:40:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="137" started-at="2018-08-05T18:40:28Z" finished-at="2018-08-05T18:40:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxOneThree status=SUCCESS method=CheckBoxCase.checkBoxOneThree()[pri:2, instance:cases.CheckBoxCase@25618e91] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneThree()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="checkBoxOneThree" duration-ms="647" started-at="2018-08-05T18:40:28Z" finished-at="2018-08-05T18:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxOneThree -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:29Z" finished-at="2018-08-05T18:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="118" started-at="2018-08-05T18:40:29Z" finished-at="2018-08-05T18:40:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxAll status=SUCCESS method=CheckBoxCase.checkBoxAll()[pri:2, instance:cases.CheckBoxCase@25618e91] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxAll()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="checkBoxAll" duration-ms="863" started-at="2018-08-05T18:40:29Z" finished-at="2018-08-05T18:40:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxAll -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="131" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxNone status=SUCCESS method=CheckBoxCase.checkBoxNone()[pri:2, instance:cases.CheckBoxCase@25618e91] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxNone()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="checkBoxNone" duration-ms="79" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxNone -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:cases.CheckBoxCase@25618e91]" name="beforeMethod" is-config="true" duration-ms="172" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkBoxOneTwo status=SUCCESS method=CheckBoxCase.checkBoxOneTwo()[pri:2, instance:cases.CheckBoxCase@25618e91] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkBoxOneTwo()[pri:2, instance:cases.CheckBoxCase@25618e91]" name="checkBoxOneTwo" duration-ms="637" started-at="2018-08-05T18:40:30Z" finished-at="2018-08-05T18:40:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxOneTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-05T18:40:31Z" finished-at="2018-08-05T18:40:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterClass" is-config="true" duration-ms="1181" started-at="2018-08-05T18:40:31Z" finished-at="2018-08-05T18:40:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:37Z" finished-at="2018-08-05T18:40:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:cases.CheckBoxCase@25618e91]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-08-05T18:40:37Z" finished-at="2018-08-05T18:40:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- cases.CheckBoxCase -->
-    </test> <!-- dynamic test with packages -->
-  </suite> <!-- 05Aug2018 01:39:47 PM linux/localhost/firefox/10 -->
+  </suite> <!-- 21Aug2018 03:05:25 PM linux/172.23.0.136/chrome/35 -->
 </testng-results>
