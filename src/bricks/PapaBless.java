@@ -79,18 +79,9 @@ public class PapaBless {
 		
 		everythingsSwell = true;
 		whatDoneSploded = ""; //im making an empty immutable string and nobody can stop me. HA HA!
+			
+		hubOS = System.getProperty("os.name").toLowerCase();
 		
-//		optionsPath = absPath + "/src/exe/options.txt";
-		
-		hubOS = System.getProperty("os.name");
-		
-//		try(FileInputStream optStream = new FileInputStream(optionsPath)) {  
-//			options = IOUtils.toString(optStream,"UTF-8");
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//			everythingsSwell = false;
-//		}
-
 	    if(everythingsSwell) {
 	    	try { 
 	    		timeout = Integer.parseInt(timeoutValue.trim());
@@ -126,7 +117,7 @@ public class PapaBless {
 	    }
 	    
 	    if(everythingsSwell) {
-	    	if(nodeOS.equals("Linux")) {
+	    	if(nodeOS.equals("linux")) {
 	    		if(browserP.matches("firefox|chrome")) {
 	    			browser = browserP;
 	    		} else {
@@ -299,7 +290,7 @@ public class PapaBless {
 			String driverPath = new String();
 //			TODO: make this an option with a default
 //			Ubuntu 18.04 no lieky /webdrivers/ right off the hard drive
-			if(hubOS.equals("Linux")) {
+			if(hubOS.equals("linux")) {
 				exeExt = "";
 				driverPath = "/webdrivers/";
 			} else {

@@ -1,5 +1,5 @@
-// There are options being used
-useCSV='y'
+// These are options being used
+useCSV='n'
 
 // These aren't used yet
 defaultNodeUrl='localhost'
